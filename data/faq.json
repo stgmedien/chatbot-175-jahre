@@ -1,0 +1,223 @@
+[
+  {
+    "id": "faq-gruendung",
+    "frage": "Wann wurde das ESG gegründet?",
+    "antwort": {
+      "kind": "Am 19. Juni 1851 ging hier zum ersten Mal die Schule los – mit 16 Schülern.",
+      "erwachsene": "Der Unterricht begann am 19. Juni 1851. Die Standortentscheidung für Gütersloh fiel 1849, die Anerkennung als öffentliches Gymnasium 1854.",
+      "fach": "Gründungsjahr ist 1851 (Unterrichtsbeginn 19. Juni mit 16 Schülern unter Dr. Theodor Rumpel). 1849 fiel die Standortentscheidung, 1854 die Anerkennung als öffentliches Gymnasium. (Quelle: ESG Chronik)"
+    },
+    "imageBildIds": [],
+    "citations": ["ESG Chronik"],
+    "themen": ["Geschichte"],
+    "reviewed": true
+  },
+  {
+    "id": "faq-name",
+    "frage": "Warum heißt die Schule Evangelisch-Stiftisches Gymnasium?",
+    "antwort": {
+      "kind": "„Evangelisch“ kommt von der Kirche, die die Schule gegründet hat. „Stiftisch“ heißt: Ein besonderes Gremium, das Kuratorium, bestimmt mit.",
+      "erwachsene": "„Evangelisch“ verweist auf die Gründung durch die Evangelische Gesellschaft für Deutschland, „Stiftisch“ auf die Kuratoriumsstruktur mit besonderen Rechten seit 1854.",
+      "fach": "„Evangelisch“ = Gründung durch die Evangelische Gesellschaft für Deutschland; „Stiftisch“ = Kuratorium mit besonderen Rechten seit 1854. (Quelle: ESG Chronik)"
+    },
+    "imageBildIds": [],
+    "citations": ["ESG Chronik"],
+    "themen": ["Geschichte"],
+    "reviewed": true
+  },
+  {
+    "id": "faq-erster-schulleiter",
+    "frage": "Wer war der erste Schulleiter?",
+    "antwort": {
+      "kind": "Der erste Schulleiter hieß Dr. Theodor Rumpel. Er startete 1851 mit nur 16 Schülern.",
+      "erwachsene": "Der erste Schulleiter war Dr. Theodor Rumpel (ab 1851).",
+      "fach": "Erster Schulleiter war Dr. Theodor Rumpel (ab 1851). Die Reihe führt über Fliedner, Bruns, Hilbk, Engelen (1987–2010) und Rachner (2010–2016) bis Martin Fugmann (seit 2016). (Quelle: ESG Chronik)"
+    },
+    "imageBildIds": [],
+    "citations": ["ESG Chronik"],
+    "themen": ["Schulleitung"],
+    "reviewed": true
+  },
+  {
+    "id": "faq-schuelerzahl-anfang",
+    "frage": "Wie viele Schüler hatte das ESG am Anfang?",
+    "antwort": {
+      "kind": "Am Anfang waren es nur 16 Schüler. Heute sind es ungefähr 1.200!",
+      "erwachsene": "1851 begann der Unterricht mit 16 Schülern, 1854 waren es bereits 189. Heute besuchen rund 1.200 Schülerinnen und Schüler das ESG.",
+      "fach": "16 (1851) → 189 (1854) → ca. 1.200 (laut Archivstand Mai 2026). (Quelle: ESG Chronik)"
+    },
+    "imageBildIds": [],
+    "citations": ["ESG Chronik"],
+    "themen": ["Geschichte", "Schule heute"],
+    "reviewed": true
+  },
+  {
+    "id": "faq-koenig-1852",
+    "frage": "Was sagte der König bei der Grundsteinlegung 1852?",
+    "antwort": {
+      "kind": "König Friedrich Wilhelm IV. legte 1852 den Grundstein. Überliefert ist der Spruch: „Christus der Grundstein – Christen die Steine – Gott führe den Bau.“",
+      "erwachsene": "Bei der Grundsteinlegung am 26. März 1852 durch König Friedrich Wilhelm IV. ist der Spruch überliefert: „Christus der Grundstein – Christen die Steine – Gott führe den Bau.“",
+      "fach": "Zur Grundsteinlegung des ersten (Fachwerk-)Baus am 26. März 1852 durch König Friedrich Wilhelm IV. ist überliefert: „Christus der Grundstein – Christen die Steine – Gott führe den Bau.“ (Quelle: ESG Baugeschichte)"
+    },
+    "imageBildIds": [],
+    "citations": ["ESG Baugeschichte"],
+    "themen": ["Baugeschichte", "Geschichte"],
+    "reviewed": true
+  },
+  {
+    "id": "faq-maedchen",
+    "frage": "Seit wann dürfen Mädchen das ESG besuchen?",
+    "antwort": {
+      "kind": "Offiziell seit 1975 dürfen auch Mädchen aufs ESG.",
+      "erwachsene": "Offiziell ist das ESG seit 1975 für Mädchen geöffnet; vereinzelt gab es schon ab 1960 Schülerinnen.",
+      "fach": "Die offizielle Öffnung für Mädchen erfolgte 1975 (vereinzelt ab 1960, damals 7 von rund 570 Schülern). (Quelle: ESG Chronik)"
+    },
+    "imageBildIds": [],
+    "citations": ["ESG Chronik"],
+    "themen": ["Geschichte"],
+    "reviewed": true
+  },
+  {
+    "id": "faq-gebaeude",
+    "frage": "Wann wurde das heutige Gebäude gebaut?",
+    "antwort": {
+      "kind": "Das große Backsteingebäude mit dem Türmchen wurde 1928 fertig.",
+      "erwachsene": "Der Klinkerbau mit dem Türmchen wurde am 31. Juli 1928 eingeweiht. Architekt war Gustav Kassbaum; seit 1984 steht er unter Denkmalschutz.",
+      "fach": "Grundsteinlegung 1926, Einweihung 31. Juli 1928 (Architekt Gustav Kassbaum, 778.000 RM), Denkmalschutz seit 1984. (Quelle: ESG Baugeschichte, ESG Chronik)"
+    },
+    "imageBildIds": ["IMG_1930_001"],
+    "citations": ["ESG Baugeschichte", "ESG Chronik"],
+    "themen": ["Baugeschichte"],
+    "reviewed": true
+  },
+  {
+    "id": "faq-tuermchen",
+    "frage": "Was ist das Türmchen und was ist Türmchenblasen?",
+    "antwort": {
+      "kind": "Das Türmchen ist der kleine Turm auf dem Dach. An Heiligabend wird von dort geblasen – das Türmchenblasen.",
+      "erwachsene": "Das Türmchen ist ein Dachreiter auf dem Klinkerbau von 1928. Seit 1986 spielt der Posaunenchor an Heiligabend vom Türmchen („Türmchenblasen“).",
+      "fach": "Der Dachreiter („Türmchen“) gehört zum 1928er Klinkerbau und erinnert an den alten Fachwerkbau. Das Türmchenblasen des Posaunenchors gibt es seit 1986 jährlich an Heiligabend. (Quelle: ESG Baugeschichte, ESG Chronik)"
+    },
+    "imageBildIds": ["IMG_1925_001"],
+    "citations": ["ESG Baugeschichte", "ESG Chronik"],
+    "themen": ["Baugeschichte", "Musik"],
+    "reviewed": true
+  },
+  {
+    "id": "faq-krieg",
+    "frage": "Was geschah mit der Schule im Zweiten Weltkrieg?",
+    "antwort": {
+      "kind": "1944/45 wurde die Schule durch Bomben schwer beschädigt. 1946 ging der Unterricht aber schon wieder los.",
+      "erwachsene": "1944/45 zerstörten Bombenangriffe die Aula und Teile des Hauptgebäudes. Der Unterricht begann am 12. März 1946 wieder, bis 1950/51 war die Schule wiederhergestellt.",
+      "fach": "Schwere Bombenangriffe 1944/45 zerstörten Aula und Gebäudeteile; Wiederbeginn am 12. März 1946, Wiederherstellung bis 1950/51. Ab 1933 war der Unterricht NS-ausgerichtet gewesen. (Quelle: ESG Chronik, ESG Baugeschichte)"
+    },
+    "imageBildIds": ["IMG_1945_001"],
+    "citations": ["ESG Chronik", "ESG Baugeschichte"],
+    "themen": ["Geschichte", "Baugeschichte"],
+    "reviewed": true
+  },
+  {
+    "id": "faq-sanierung",
+    "frage": "Was wurde bei der Sanierung 2023–2025 gemacht?",
+    "antwort": {
+      "kind": "Von 2023 bis 2025 wurde die Schule renoviert. So lange lernten alle in einem „Containerdorf“.",
+      "erwachsene": "Von 2023 bis 2025 wurde das ESG umfassend saniert; der Unterricht fand währenddessen im Containerdorf statt. Im September 2025 wurde das Gebäude eingeweiht.",
+      "fach": "Die Großsanierung lief 2023–2025 (Unterricht im Containerdorf), Einweihung des sanierten Gebäudes im September 2025. (Quelle: ESG Baugeschichte, ESG Chronik)"
+    },
+    "imageBildIds": [],
+    "citations": ["ESG Baugeschichte", "ESG Chronik"],
+    "themen": ["Baugeschichte"],
+    "reviewed": true
+  },
+  {
+    "id": "faq-posaunenchor",
+    "frage": "Seit wann gibt es den Posaunenchor?",
+    "antwort": {
+      "kind": "Den Posaunenchor gibt es seit 1871 – einer der ältesten an einer Schule in Deutschland.",
+      "erwachsene": "Der Gymnasial-Posaunenchor besteht seit 1871 (gegründet von Johannes Kuhlo) und ist einer der ältesten Schulposaunenchöre Deutschlands.",
+      "fach": "Gründung 1871 durch Johannes Kuhlo; einer der ältesten Schulposaunenchöre Deutschlands. (Quelle: ESG Chronik)"
+    },
+    "imageBildIds": ["IMG_1897_001"],
+    "citations": ["ESG Chronik"],
+    "themen": ["Musik"],
+    "reviewed": true
+  },
+  {
+    "id": "faq-bigband",
+    "frage": "Seit wann gibt es die Big Band?",
+    "antwort": {
+      "kind": "Die Big Band gibt es seit 1994. Sie war sogar schon in Moskau.",
+      "erwachsene": "Die Big Band besteht seit 1994, reiste 2012 nach Moskau und feierte 2024 ihr 30-jähriges Bestehen.",
+      "fach": "Gründung 1994 (Vorläufer Jazz AG 1989), Moskau-Reise 2012, 30-jähriges Jubiläum 2024. (Quelle: ESG Chronik, Pressearchiv)"
+    },
+    "imageBildIds": [],
+    "citations": ["ESG Chronik", "Pressearchiv"],
+    "themen": ["Musik"],
+    "reviewed": true
+  },
+  {
+    "id": "faq-schulleiter-heute",
+    "frage": "Wer leitet das ESG heute?",
+    "antwort": {
+      "kind": "Der Schulleiter heißt Martin Fugmann. Er leitet das ESG seit 2016.",
+      "erwachsene": "Laut Archivstand Mai 2026 leitet OStD Martin Fugmann das ESG seit 2016; sein Stellvertreter ist StD Thomas Rimpel.",
+      "fach": "Schulleiter ist Martin Fugmann (seit 2016, Fächer Musik/Englisch, Schwerpunkte Internationalisierung und Digitalisierung); Stellvertreter Thomas Rimpel. (Quelle: ESG Chronik, laut Archivstand Mai 2026)"
+    },
+    "imageBildIds": [],
+    "citations": ["ESG Chronik"],
+    "themen": ["Schulleitung"],
+    "reviewed": true
+  },
+  {
+    "id": "faq-ib",
+    "frage": "Was bedeutet IB World School?",
+    "antwort": {
+      "kind": "Das ESG bietet einen internationalen Abschluss an, der überall auf der Welt zählt. Seit 2013 heißt es „IB World School“.",
+      "erwachsene": "Seit 2013 ist das ESG IB World School und bietet das international anerkannte International Baccalaureate an. Seit 2011/12 gibt es einen bilingualen Zweig.",
+      "fach": "IB World School seit 2013 (International Baccalaureate); bilingualer Zweig seit 2011/12. (Quelle: ESG Chronik)"
+    },
+    "imageBildIds": [],
+    "citations": ["ESG Chronik"],
+    "themen": ["Internationales"],
+    "reviewed": true
+  },
+  {
+    "id": "faq-fussball",
+    "frage": "War das ESG der erste Fußballverein in NRW?",
+    "antwort": {
+      "kind": "Ja, am ESG entstand einer der ersten Fußballvereine in ganz NRW.",
+      "erwachsene": "Der Gymnasial-Spielverein gilt als erster Fußballverein in NRW. Das Archiv nennt 1877 (ESG-Chronik) bzw. 1878 (Wikipedia).",
+      "fach": "Erster Fußballverein in NRW (Gymnasial-Spielverein). Zwei Quellenangaben: 1877 (ESG-Chronik), 1878 (Wikipedia). (Quelle: ESG Chronik, Wikipedia)"
+    },
+    "imageBildIds": [],
+    "citations": ["ESG Chronik", "Wikipedia"],
+    "themen": ["Sport"],
+    "reviewed": true
+  },
+  {
+    "id": "faq-schulfest-termin",
+    "frage": "Wann ist das Schulfest 2026?",
+    "antwort": {
+      "kind": "Das große Schulfest ist am 12. Juni 2026, nachmittags von 15 bis 19 Uhr.",
+      "erwachsene": "Das Schulfest zum 175-jährigen Jubiläum findet am 12. Juni 2026 von 15 bis 19 Uhr statt. Der Festakt folgt am 13. Juni 2026 um 11 Uhr.",
+      "fach": "Laut Archivstand Mai 2026: Schulfest 12.06.2026 (15–19 Uhr), Festakt 13.06.2026 (11 Uhr), ESG-Revue 10./11.06.2026, Pfingstkonzert 24.05.2026. Motto: „1000 Fenster, unendlich viele Geschichten“. (Quelle: ESG Jubiläum 175 Jahre)"
+    },
+    "imageBildIds": [],
+    "citations": ["ESG Jubiläum 175 Jahre"],
+    "themen": ["Jubiläum"],
+    "reviewed": true
+  },
+  {
+    "id": "faq-motto",
+    "frage": "Was bedeutet das Jubiläumsmotto „1000 Fenster, unendlich viele Geschichten“?",
+    "antwort": {
+      "kind": "Jedes Fenster der Schule steht für eine Geschichte – und davon gibt es ganz viele in 175 Jahren.",
+      "erwachsene": "Das Motto „1000 Fenster, unendlich viele Geschichten“ spielt auf das markante Schulgebäude an: Hinter jedem Fenster stecken Erlebnisse von 175 Jahren ESG.",
+      "fach": "Das Jubiläumsmotto 2026 „1000 Fenster, unendlich viele Geschichten“ verbindet das denkmalgeschützte Gebäude mit den vielen persönlichen Geschichten aus 175 Jahren Schulgeschichte. (Quelle: ESbloG, ESG Jubiläum 175 Jahre)"
+    },
+    "imageBildIds": [],
+    "citations": ["ESbloG", "ESG Jubiläum 175 Jahre"],
+    "themen": ["Jubiläum"],
+    "reviewed": true
+  }
+]
