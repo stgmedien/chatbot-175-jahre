@@ -7,9 +7,15 @@
       "erwachsene": "Der Unterricht begann am 19. Juni 1851. Die Standortentscheidung für Gütersloh fiel 1849, die Anerkennung als öffentliches Gymnasium 1854.",
       "fach": "Gründungsjahr ist 1851 (Unterrichtsbeginn 19. Juni mit 16 Schülern unter Dr. Theodor Rumpel). 1849 fiel die Standortentscheidung, 1854 die Anerkennung als öffentliches Gymnasium. (Quelle: ESG Chronik)"
     },
-    "imageBildIds": [],
-    "citations": ["ESG Chronik"],
-    "themen": ["Geschichte"],
+    "imageBildIds": [
+      "PENNE_S04_04"
+    ],
+    "citations": [
+      "ESG Chronik"
+    ],
+    "themen": [
+      "Geschichte"
+    ],
     "reviewed": true
   },
   {
@@ -21,8 +27,12 @@
       "fach": "„Evangelisch“ = Gründung durch die Evangelische Gesellschaft für Deutschland; „Stiftisch“ = Kuratorium mit besonderen Rechten seit 1854. (Quelle: ESG Chronik)"
     },
     "imageBildIds": [],
-    "citations": ["ESG Chronik"],
-    "themen": ["Geschichte"],
+    "citations": [
+      "ESG Chronik"
+    ],
+    "themen": [
+      "Geschichte"
+    ],
     "reviewed": true
   },
   {
@@ -34,8 +44,12 @@
       "fach": "Erster Schulleiter war Dr. Theodor Rumpel (ab 1851). Die Reihe führt über Fliedner, Bruns, Hilbk, Engelen (1987–2010) und Rachner (2010–2016) bis Martin Fugmann (seit 2016). (Quelle: ESG Chronik)"
     },
     "imageBildIds": [],
-    "citations": ["ESG Chronik"],
-    "themen": ["Schulleitung"],
+    "citations": [
+      "ESG Chronik"
+    ],
+    "themen": [
+      "Schulleitung"
+    ],
     "reviewed": true
   },
   {
@@ -47,8 +61,13 @@
       "fach": "16 (1851) → 189 (1854) → ca. 1.200 (laut Archivstand Mai 2026). (Quelle: ESG Chronik)"
     },
     "imageBildIds": [],
-    "citations": ["ESG Chronik"],
-    "themen": ["Geschichte", "Schule heute"],
+    "citations": [
+      "ESG Chronik"
+    ],
+    "themen": [
+      "Geschichte",
+      "Schule heute"
+    ],
     "reviewed": true
   },
   {
@@ -60,8 +79,13 @@
       "fach": "Zur Grundsteinlegung des ersten (Fachwerk-)Baus am 26. März 1852 durch König Friedrich Wilhelm IV. ist überliefert: „Christus der Grundstein – Christen die Steine – Gott führe den Bau.“ (Quelle: ESG Baugeschichte)"
     },
     "imageBildIds": [],
-    "citations": ["ESG Baugeschichte"],
-    "themen": ["Baugeschichte", "Geschichte"],
+    "citations": [
+      "ESG Baugeschichte"
+    ],
+    "themen": [
+      "Baugeschichte",
+      "Geschichte"
+    ],
     "reviewed": true
   },
   {
@@ -73,8 +97,12 @@
       "fach": "Die offizielle Öffnung für Mädchen erfolgte 1975 (vereinzelt ab 1960, damals 7 von rund 570 Schülern). (Quelle: ESG Chronik)"
     },
     "imageBildIds": [],
-    "citations": ["ESG Chronik"],
-    "themen": ["Geschichte"],
+    "citations": [
+      "ESG Chronik"
+    ],
+    "themen": [
+      "Geschichte"
+    ],
     "reviewed": true
   },
   {
@@ -85,9 +113,16 @@
       "erwachsene": "Der Klinkerbau mit dem Türmchen wurde am 31. Juli 1928 eingeweiht. Architekt war Gustav Kassbaum; seit 1984 steht er unter Denkmalschutz.",
       "fach": "Grundsteinlegung 1926, Einweihung 31. Juli 1928 (Architekt Gustav Kassbaum, 778.000 RM), Denkmalschutz seit 1984. (Quelle: ESG Baugeschichte, ESG Chronik)"
     },
-    "imageBildIds": ["IMG_1930_001"],
-    "citations": ["ESG Baugeschichte", "ESG Chronik"],
-    "themen": ["Baugeschichte"],
+    "imageBildIds": [
+      "HEFT_S01_01"
+    ],
+    "citations": [
+      "ESG Baugeschichte",
+      "ESG Chronik"
+    ],
+    "themen": [
+      "Baugeschichte"
+    ],
     "reviewed": true
   },
   {
@@ -98,9 +133,17 @@
       "erwachsene": "Das Türmchen ist ein Dachreiter auf dem Klinkerbau von 1928. Seit 1986 spielt der Posaunenchor an Heiligabend vom Türmchen („Türmchenblasen“).",
       "fach": "Der Dachreiter („Türmchen“) gehört zum 1928er Klinkerbau und erinnert an den alten Fachwerkbau. Das Türmchenblasen des Posaunenchors gibt es seit 1986 jährlich an Heiligabend. (Quelle: ESG Baugeschichte, ESG Chronik)"
     },
-    "imageBildIds": ["IMG_1925_001"],
-    "citations": ["ESG Baugeschichte", "ESG Chronik"],
-    "themen": ["Baugeschichte", "Musik"],
+    "imageBildIds": [
+      "HEFT_S01_01"
+    ],
+    "citations": [
+      "ESG Baugeschichte",
+      "ESG Chronik"
+    ],
+    "themen": [
+      "Baugeschichte",
+      "Musik"
+    ],
     "reviewed": true
   },
   {
@@ -111,9 +154,15 @@
       "erwachsene": "1944/45 zerstörten Bombenangriffe die Aula und Teile des Hauptgebäudes. Der Unterricht begann am 12. März 1946 wieder, bis 1950/51 war die Schule wiederhergestellt.",
       "fach": "Schwere Bombenangriffe 1944/45 zerstörten Aula und Gebäudeteile; Wiederbeginn am 12. März 1946, Wiederherstellung bis 1950/51. Ab 1933 war der Unterricht NS-ausgerichtet gewesen. (Quelle: ESG Chronik, ESG Baugeschichte)"
     },
-    "imageBildIds": ["IMG_1945_001"],
-    "citations": ["ESG Chronik", "ESG Baugeschichte"],
-    "themen": ["Geschichte", "Baugeschichte"],
+    "imageBildIds": [],
+    "citations": [
+      "ESG Chronik",
+      "ESG Baugeschichte"
+    ],
+    "themen": [
+      "Geschichte",
+      "Baugeschichte"
+    ],
     "reviewed": true
   },
   {
@@ -125,8 +174,13 @@
       "fach": "Die Großsanierung lief 2023–2025 (Unterricht im Containerdorf), Einweihung des sanierten Gebäudes im September 2025. (Quelle: ESG Baugeschichte, ESG Chronik)"
     },
     "imageBildIds": [],
-    "citations": ["ESG Baugeschichte", "ESG Chronik"],
-    "themen": ["Baugeschichte"],
+    "citations": [
+      "ESG Baugeschichte",
+      "ESG Chronik"
+    ],
+    "themen": [
+      "Baugeschichte"
+    ],
     "reviewed": true
   },
   {
@@ -137,9 +191,15 @@
       "erwachsene": "Der Gymnasial-Posaunenchor besteht seit 1871 (gegründet von Johannes Kuhlo) und ist einer der ältesten Schulposaunenchöre Deutschlands.",
       "fach": "Gründung 1871 durch Johannes Kuhlo; einer der ältesten Schulposaunenchöre Deutschlands. (Quelle: ESG Chronik)"
     },
-    "imageBildIds": ["IMG_1897_001"],
-    "citations": ["ESG Chronik"],
-    "themen": ["Musik"],
+    "imageBildIds": [
+      "PENNE_S07_01"
+    ],
+    "citations": [
+      "ESG Chronik"
+    ],
+    "themen": [
+      "Musik"
+    ],
     "reviewed": true
   },
   {
@@ -151,8 +211,13 @@
       "fach": "Gründung 1994 (Vorläufer Jazz AG 1989), Moskau-Reise 2012, 30-jähriges Jubiläum 2024. (Quelle: ESG Chronik, Pressearchiv)"
     },
     "imageBildIds": [],
-    "citations": ["ESG Chronik", "Pressearchiv"],
-    "themen": ["Musik"],
+    "citations": [
+      "ESG Chronik",
+      "Pressearchiv"
+    ],
+    "themen": [
+      "Musik"
+    ],
     "reviewed": true
   },
   {
@@ -164,8 +229,12 @@
       "fach": "Schulleiter ist Martin Fugmann (seit 2016, Fächer Musik/Englisch, Schwerpunkte Internationalisierung und Digitalisierung); Stellvertreter Thomas Rimpel. (Quelle: ESG Chronik, laut Archivstand Mai 2026)"
     },
     "imageBildIds": [],
-    "citations": ["ESG Chronik"],
-    "themen": ["Schulleitung"],
+    "citations": [
+      "ESG Chronik"
+    ],
+    "themen": [
+      "Schulleitung"
+    ],
     "reviewed": true
   },
   {
@@ -177,8 +246,12 @@
       "fach": "IB World School seit 2013 (International Baccalaureate); bilingualer Zweig seit 2011/12. (Quelle: ESG Chronik)"
     },
     "imageBildIds": [],
-    "citations": ["ESG Chronik"],
-    "themen": ["Internationales"],
+    "citations": [
+      "ESG Chronik"
+    ],
+    "themen": [
+      "Internationales"
+    ],
     "reviewed": true
   },
   {
@@ -189,9 +262,16 @@
       "erwachsene": "Der Gymnasial-Spielverein gilt als erster Fußballverein in NRW. Das Archiv nennt 1877 (ESG-Chronik) bzw. 1878 (Wikipedia).",
       "fach": "Erster Fußballverein in NRW (Gymnasial-Spielverein). Zwei Quellenangaben: 1877 (ESG-Chronik), 1878 (Wikipedia). (Quelle: ESG Chronik, Wikipedia)"
     },
-    "imageBildIds": [],
-    "citations": ["ESG Chronik", "Wikipedia"],
-    "themen": ["Sport"],
+    "imageBildIds": [
+      "PENNE_S05_03"
+    ],
+    "citations": [
+      "ESG Chronik",
+      "Wikipedia"
+    ],
+    "themen": [
+      "Sport"
+    ],
     "reviewed": true
   },
   {
@@ -203,8 +283,12 @@
       "fach": "Laut Archivstand Mai 2026: Schulfest 12.06.2026 (15–19 Uhr), Festakt 13.06.2026 (11 Uhr), ESG-Revue 10./11.06.2026, Pfingstkonzert 24.05.2026. Motto: „1000 Fenster, unendlich viele Geschichten“. (Quelle: ESG Jubiläum 175 Jahre)"
     },
     "imageBildIds": [],
-    "citations": ["ESG Jubiläum 175 Jahre"],
-    "themen": ["Jubiläum"],
+    "citations": [
+      "ESG Jubiläum 175 Jahre"
+    ],
+    "themen": [
+      "Jubiläum"
+    ],
     "reviewed": true
   },
   {
@@ -216,8 +300,13 @@
       "fach": "Das Jubiläumsmotto 2026 „1000 Fenster, unendlich viele Geschichten“ verbindet das denkmalgeschützte Gebäude mit den vielen persönlichen Geschichten aus 175 Jahren Schulgeschichte. (Quelle: ESbloG, ESG Jubiläum 175 Jahre)"
     },
     "imageBildIds": [],
-    "citations": ["ESbloG", "ESG Jubiläum 175 Jahre"],
-    "themen": ["Jubiläum"],
+    "citations": [
+      "ESbloG",
+      "ESG Jubiläum 175 Jahre"
+    ],
+    "themen": [
+      "Jubiläum"
+    ],
     "reviewed": true
   }
 ]

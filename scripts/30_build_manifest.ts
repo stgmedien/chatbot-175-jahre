@@ -1,7 +1,7 @@
 // Baut data/image-manifest.json aus 05_Bilder_und_Medien/Bildquellen_Index.json.
 // Real ausführbar, braucht weder API-Key noch echte Bilddateien.
 //   Aufruf:  npm run build:manifest   (tsx, cwd = webapp/)
-import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
+import { readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
 import { join } from "node:path";
 import { normalizeUmlauts } from "../lib/normalize";
 import type { ImageEntry, ImageManifest } from "../lib/types";
@@ -46,6 +46,39 @@ for (const r of raw) {
   manifest[r.id] = entry;
 }
 
+// Zusätzlich: echte, freigegebene Bilder aus den extrahierten Dokumenten (07_),
+// kopiert nach webapp/public/bilder/. doc-images.json erzeugt die Python-Konsolidierung.
+const DOC = join(OUT_DIR, "doc-images.json");
+const PUB = join(process.cwd(), "public", "bilder");
+if (existsSync(DOC)) {
+  const docs = JSON.parse(readFileSync(DOC, "utf8")) as Array<{
+    bildId: string;
+    dateiname: string;
+    alt: string;
+    rechte: string;
+    nutzung: string;
+    jahr: number | null;
+    thema: string;
+  }>;
+  for (const d of docs) {
+    if (!d.bildId) continue;
+    const present = existsSync(join(PUB, d.dateiname));
+    manifest[d.bildId] = {
+      bildId: d.bildId,
+      dateiname: d.dateiname,
+      alt: normalizeUmlauts(d.alt || ""),
+      rechte: normalizeUmlauts(d.rechte || ""),
+      nutzung: d.nutzung || "",
+      jahr: d.jahr ?? null,
+      thema: d.thema || "",
+      blobUrl: present ? "/bilder/" + d.dateiname : null,
+      present,
+    };
+  }
+  console.log(`  + ${docs.length} Bilder aus 07_Dokumente_extrahiert`);
+}
+
 mkdirSync(OUT_DIR, { recursive: true });
 writeFileSync(OUT, JSON.stringify(manifest, null, 2) + "\n", "utf8");
-console.log(`✓ image-manifest.json: ${Object.keys(manifest).length} Bilder → ${OUT}`);
+const present = Object.values(manifest).filter((m) => m.present).length;
+console.log(`✓ image-manifest.json: ${Object.keys(manifest).length} Bilder (${present} mit Datei) → ${OUT}`);

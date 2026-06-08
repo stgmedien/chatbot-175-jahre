@@ -29,6 +29,8 @@ const MAP: Record<string, string> = {
   Buehne: "Bühne", Auffuehrung: "Aufführung", Auffuehrungen: "Aufführungen",
   Gaeste: "Gäste", Saenger: "Sänger", Posaunenchoere: "Posaunenchöre",
   Feldstrasse: "Feldstraße", Strasse: "Straße", Grundsteinlegung: "Grundsteinlegung",
+  Guetersloh: "Gütersloh", Guterslohs: "Güterslohs", Baeumen: "Bäumen", Baeume: "Bäume",
+  Lehrmittelraum: "Lehrmittelraum", Klassenraeume: "Klassenräume",
 };
 
 /** Ersetzt allowlistete ASCII-Umlaut-Wörter durch echte Umlaute (wortweise, sicher). */

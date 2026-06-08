@@ -20,6 +20,7 @@ const FILES = [
   "ESG_Begriffe_und_Synonyme.md",
   "ESG_Haeufige_Fragen_FAQ.md",
   "ESG_SuperKI_Schnellantworten.md",
+  "ESG_Historische_Dokumente_Funde.md",
 ];
 
 const parts: string[] = [];
