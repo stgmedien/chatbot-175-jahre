@@ -900,5 +900,159 @@
     "thema": "Schülerleben",
     "blobUrl": "/bilder/1890_Schuelerleben_Theaterauffuehrung_Der-Nasse-als-Onkel_PRIMA.jpg",
     "present": true
+  },
+  "SCHIFF_IMG_1620_01": {
+    "bildId": "SCHIFF_IMG_1620_01",
+    "dateiname": "IMG1620_Baugeschichte_StadtansichtGuetersloh1928_SCHIFF.jpg",
+    "alt": "Panorama von Gütersloh 1928 mit Kirchtuermen, vom Schulturm aus gesehen",
+    "rechte": "Stadt-/Schularchiv Gütersloh; Nutzung für das ESG-175-Projekt freigegeben",
+    "nutzung": "freigegeben",
+    "jahr": 1928,
+    "thema": "Baugeschichte",
+    "blobUrl": "/bilder/IMG1620_Baugeschichte_StadtansichtGuetersloh1928_SCHIFF.jpg",
+    "present": true
+  },
+  "SCHIFF_IMG_1624_01": {
+    "bildId": "SCHIFF_IMG_1624_01",
+    "dateiname": "IMG1624_Baugeschichte_AlteSchule1852_SCHIFF.jpg",
+    "alt": "Altes Gymnasialgebaeude von 1852, Fachwerkhaus an der Feldstraße Gütersloh",
+    "rechte": "Stadt-/Schularchiv Gütersloh; Nutzung für das ESG-175-Projekt freigegeben",
+    "nutzung": "freigegeben",
+    "jahr": 1852,
+    "thema": "Baugeschichte",
+    "blobUrl": "/bilder/IMG1624_Baugeschichte_AlteSchule1852_SCHIFF.jpg",
+    "present": true
+  },
+  "SCHIFF_IMG_1625_01": {
+    "bildId": "SCHIFF_IMG_1625_01",
+    "dateiname": "IMG1625_Baugeschichte_ESGNeubau1928_SCHIFF.jpg",
+    "alt": "Klinkerbau des neuen Ev. Stift. Gymnasiums Gütersloh um 1928 mit Aulatuermchen",
+    "rechte": "Stadt-/Schularchiv Gütersloh; Nutzung für das ESG-175-Projekt freigegeben",
+    "nutzung": "freigegeben",
+    "jahr": 1928,
+    "thema": "Baugeschichte",
+    "blobUrl": "/bilder/IMG1625_Baugeschichte_ESGNeubau1928_SCHIFF.jpg",
+    "present": true
+  },
+  "SCHIFF_IMG_1627_02": {
+    "bildId": "SCHIFF_IMG_1627_02",
+    "dateiname": "IMG1627_Schuelerleben_Unterprima1932_SCHIFF.jpg",
+    "alt": "Klassenfoto der Unterprima 1932/1933 mit nummerierten Schülern",
+    "rechte": "Stadt-/Schularchiv Gütersloh; Nutzung für das ESG-175-Projekt freigegeben",
+    "nutzung": "freigegeben",
+    "jahr": 1932,
+    "thema": "Schuelerleben",
+    "blobUrl": "/bilder/IMG1627_Schuelerleben_Unterprima1932_SCHIFF.jpg",
+    "present": true
+  },
+  "SCHIFF_IMG_1630_01": {
+    "bildId": "SCHIFF_IMG_1630_01",
+    "dateiname": "IMG1630_Schulleitung_Lehrerkollegium1926_SCHIFF.jpg",
+    "alt": "Gruppenfoto des Lehrerkollegiums 1926 mit fuenfzehn nummerierten Lehrern",
+    "rechte": "Stadt-/Schularchiv Gütersloh; Nutzung für das ESG-175-Projekt freigegeben",
+    "nutzung": "freigegeben",
+    "jahr": 1926,
+    "thema": "Schulleitung",
+    "blobUrl": "/bilder/IMG1630_Schulleitung_Lehrerkollegium1926_SCHIFF.jpg",
+    "present": true
+  },
+  "SCHIFF_IMG_1637_01": {
+    "bildId": "SCHIFF_IMG_1637_01",
+    "dateiname": "IMG1637_Sport_Turnfahrt1928Umzug_SCHIFF.jpg",
+    "alt": "Festlicher Schulumzug 1928 durch eine Gueterloher Straße mit Fachwerkhaeusern",
+    "rechte": "Stadt-/Schularchiv Gütersloh; Nutzung für das ESG-175-Projekt freigegeben",
+    "nutzung": "freigegeben",
+    "jahr": 1928,
+    "thema": "Sport",
+    "blobUrl": "/bilder/IMG1637_Sport_Turnfahrt1928Umzug_SCHIFF.jpg",
+    "present": true
+  },
+  "SCHIFF_IMG_1640_01": {
+    "bildId": "SCHIFF_IMG_1640_01",
+    "dateiname": "IMG1640_Geschichte_StadtplanGuetersloh1933_SCHIFF.jpg",
+    "alt": "Historischer Stadtplan Gütersloh mit markiertem Gymnasium und Alumnaten",
+    "rechte": "Stadt-/Schularchiv Gütersloh; Nutzung für das ESG-175-Projekt freigegeben",
+    "nutzung": "freigegeben",
+    "jahr": 1933,
+    "thema": "Geschichte",
+    "blobUrl": "/bilder/IMG1640_Geschichte_StadtplanGuetersloh1933_SCHIFF.jpg",
+    "present": true
+  },
+  "SCHIFF_IMG1651_02": {
+    "bildId": "SCHIFF_IMG1651_02",
+    "dateiname": "IMG1651_Baugeschichte_TurnhalleInnen1928_SCHIFF.jpg",
+    "alt": "Innenraum einer historischen Turnhalle mit Turngeraeten.",
+    "rechte": "Stadt-/Schularchiv Gütersloh; Nutzung für das ESG-175-Projekt freigegeben",
+    "nutzung": "freigegeben",
+    "jahr": 1928,
+    "thema": "Baugeschichte",
+    "blobUrl": "/bilder/IMG1651_Baugeschichte_TurnhalleInnen1928_SCHIFF.jpg",
+    "present": true
+  },
+  "SCHIFF_IMG1652_01": {
+    "bildId": "SCHIFF_IMG1652_01",
+    "dateiname": "IMG1652_Baugeschichte_AlumnatIIIundWasserturm_SCHIFF.jpg",
+    "alt": "Wohngebaeude (Alumnat) neben einem hohen Wasserturm.",
+    "rechte": "Stadt-/Schularchiv Gütersloh; Nutzung für das ESG-175-Projekt freigegeben",
+    "nutzung": "freigegeben",
+    "jahr": 1929,
+    "thema": "Baugeschichte",
+    "blobUrl": "/bilder/IMG1652_Baugeschichte_AlumnatIIIundWasserturm_SCHIFF.jpg",
+    "present": true
+  },
+  "SCHIFF_IMG1652_02": {
+    "bildId": "SCHIFF_IMG1652_02",
+    "dateiname": "IMG1652_Baugeschichte_AlumnatIIIStrassenansicht_SCHIFF.jpg",
+    "alt": "Strassenansicht eines mehrstoeckigen Wohnhauses hinter Bäumen.",
+    "rechte": "Stadt-/Schularchiv Gütersloh; Nutzung für das ESG-175-Projekt freigegeben",
+    "nutzung": "freigegeben",
+    "jahr": 1929,
+    "thema": "Baugeschichte",
+    "blobUrl": "/bilder/IMG1652_Baugeschichte_AlumnatIIIStrassenansicht_SCHIFF.jpg",
+    "present": true
+  },
+  "SCHIFF_IMG1655_02": {
+    "bildId": "SCHIFF_IMG1655_02",
+    "dateiname": "IMG1655_Baugeschichte_AulaGymnasiumInnen_SCHIFF.jpg",
+    "alt": "Innenraum der historischen Aula des Gymnasiums mit Kanzel und Bankreihen.",
+    "rechte": "Stadt-/Schularchiv Gütersloh; Nutzung für das ESG-175-Projekt freigegeben",
+    "nutzung": "freigegeben",
+    "jahr": 1929,
+    "thema": "Baugeschichte",
+    "blobUrl": "/bilder/IMG1655_Baugeschichte_AulaGymnasiumInnen_SCHIFF.jpg",
+    "present": true
+  },
+  "SCHIFF_IMG1661_01": {
+    "bildId": "SCHIFF_IMG1661_01",
+    "dateiname": "IMG1661_Schuelerleben_WandertagObertertiaStRHuth1929_SCHIFF.jpg",
+    "alt": "Grosse Schuelergruppe mit Lehrer bei einem Sommer-Wandertag.",
+    "rechte": "Stadt-/Schularchiv Gütersloh; Nutzung für das ESG-175-Projekt freigegeben",
+    "nutzung": "freigegeben",
+    "jahr": 1929,
+    "thema": "Schülerleben",
+    "blobUrl": "/bilder/IMG1661_Schuelerleben_WandertagObertertiaStRHuth1929_SCHIFF.jpg",
+    "present": true
+  },
+  "SCHIFF_IMG1664_01": {
+    "bildId": "SCHIFF_IMG1664_01",
+    "dateiname": "IMG1664_Schuelerleben_ObertertiaKlassenfotoStRHuth1929_SCHIFF.jpg",
+    "alt": "Klassenportraet der Obertertia mit sitzendem Klassenlehrer in der Bildmitte.",
+    "rechte": "Stadt-/Schularchiv Gütersloh; Nutzung für das ESG-175-Projekt freigegeben",
+    "nutzung": "freigegeben",
+    "jahr": 1929,
+    "thema": "Schülerleben",
+    "blobUrl": "/bilder/IMG1664_Schuelerleben_ObertertiaKlassenfotoStRHuth1929_SCHIFF.jpg",
+    "present": true
+  },
+  "SCHIFF_IMG1668_02": {
+    "bildId": "SCHIFF_IMG1668_02",
+    "dateiname": "IMG1668_Schuelerleben_Wandertage1930StRHuth_SCHIFF.jpg",
+    "alt": "Schuelergruppe mit Lehrer im Feld bei einem Wandertag.",
+    "rechte": "Stadt-/Schularchiv Gütersloh; Nutzung für das ESG-175-Projekt freigegeben",
+    "nutzung": "freigegeben",
+    "jahr": 1930,
+    "thema": "Schülerleben",
+    "blobUrl": "/bilder/IMG1668_Schuelerleben_Wandertage1930StRHuth_SCHIFF.jpg",
+    "present": true
   }
 }
