@@ -1,6 +1,6 @@
 import type { NextRequest } from "next/server";
 import Anthropic from "@anthropic-ai/sdk";
-import { checkRateLimit, checkDailyCap } from "@/lib/ratelimit";
+import { checkRateLimit, checkDailyCap, clientIp } from "@/lib/ratelimit";
 import { answerKey, getCachedAnswer, setCachedAnswer } from "@/lib/cache";
 import { SYSTEM_PROMPT, WISSENSBASIS } from "@/lib/prompt";
 import { suffixForTier } from "@/lib/persona";
@@ -47,9 +47,16 @@ export async function POST(req: NextRequest) {
   const cached = await getCachedAnswer<AskAnswer>(key);
   if (cached) return Response.json({ ...cached, cached: true });
 
-  // Rate-Limit + globaler Tages-Deckel (Budget-Schutz).
-  const ip = (req.headers.get("x-forwarded-for") ?? "local").split(",")[0].trim();
-  const rl = await checkRateLimit(ip);
+  // API-Key zuerst: ohne Key kostet die Anfrage 0 Token und darf keine Zähler verbrauchen.
+  if (!process.env.ANTHROPIC_API_KEY) {
+    return Response.json(
+      { error: "Die Live-Antwort ist gerade nicht verfügbar (kein API-Key konfiguriert)." },
+      { status: 503 },
+    );
+  }
+
+  // Rate-Limit + globaler Tages-Deckel (Budget-Schutz). Vertrauenswürdige Client-IP.
+  const rl = await checkRateLimit(clientIp(req));
   if (!rl.ok) {
     return Response.json(
       { error: "Zu viele Fragen in kurzer Zeit. Bitte später erneut versuchen." },
@@ -63,13 +70,6 @@ export async function POST(req: NextRequest) {
         error: "Heute wurden schon sehr viele Fragen gestellt – schau gern die geführten Pfade an!",
         capped: true,
       },
-      { status: 503 },
-    );
-  }
-
-  if (!process.env.ANTHROPIC_API_KEY) {
-    return Response.json(
-      { error: "Die Live-Antwort ist gerade nicht verfügbar (kein API-Key konfiguriert)." },
       { status: 503 },
     );
   }

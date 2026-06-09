@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Link from "next/link";
 import "./globals.css";
@@ -10,6 +10,14 @@ export const metadata: Metadata = {
   title: "ESG-Erzählbot · 175 Jahre",
   description:
     "Entdecke 175 Jahre Evangelisch-Stiftisches Gymnasium Gütersloh – Geschichte, Gegenwart und Zukunft zum Anklicken und Fragen.",
+};
+
+// interactiveWidget: "resizes-content" → die Bildschirmtastatur verkleinert das
+// Layout-Viewport (und damit dvh + sticky bottom-0), statt die Eingabe zu verdecken.
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  interactiveWidget: "resizes-content",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

@@ -1,8 +1,30 @@
 // Rate-Limit pro IP + globaler Tages-Deckel als Budget-Circuit-Breaker.
 // Vercel KV in Prod, In-Memory-Fallback lokal.
 import { kv } from "@vercel/kv";
+import type { NextRequest } from "next/server";
 
 const kvEnabled = !!process.env.KV_REST_API_URL;
+
+/**
+ * Vertrauenswürdige Client-IP für den Rate-Limit-Schlüssel.
+ * Auf Vercel setzt der Plattform-Proxy `x-real-ip` auf die echte Client-IP und
+ * hängt sie zusätzlich am RECHTEN Ende von `x-forwarded-for` an. Das LINKE/erste
+ * XFF-Element ist hingegen client-setzbar und darf NICHT als Schlüssel dienen –
+ * sonst lässt sich das Pro-IP-Limit durch einen gefälschten Header trivial umgehen.
+ */
+export function clientIp(req: NextRequest): string {
+  const real = req.headers.get("x-real-ip");
+  if (real && real.trim()) return real.trim();
+  const xff = req.headers.get("x-forwarded-for");
+  if (xff) {
+    const parts = xff
+      .split(",")
+      .map((s) => s.trim())
+      .filter(Boolean);
+    if (parts.length) return parts[parts.length - 1]; // rechtes Ende = vom Proxy angehängt
+  }
+  return "local";
+}
 const mem = new Map<string, { count: number; reset: number }>();
 
 const WINDOW_S = 60 * 60; // 1 Stunde

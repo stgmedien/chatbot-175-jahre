@@ -14,11 +14,20 @@ const components: Components = {
       </a>
     );
   },
+  // Breite Tabellen horizontal scrollbar machen, damit sie die Chat-Bubble nicht sprengen.
+  table({ children, ...props }) {
+    return (
+      <div className="overflow-x-auto">
+        <table {...props}>{children}</table>
+      </div>
+    );
+  },
 };
 
 function MarkdownPreviewImpl({ content }: { content: string }) {
   return (
-    <div className="prose prose-sm prose-esg max-w-none">
+    // break-words verhindert, dass lange URLs/unumbrechbare Strings die Bubble aufblähen.
+    <div className="prose prose-sm prose-esg max-w-none break-words [overflow-wrap:anywhere]">
       <ReactMarkdown remarkPlugins={remarkPlugins} skipHtml components={components}>
         {content}
       </ReactMarkdown>

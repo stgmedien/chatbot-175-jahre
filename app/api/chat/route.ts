@@ -1,6 +1,6 @@
 import type { NextRequest } from "next/server";
 import Anthropic, { APIUserAbortError } from "@anthropic-ai/sdk";
-import { checkRateLimit, checkDailyCap } from "@/lib/ratelimit";
+import { checkRateLimit, checkDailyCap, clientIp } from "@/lib/ratelimit";
 import { answerKey, getCachedAnswer, setCachedAnswer } from "@/lib/cache";
 import { SYSTEM_PROMPT, WISSENSBASIS } from "@/lib/prompt";
 import { suffixForTier } from "@/lib/persona";
@@ -65,6 +65,11 @@ export async function POST(req: NextRequest) {
     .map((m) => ({ role: m.role, content: m.content.toString().slice(0, 2000) }))
     .slice(-MAX_TURNS);
 
+  // Nach dem Zuschnitt kann das Array mit einem assistant-Turn beginnen (gerade
+  // Slice-Grenze bei abwechselndem Verlauf). Die Anthropic Messages API verlangt
+  // aber role:"user" als erstes Element → führende assistant-Turns abschneiden.
+  while (history.length && history[0].role !== "user") history.shift();
+
   const last = history[history.length - 1];
   if (!last || last.role !== "user") {
     return Response.json({ error: "Bitte gib eine Frage ein." }, { status: 400 });
@@ -94,9 +99,18 @@ export async function POST(req: NextRequest) {
     if (cached?.antwort) return textStreamFromString(cached.antwort);
   }
 
-  // --- 3) Rate-Limit pro IP ---
-  const ip = (req.headers.get("x-forwarded-for") ?? "local").split(",")[0].trim();
-  const rl = await checkRateLimit(ip);
+  // --- 3) API-Key zuerst prüfen (vor den Zählern) ---
+  // Ohne Key kostet die Anfrage garantiert 0 Token; sie darf weder das persönliche
+  // Stundenkontingent noch den globalen Tages-Deckel verbrauchen.
+  if (!process.env.ANTHROPIC_API_KEY) {
+    return Response.json(
+      { error: "Die Live-Antwort ist gerade nicht verfügbar (kein API-Key konfiguriert)." },
+      { status: 503 },
+    );
+  }
+
+  // --- 4) Rate-Limit pro IP (vertrauenswürdige Client-IP) ---
+  const rl = await checkRateLimit(clientIp(req));
   if (!rl.ok) {
     return Response.json(
       { error: "Zu viele Fragen in kurzer Zeit. Bitte später erneut versuchen." },
@@ -104,7 +118,7 @@ export async function POST(req: NextRequest) {
     );
   }
 
-  // --- 4) Globaler Tages-Deckel ---
+  // --- 5) Globaler Tages-Deckel (letzter Gate direkt vor dem LLM-Call) ---
   const cap = await checkDailyCap();
   if (!cap.ok) {
     return Response.json(
@@ -112,14 +126,6 @@ export async function POST(req: NextRequest) {
         error: "Heute wurden schon sehr viele Fragen gestellt – schau gern die geführten Pfade an!",
         capped: true,
       },
-      { status: 503 },
-    );
-  }
-
-  // --- 5) API-Key ---
-  if (!process.env.ANTHROPIC_API_KEY) {
-    return Response.json(
-      { error: "Die Live-Antwort ist gerade nicht verfügbar (kein API-Key konfiguriert)." },
       { status: 503 },
     );
   }
@@ -163,8 +169,12 @@ export async function POST(req: NextRequest) {
           }
         }
         controller.close();
-        if (cacheKey && full.trim()) {
-          await setCachedAnswer(cacheKey, { antwort: full.trim(), quellen: [] });
+        // Nur plausible Antworten in den GETEILTEN Cache schreiben (eine Erstfrage
+        // landet sonst für alle späteren Nutzer verbatim hier). Mindest-/Höchstlänge
+        // als einfache Plausibilitätsschranke; TTL + Versions-Key kommen aus lib/cache.
+        const answer = full.trim();
+        if (cacheKey && answer.length >= 12 && answer.length <= 6000) {
+          await setCachedAnswer(cacheKey, { antwort: answer, quellen: [] });
         }
       } catch (err) {
         if (err instanceof APIUserAbortError) {

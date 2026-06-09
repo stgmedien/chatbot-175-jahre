@@ -1,6 +1,8 @@
 "use client";
 // Persona + 18+-Bestätigung leben clientseitig in localStorage.
-import { useEffect, useState } from "react";
+// Gelesen über useSyncExternalStore → hydration-sicher (Server-Snapshot = leer)
+// und ohne setState-in-Effect.
+import { useSyncExternalStore } from "react";
 import type { Persona } from "./types";
 import { STORAGE_KEY } from "./persona";
 
@@ -35,15 +37,49 @@ export function readAge(): boolean {
   }
 }
 
-/** Liest die Persona erst nach Mount (vermeidet Hydration-Mismatch). */
+// --- Externer Store (localStorage) für useSyncExternalStore ---
+
+function subscribe(onChange: () => void): () => void {
+  // "storage" feuert bei Änderungen aus anderen Tabs; für denselben Tab genügt
+  // das Remounten bei Navigation (Persona wird auf /persona gesetzt, dann /frage).
+  window.addEventListener("storage", onChange);
+  return () => window.removeEventListener("storage", onChange);
+}
+
+// getSnapshot MUSS bei unveränderten Daten denselben Wert liefern (sonst Endlos-
+// Render). Booleans sind stabil; das Persona-Objekt cachen wir gegen den Rohstring.
+let personaRaw: string | null | undefined;
+let personaCache: Persona | null = null;
+
+function personaSnapshot(): Persona | null {
+  let raw: string | null = null;
+  try {
+    raw = localStorage.getItem(STORAGE_KEY);
+  } catch {}
+  if (raw !== personaRaw) {
+    personaRaw = raw;
+    try {
+      personaCache = raw ? (JSON.parse(raw) as Persona) : null;
+    } catch {
+      personaCache = null;
+    }
+  }
+  return personaCache;
+}
+
 export function usePersona(): Persona | null {
-  const [p, setP] = useState<Persona | null>(null);
-  useEffect(() => setP(readPersona()), []);
-  return p;
+  return useSyncExternalStore(subscribe, personaSnapshot, () => null);
 }
 
 export function useAgeConfirmed(): boolean {
-  const [ok, setOk] = useState(false);
-  useEffect(() => setOk(readAge()), []);
-  return ok;
+  return useSyncExternalStore(subscribe, readAge, () => false);
+}
+
+/** false während SSR/Hydration, danach true – für hydrationssichere Platzhalter. */
+export function useHydrated(): boolean {
+  return useSyncExternalStore(
+    subscribe,
+    () => true,
+    () => false,
+  );
 }
