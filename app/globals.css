@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 :root {
   --background: #faf8f4; /* warmes Off-White */
@@ -28,4 +29,25 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+/* ESG-Prose-Variante für gerenderte KI-Antworten (Markdown) – Petrol-Headings,
+   Terrakotta-Akzente, warmer Body. Nutzung: class="prose prose-sm prose-esg max-w-none". */
+@utility prose-esg {
+  --tw-prose-body: var(--foreground);
+  --tw-prose-headings: var(--esg-primary);
+  --tw-prose-lead: var(--esg-muted);
+  --tw-prose-links: var(--esg-accent);
+  --tw-prose-bold: var(--esg-primary-700);
+  --tw-prose-counters: var(--esg-muted);
+  --tw-prose-bullets: var(--esg-accent);
+  --tw-prose-hr: var(--esg-border);
+  --tw-prose-quotes: var(--esg-primary-700);
+  --tw-prose-quote-borders: var(--esg-accent);
+  --tw-prose-captions: var(--esg-muted);
+  --tw-prose-code: var(--esg-primary-700);
+  --tw-prose-pre-code: #faf8f4;
+  --tw-prose-pre-bg: var(--esg-primary-700);
+  --tw-prose-th-borders: var(--esg-border);
+  --tw-prose-td-borders: var(--esg-border);
 }
