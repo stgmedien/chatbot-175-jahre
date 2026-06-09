@@ -3,127 +3,119 @@
     "slug": "175-jahre-in-5-minuten",
     "titel": "175 Jahre in 5 Minuten",
     "icon": "🏛",
-    "kurz": "Von der Gründung 1851 über Krieg und Wiederaufbau bis zum Jubiläum 2026.",
+    "kurz": "Eine kleine Zeitreise von der Gründung 1851 bis zum Jubiläum 2026 – du wählst den Weg.",
     "themen": [
       "Geschichte",
       "Jubiläum"
     ],
-    "stationen": [
+    "start": {
+      "intro": "Schön, dass du da bist! 175 Jahre ESG stecken voller Geschichten – und du entscheidest, wo wir anfangen. Tipp einfach an, was dich am meisten neugierig macht.",
+      "optionen": [
+        {
+          "label": "Wie hat eigentlich alles angefangen?",
+          "ziel": "gruendung"
+        },
+        {
+          "label": "Was hat es mit dem geheimnisvollen Türmchen auf sich?",
+          "ziel": "tuermchen"
+        },
+        {
+          "label": "Wie kam die Schule durch Krieg und schwere Zeiten?",
+          "ziel": "krieg"
+        }
+      ]
+    },
+    "nodes": [
       {
-        "id": "st1",
-        "frage": "Wann wurde das ESG gegründet?",
+        "id": "gruendung",
         "antwort": {
-          "kind": "Das ESG ist richtig alt! Am 19. Juni 1851 ging hier zum ersten Mal die Schule los – mit nur 16 Schülern. Deshalb wird die Schule 2026 schon 175 Jahre alt.",
-          "erwachsene": "Der Unterricht am ESG begann am 19. Juni 1851 mit 16 Schülern. Schon 1849 war die Entscheidung für Gütersloh als Standort gefallen, 1854 wurde die Schule als öffentliches Gymnasium anerkannt. 2026 feiert das ESG sein 175-jähriges Bestehen.",
-          "fach": "Als Gründungsjahr gilt 1851 (Unterrichtsbeginn am 19. Juni mit 16 Schülern unter Dr. Theodor Rumpel). Die Standortentscheidung der Evangelischen Gesellschaft für Deutschland fiel am 2. August 1849, die Anerkennung als öffentliches Gymnasium mit besonderen Kuratoriumsrechten erfolgte 1854. (Quelle: ESG Chronik)"
+          "kind": "Das ESG begann am 19. Juni 1851 mit nur 16 Schülern. Schon 1849 hatte man Gütersloh als Ort ausgesucht.",
+          "erwachsene": "Der Unterricht am ESG begann am 19. Juni 1851 mit 16 Schülern unter Dr. Theodor Rumpel. Die Standortentscheidung für Gütersloh war schon 1849 gefallen. 1854 wurde die Schule als öffentliches Gymnasium anerkannt.",
+          "fach": "Gegründet wurde das ESG von der „Evangelischen Gesellschaft für Deutschland“, einer Missionsgesellschaft aus der Erweckungsbewegung. Der Unterricht startete am 19. Juni 1851 mit 16 Schülern unter Dr. Theodor Rumpel in der Feldstraße. 1854 folgte die Anerkennung als öffentliches Gymnasium; das Kuratorium erhielt damals besondere Rechte bei Inhalten und Personalauswahl."
         },
         "imageBildIds": [
-          "PENNE_S04_04"
+          "PENNE_S04_01"
         ],
         "citations": [
           "ESG Chronik"
         ],
-        "weiter": [
-          "st2"
-        ],
-        "reviewed": true
+        "optionen": [
+          {
+            "label": "Warum heißt sie „Evangelisch-Stiftisch“?",
+            "ziel": "name"
+          },
+          {
+            "label": "Wie sah das allererste Schulhaus aus?",
+            "ziel": "fachwerk"
+          },
+          {
+            "label": "Was steht über dem Eingang geschrieben?",
+            "ziel": "soli-deo"
+          }
+        ]
       },
       {
-        "id": "st2",
-        "frage": "Warum heißt die Schule Evangelisch-Stiftisches Gymnasium?",
+        "id": "name",
         "antwort": {
-          "kind": "„Evangelisch“ kommt von der Kirche, die die Schule gegründet hat. „Stiftisch“ bedeutet, dass ein besonderes Leitungsgremium – das Kuratorium – mitbestimmt.",
-          "erwachsene": "„Evangelisch“ verweist auf die evangelischen Wurzeln: Gegründet wurde die Schule von der Evangelischen Gesellschaft für Deutschland. „Stiftisch“ steht für die besondere Kuratoriumsstruktur, die seit 1854 eigene Rechte besitzt.",
-          "fach": "„Evangelisch“ bezieht sich auf die Gründung durch die Evangelische Gesellschaft für Deutschland (1848 in Elberfeld gegründet). „Stiftisch“ verweist auf das Kuratorium, das seit 1854 besondere Rechte bei Inhalten und Personalauswahl besitzt; 2017 erhielt das ESG nach über 160 Jahren eine neue Satzung. (Quelle: ESG Chronik)"
+          "kind": "„Evangelisch“ steht für die evangelischen Wurzeln. „Stiftisch“ meint die besondere Trägerstruktur mit einem Kuratorium.",
+          "erwachsene": "„Evangelisch“ verweist auf die Gründung durch die Evangelische Gesellschaft für Deutschland. „Stiftisch“ steht für die stiftungsartige Trägerstruktur: Ein Kuratorium besitzt seit 1854 besondere Rechte bei Inhalt und Personalauswahl.",
+          "fach": "Der Name spiegelt die protestantische Erweckungsbewegung wider, aus der die Evangelische Gesellschaft für Deutschland (gegründet 1848 in Elberfeld) hervorging. „Stiftisch“ bezeichnet die stiftungsartige Verfasstheit: Das Kuratorium hat seit dem Privileg von 1854 besondere Rechte bei inhaltlicher Ausgestaltung und Personalauswahl; die heutige Finanzstruktur geht auf einen Vertrag von 1923 zurück."
         },
-        "imageBildIds": [
-          "PENNE_S01_02",
-          "SCHIFF_IMG1655_02"
-        ],
-        "citations": [
-          "ESG Chronik"
-        ],
-        "weiter": [
-          "st3"
-        ],
-        "reviewed": true
-      },
-      {
-        "id": "st3",
-        "frage": "Was hat es mit dem Türmchen auf sich?",
-        "antwort": {
-          "kind": "Oben auf dem Dach sitzt ein kleiner Turm, das „Türmchen“. Von dort wird an Heiligabend geblasen – das nennt man Türmchenblasen.",
-          "erwachsene": "Das Türmchen ist ein Dachreiter auf dem Klinkerbau von 1928 und erinnert an den alten Fachwerkbau. Seit 1986 gibt es das Türmchenblasen: An Heiligabend spielt der Posaunenchor vom Türmchen.",
-          "fach": "Der Dachreiter („Türmchen“) gehört zum 1928 eingeweihten Klinkerbau (Architekt Gustav Kassbaum) und zitiert den Vorgängerbau. Das Türmchenblasen des Gymnasial-Posaunenchors (gegründet 1871) findet seit 1986 jährlich an Heiligabend statt. (Quelle: ESG Baugeschichte, ESG Chronik)"
-        },
-        "imageBildIds": [
-          "HEFT_S01_01"
-        ],
-        "citations": [
-          "ESG Baugeschichte",
-          "ESG Chronik"
-        ],
-        "weiter": [
-          "st4"
-        ],
-        "reviewed": true
-      },
-      {
-        "id": "st4",
-        "frage": "Was geschah im Zweiten Weltkrieg?",
-        "antwort": {
-          "kind": "Im Krieg wurde die Schule durch Bomben schwer beschädigt. Schon 1946 ging der Unterricht trotzdem wieder los, und 1951 feierte die Schule ihren 100. Geburtstag.",
-          "erwachsene": "1944/45 zerstörten Bombenangriffe die Aula und Teile des Hauptgebäudes. Am 12. März 1946 begann der Unterricht wieder; 1951 wurde die wiederhergestellte Schule zum 100-jährigen Jubiläum festlich eingeweiht.",
-          "fach": "Bei schweren Bombenangriffen 1944/45 wurden Aula und Teile des Hauptgebäudes zerstört. Der Wiederbeginn des Unterrichts erfolgte am 12. März 1946, die festliche Wiedereinweihung 1951 zum 100-jährigen Jubiläum. Zuvor war der Unterricht ab 1933 NS-ausgerichtet worden. (Quelle: ESG Chronik, ESG Baugeschichte)"
-        },
-        "imageBildIds": [
-          "PRIMA_S04_02"
-        ],
+        "imageBildIds": [],
         "citations": [
           "ESG Chronik",
-          "ESG Baugeschichte"
+          "Wikipedia"
         ],
-        "weiter": [
-          "st5"
-        ],
-        "reviewed": true
+        "optionen": [
+          {
+            "label": "Was steht über dem Eingang geschrieben?",
+            "ziel": "soli-deo"
+          },
+          {
+            "label": "Wie sah das allererste Schulhaus aus?",
+            "ziel": "fachwerk"
+          },
+          {
+            "label": "Und das geheimnisvolle Türmchen?",
+            "ziel": "tuermchen"
+          }
+        ]
       },
       {
-        "id": "st5",
-        "frage": "Seit wann dürfen Mädchen das ESG besuchen – und wie groß ist die Schule heute?",
+        "id": "soli-deo",
         "antwort": {
-          "kind": "Lange war das ESG nur für Jungen. Offiziell seit 1975 dürfen auch Mädchen hierher. Heute lernen ungefähr 1.200 Kinder und Jugendliche am ESG.",
-          "erwachsene": "Offiziell seit 1975 ist das ESG für Mädchen geöffnet (vereinzelt schon ab 1960). Laut Archivstand Mai 2026 besuchen rund 1.200 Schülerinnen und Schüler die Schule. 2026 feiert das ESG sein 175-jähriges Jubiläum unter dem Motto „1000 Fenster, unendlich viele Geschichten“.",
-          "fach": "Die offizielle Öffnung für Mädchen erfolgte 1975 (vereinzelt ab 1960, damals 7 von rund 570 Schülern). Laut Archivstand Mai 2026 hat das ESG ca. 1.200 Schülerinnen und Schüler und etwa 84 Lehrkräfte; Schulleiter ist Martin Fugmann (seit 2016). Das Jubiläum 2026 steht unter dem Motto „1000 Fenster, unendlich viele Geschichten“. (Quelle: ESG Chronik)"
+          "kind": "Über dem Eingang steht „Soli Deo Gloria“ – das heißt „Allein Gott die Ehre“.",
+          "erwachsene": "Über dem Haupteingang steht der lateinische Wahlspruch „Soli Deo Gloria“ – „Allein Gott die Ehre“. Er passt zu den evangelischen Wurzeln der Schule. Auf dem Schulsiegel steht zusätzlich „In hoc signo vinces“ – „In diesem Zeichen wirst du siegen“.",
+          "fach": "Der Eingangsspruch „Soli Deo Gloria“ („Allein Gott die Ehre“) ist eine der reformatorischen Grundformeln und unterstreicht die protestantische Prägung des ESG. Das Schulsiegel zeigt ein Kreuz mit dem Motto „In hoc signo vinces“ („In diesem Zeichen wirst du siegen“). Beide Inschriften verweisen auf die konfessionelle Gründungsidee der Schule."
         },
         "imageBildIds": [
-          "FEST_S07_01",
-          "SCHIFF_IMG_1630_01"
+          "PENNE_S01_02"
         ],
         "citations": [
+          "Wikipedia",
           "ESG Chronik"
         ],
-        "weiter": [],
-        "reviewed": true
-      }
-    ]
-  },
-  {
-    "slug": "vom-fachwerk-zum-neubau",
-    "titel": "Vom Fachwerk zum Neubau",
-    "icon": "🏗",
-    "kurz": "Die Gebäude des ESG – vom Fachwerkhaus 1852 bis zur Sanierung 2025.",
-    "themen": [
-      "Baugeschichte"
-    ],
-    "stationen": [
+        "optionen": [
+          {
+            "label": "Wie sah das allererste Schulhaus aus?",
+            "ziel": "fachwerk"
+          },
+          {
+            "label": "Und das geheimnisvolle Türmchen?",
+            "ziel": "tuermchen"
+          },
+          {
+            "label": "Welche Musik macht das ESG berühmt?",
+            "ziel": "musik"
+          }
+        ]
+      },
       {
-        "id": "bau1",
-        "frage": "Wie sah die erste Schule aus?",
+        "id": "fachwerk",
         "antwort": {
-          "kind": "Die erste Schule war ein Fachwerkhaus – das letzte, das es in Gütersloh gab. Den Grundstein legte 1852 sogar der König!",
-          "erwachsene": "Das erste Schulgebäude war ein Fachwerkbau von 1852, das letzte Fachwerkhaus Güterslohs. Den Grundstein legte am 26. März 1852 König Friedrich Wilhelm IV.",
-          "fach": "Der erste Bau (1852) war ein Fachwerkhaus an der Feldstraße – das letzte Fachwerkhaus Güterslohs. Die Grundsteinlegung am 26. März 1852 nahm König Friedrich Wilhelm IV. vor; überliefert ist der Spruch „Christus der Grundstein – Christen die Steine – Gott führe den Bau“. (Quelle: ESG Baugeschichte, ESG Chronik)"
+          "kind": "Das erste Schulhaus war ein Fachwerkhaus von 1852 – das letzte, das in Gütersloh gebaut wurde.",
+          "erwachsene": "Das erste Schulgebäude war ein Fachwerkbau von 1852 und galt als letztes in Gütersloh errichtetes Fachwerkhaus. Den Grundstein legte am 26. März 1852 König Friedrich Wilhelm IV. Das Haus diente der Schule 76 Jahre lang.",
+          "fach": "Der Fachwerkbau von 1852 war das letzte in Gütersloh errichtete Fachwerkhaus und beherbergte die Schule 76 Jahre. König Friedrich Wilhelm IV. legte am 26. März 1852 den Grundstein mit den Worten „Christus der Grundstein – Christen die Steine – Gott führe den Bau“. Eine Bronzetafel erinnert bis heute in der Aula daran. Neben dem Gebäude stand der „Physikstall“, ein Fachwerkhäuschen für den Physikunterricht."
         },
         "imageBildIds": [
           "FEST_S11_01",
@@ -133,85 +125,740 @@
           "ESG Baugeschichte",
           "ESG Chronik"
         ],
-        "weiter": [
-          "bau2"
-        ],
-        "reviewed": true
+        "optionen": [
+          {
+            "label": "Wann kam das große Backsteingebäude?",
+            "ziel": "tuermchen"
+          },
+          {
+            "label": "Wie kam die Schule durch den Krieg?",
+            "ziel": "krieg"
+          },
+          {
+            "label": "Welche Musik macht das ESG berühmt?",
+            "ziel": "musik"
+          }
+        ]
       },
       {
-        "id": "bau2",
-        "frage": "Was war der „Physikstall“?",
+        "id": "tuermchen",
         "antwort": {
-          "kind": "Neben der Schule stand ein kleines Fachwerkhäuschen nur für den Physikunterricht. Die Schüler nannten es scherzhaft „Physikstall“.",
-          "erwachsene": "Der „Physikstall“ war ein kleines Fachwerkhäuschen neben dem ersten Schulgebäude, in dem Physik unterrichtet wurde.",
-          "fach": "Als „Physikstall“ wurde ein Fachwerkhäuschen neben dem ersten Schulgebäude bezeichnet, das dem Physikunterricht diente – eine bauliche Besonderheit der frühen ESG-Jahre. (Quelle: ESG Chronik)"
-        },
-        "imageBildIds": [],
-        "citations": [
-          "ESG Chronik"
-        ],
-        "weiter": [
-          "bau3"
-        ],
-        "reviewed": true
-      },
-      {
-        "id": "bau3",
-        "frage": "Wann entstand das heutige Hauptgebäude?",
-        "antwort": {
-          "kind": "Das große Backsteingebäude mit dem Türmchen wurde 1928 fertig. Es steht heute unter Denkmalschutz.",
-          "erwachsene": "Das heutige Hauptgebäude, ein Klinkerbau mit dem markanten Türmchen, wurde am 31. Juli 1928 eingeweiht. Architekt war Gustav Kassbaum; seit 1984 steht der Bau unter Denkmalschutz.",
-          "fach": "Nach der Grundsteinlegung 1926 wurde der Klinkerbau (Architekt Gustav Kassbaum, Baukosten 778.000 RM) am 31. Juli 1928 eingeweiht – mit dem markanten Türmchen als Dachreiter. Seit 1984 steht das Gebäude unter Denkmalschutz. (Quelle: ESG Baugeschichte, ESG Chronik)"
+          "kind": "Das Türmchen sitzt oben auf dem Backsteinhaus von 1928. Jedes Jahr an Heiligabend spielt dort der Posaunenchor.",
+          "erwachsene": "Das Türmchen ist ein Dachreiter auf dem Klinkerbau, der 1928 eingeweiht wurde. Es erinnert an den alten Fachwerkbau, der schon einen Dachreiter besaß. Seit 1986 gibt es das „Türmchenblasen“: An Heiligabend spielt der Posaunenchor vom Türmchen.",
+          "fach": "Der Dachreiter krönt den 1928 eingeweihten Klinkerbau (Architekt Gustav Kassbaum). Das Detail wurde bewusst vom alten Fachwerkbau übernommen, von dessen Dachreiter sonntags geblasen wurde. Seit 1986 findet dort am Heiligen Abend die „Weihnachtliche Nachtmusik“ statt – das „Türmchenblasen“, eine feste Tradition von Schule und Stadt. Der Altbau steht seit 1984 unter Denkmalschutz."
         },
         "imageBildIds": [
           "HEFT_S01_01",
+          "SCHIFF_IMG_1625_01"
+        ],
+        "citations": [
+          "ESG Baugeschichte",
+          "ESG Chronik"
+        ],
+        "optionen": [
+          {
+            "label": "Welche Musik macht das ESG berühmt?",
+            "ziel": "musik"
+          },
+          {
+            "label": "Wie kam die Schule durch den Krieg?",
+            "ziel": "krieg"
+          },
+          {
+            "label": "Wie groß ist das ESG heute?",
+            "ziel": "heute"
+          }
+        ]
+      },
+      {
+        "id": "musik",
+        "antwort": {
+          "kind": "Schon seit 1871 gibt es den Posaunenchor – einen der ältesten an einer Schule in Deutschland. Seit 1994 gibt es auch eine Big Band.",
+          "erwachsene": "Der Gymnasial-Posaunenchor besteht seit 1871 und wurde von Johannes Kuhlo gegründet – er gilt als einer der ältesten Schulposaunenchöre Deutschlands. Seit 1994 gibt es zusätzlich die Big Band, die regelmäßig im Theater Gütersloh auftritt.",
+          "fach": "Der 1871 von Johannes Kuhlo gegründete Gymnasial-Posaunenchor zählt zu den ältesten Schulposaunenchören Deutschlands; Kuhlo prägte die evangelische Posaunenchorbewegung. Die Kantorei besteht seit 1949, die Big Band seit 1994 (2012 Moskau-Reise, 2024 30-jähriges Jubiläum mit Jazznight im Theater Gütersloh). Jährlicher Höhepunkt ist das Weihnachtskonzert in der Martin-Luther-Kirche."
+        },
+        "imageBildIds": [
+          "PENNE_S07_01"
+        ],
+        "citations": [
+          "ESG Chronik"
+        ],
+        "optionen": [
+          {
+            "label": "War das ESG auch im Sport ein Pionier?",
+            "ziel": "sport"
+          },
+          {
+            "label": "Wie modern ist das ESG beim Lernen?",
+            "ziel": "digital"
+          },
+          {
+            "label": "Wie groß ist das ESG heute?",
+            "ziel": "heute"
+          }
+        ]
+      },
+      {
+        "id": "sport",
+        "antwort": {
+          "kind": "Am ESG entstand 1877 der erste Fußballverein in ganz NRW. Sport gehört bis heute fest dazu.",
+          "erwachsene": "Der Gymnasial-Spielverein am ESG gilt als erster Fußballverein in NRW; die ESG-Chronik nennt 1877, Wikipedia 1878. Später kam ein Turnverein hinzu. Eine bekannte Tradition ist das Abi-Duell „Stifter gegen Städter“.",
+          "fach": "Der 1877 gegründete Gymnasial-Spielverein gilt als erster Fußballverein im heutigen Nordrhein-Westfalen (Wikipedia datiert auf 1878). Später kam ein Turnverein hinzu. 1993/94 entstand die rund 7.500 qm große Sportanlage, 1997 eine neue Sporthalle. Erfolgreich ist auch die Schach-AG unter Rüdiger Mönig, etwa mit einem Wanderpokal 2026; traditionell ausgetragen wird das Abi-Duell „Stifter gegen Städter“."
+        },
+        "imageBildIds": [
+          "PENNE_S05_03"
+        ],
+        "citations": [
+          "ESG Chronik",
+          "Wikipedia"
+        ],
+        "optionen": [
+          {
+            "label": "Wie modern ist das ESG beim Lernen?",
+            "ziel": "digital"
+          },
+          {
+            "label": "Reicht das ESG bis ins Ausland?",
+            "ziel": "international"
+          },
+          {
+            "label": "Wie groß ist das ESG heute?",
+            "ziel": "heute"
+          }
+        ]
+      },
+      {
+        "id": "digital",
+        "antwort": {
+          "kind": "Das ESG nutzt seit 1999 Laptops im Unterricht. 2019 wurde es sogar „Smart School“ genannt.",
+          "erwachsene": "Schon 1984 entstand die Mediothek, finanziert von der Bertelsmann Stiftung und eingeweiht von Ministerpräsident Johannes Rau. 1999 startete das Laptop-Projekt. 2019 wurde das ESG als „Smart School“ ausgezeichnet; heute arbeiten die jüngeren Klassen mit iPads, ab Klasse 7 mit Laptops.",
+          "fach": "Die digitale Tradition reicht weit zurück: 1984 wurde die Mediothek (Bertelsmann Stiftung, eingeweiht von Johannes Rau) eröffnet, 1985 Informatik als Oberstufenkurs eingeführt. Das Laptop-Projekt läuft seit 1999, zunächst in Jahrgang 7. 2019 zeichnete der Digitalverband Bitkom das ESG als „Smart School“ aus. Heute lernen Klasse 5/6 mit iPads, ab Klasse 7 mit Laptops; das ESG ist zudem seit 2016 MINT-EC-Schule."
+        },
+        "imageBildIds": [],
+        "citations": [
+          "ESG Chronik"
+        ],
+        "optionen": [
+          {
+            "label": "Reicht das ESG bis ins Ausland?",
+            "ziel": "international"
+          },
+          {
+            "label": "War das ESG auch im Sport ein Pionier?",
+            "ziel": "sport"
+          },
+          {
+            "label": "Wie groß ist das ESG heute?",
+            "ziel": "heute"
+          }
+        ]
+      },
+      {
+        "id": "international",
+        "antwort": {
+          "kind": "Das ESG hat Partnerschulen in vielen Ländern – von Frankreich über die USA bis Kenia.",
+          "erwachsene": "Das ESG pflegt Partnerschaften unter anderem mit Schulen in Douai und Châteauroux (Frankreich), der Athens Academy (USA), Grudziądz (Polen), Selby (Großbritannien) und Nairobi (Kenia). Seit 2013 ist es zudem „IB World School“ und bietet das International Baccalaureate an.",
+          "fach": "Seit 2013 ist das ESG „IB World School“ und ermöglicht neben dem NRW-Abitur das International Baccalaureate; einen bilingualen Englisch-Zweig gibt es seit 2011/12. Die Partnerschulen liegen auf mehreren Kontinenten: Douai und Châteauroux (Frankreich, seit 1990), Athens Academy (USA, seit 1990), Grudziądz (Polen, seit 1991), Selby (Großbritannien, seit 1996) und St. Joseph in Nairobi (Kenia, seit 2020). Schon 1886–1889 besuchte mit Paul Mavanzilla ein Schüler aus Angola das ESG."
+        },
+        "imageBildIds": [],
+        "citations": [
+          "ESG Chronik"
+        ],
+        "optionen": [
+          {
+            "label": "Wie groß ist das ESG heute?",
+            "ziel": "heute"
+          },
+          {
+            "label": "Welche Musik macht das ESG berühmt?",
+            "ziel": "musik"
+          },
+          {
+            "label": "Was wird 2026 eigentlich gefeiert?",
+            "ziel": "jubilaeum"
+          }
+        ]
+      },
+      {
+        "id": "krieg",
+        "antwort": {
+          "kind": "Im Zweiten Weltkrieg wurde die Schule schwer zerstört. Schon 1946 ging der Unterricht wieder los.",
+          "erwachsene": "1944/45 zerstörten Bombenangriffe die Aula und Teile des Hauptgebäudes. Am 12. März 1946 begann der Unterricht wieder. 1951 wurde die wiederhergestellte Schule zum 100-jährigen Jubiläum festlich eingeweiht.",
+          "fach": "Am 26. November 1944 (Totensonntag) zerstörten Bomben die alte Aula, am 28./29. Januar 1945 traf ein Volltreffer das Hauptgebäude und beschädigte es schwer. Zuvor war ab 1933 das Erziehungswesen auf die NS-Ideologie ausgerichtet worden. Der Wiederaufbau dauerte bis 1950; der Unterricht begann am 12. März 1946 erneut. Zum 100-jährigen Jubiläum 1951 wurde die wiederhergestellte Schule festlich eingeweiht."
+        },
+        "imageBildIds": [
+          "SCHIFF_IMG1655_02"
+        ],
+        "citations": [
+          "ESG Chronik",
+          "ESG Baugeschichte"
+        ],
+        "optionen": [
+          {
+            "label": "Wie erinnert das ESG an diese dunkle Zeit?",
+            "ziel": "gedenken"
+          },
+          {
+            "label": "Seit wann dürfen Mädchen aufs ESG?",
+            "ziel": "maedchen"
+          },
+          {
+            "label": "Wann kam das große Backsteingebäude?",
+            "ziel": "tuermchen"
+          }
+        ]
+      },
+      {
+        "id": "gedenken",
+        "antwort": {
+          "kind": "Vor der Mediothek steht seit 1984 ein Gedenkstein. Er erinnert an die zerstörte jüdische Synagoge in Gütersloh.",
+          "erwachsene": "Am 9. November 1984 wurde vor der Mediothek ein Gedenkstein errichtet – zur Erinnerung an die 1938 zerstörte jüdische Synagoge und die Verfolgung der jüdischen Gemeinde Gütersloh. Die Schulchronik geht offen mit der NS-Zeit um.",
+          "fach": "Der Gedenkstein von 1984 (errichtet am 9. November, dem Jahrestag der Pogromnacht) erinnert an die 1938 zerstörte Synagoge und die Verfolgung der jüdischen Gemeinde Gütersloh. Die Schulchronik dokumentiert die NS-Ausrichtung ab 1933 offen, darunter „Rassenkunde“ als Unterrichtsbestandteil. Im Deutschunterricht wird Holocaust-Literatur behandelt; 2026 ist ein Museumskoffer zur Holocaust-Erinnerung dokumentiert."
+        },
+        "imageBildIds": [
+          "PRIMA_S04_02"
+        ],
+        "citations": [
+          "ESG Chronik"
+        ],
+        "optionen": [
+          {
+            "label": "Seit wann dürfen Mädchen aufs ESG?",
+            "ziel": "maedchen"
+          },
+          {
+            "label": "Wie modern ist das ESG beim Lernen?",
+            "ziel": "digital"
+          },
+          {
+            "label": "Was wird 2026 eigentlich gefeiert?",
+            "ziel": "jubilaeum"
+          }
+        ]
+      },
+      {
+        "id": "maedchen",
+        "antwort": {
+          "kind": "Offiziell für Mädchen offen ist das ESG seit 1975. Heute sind etwa die Hälfte der Schüler Mädchen.",
+          "erwachsene": "Vereinzelt gab es schon ab 1960 Mädchen am ESG (sieben bei 570 Schülern). Offiziell für Mädchen geöffnet wurde die Schule 1975 mit der Reformierten Oberstufe. Im Jahr 2000 waren bereits über die Hälfte der Schülerschaft Mädchen.",
+          "fach": "Ab 1960 besuchten erste Mädchen das ESG (7 von 570). Die offizielle Öffnung erfolgte 1975 mit Einführung der Reformierten Oberstufe. Der Mädchenanteil stieg deutlich: 1980 rund 35 %, 1990 knapp 49 %, 2000 über 54 %. Auch im Kollegium wuchs der Frauenanteil über die Jahrzehnte spürbar an."
+        },
+        "imageBildIds": [],
+        "citations": [
+          "ESG Chronik"
+        ],
+        "optionen": [
+          {
+            "label": "Wie groß ist das ESG heute?",
+            "ziel": "heute"
+          },
+          {
+            "label": "Wie modern ist das ESG beim Lernen?",
+            "ziel": "digital"
+          },
+          {
+            "label": "Was wird 2026 eigentlich gefeiert?",
+            "ziel": "jubilaeum"
+          }
+        ]
+      },
+      {
+        "id": "heute",
+        "antwort": {
+          "kind": "Heute lernen rund 1.200 Schülerinnen und Schüler am ESG. Schulleiter ist seit 2016 Martin Fugmann.",
+          "erwachsene": "Laut Archivstand Mai 2026 besuchen rund 1.200 Schülerinnen und Schüler das ESG, betreut von etwa 84 Lehrkräften. Schulleiter ist OStD Martin Fugmann (seit 2016). Von 2023 bis 2025 wurde die Schule umfassend saniert und im September 2025 wiedereröffnet.",
+          "fach": "Laut Archivstand Mai 2026 zählt das ESG rund 1.200 Schülerinnen und Schüler und ca. 84 Lehrkräfte; es liegt an der Feldstraße 13, 33330 Gütersloh. Schulleiter ist seit 2016 OStD Martin Fugmann (Schwerpunkte Internationalisierung und Digitalisierung), Stellvertreter StD Thomas Rimpel. Während der Großsanierung 2023–2025 fand der Unterricht in einem Containerdorf statt; die Wiedereröffnung war im September 2025."
+        },
+        "imageBildIds": [],
+        "citations": [
+          "ESG Chronik",
+          "Wikipedia"
+        ],
+        "optionen": [
+          {
+            "label": "Was wird 2026 eigentlich gefeiert?",
+            "ziel": "jubilaeum"
+          },
+          {
+            "label": "Was bedeutet „1000 Fenster“?",
+            "ziel": "tausend-fenster"
+          },
+          {
+            "label": "Welche Musik macht das ESG berühmt?",
+            "ziel": "musik"
+          }
+        ]
+      },
+      {
+        "id": "jubilaeum",
+        "antwort": {
+          "kind": "2026 wird das ESG 175 Jahre alt! Gefeiert wird mit einem Schulfest am 12. Juni 2026.",
+          "erwachsene": "2026 feiert das ESG sein 175-jähriges Bestehen – gerechnet ab dem Unterrichtsbeginn 1851. Das Schulfest ist am Freitag, 12. Juni 2026, von 15 bis 19 Uhr, der Festakt am Samstag, 13. Juni 2026, um 11 Uhr. Das Motto lautet „1000 Fenster, unendlich viele Geschichten“.",
+          "fach": "Das Jubiläum 2026 markiert 175 Jahre seit dem Unterrichtsbeginn am 19. Juni 1851. Zum Programm gehören das Pfingstkonzert des Posaunenchors (24. Mai 2026), die ESG-Revue der Q1-Dramakurse (10./11. Juni 2026), das Schulfest (12. Juni 2026, 15–19 Uhr) und der Festakt (13. Juni 2026, 11 Uhr). Das Jubiläum fällt mit dem Abschluss der Großsanierung zusammen, gefeiert wird also Geschichte und Neuanfang zugleich – unter dem Motto „1000 Fenster, unendlich viele Geschichten“."
+        },
+        "imageBildIds": [],
+        "citations": [
+          "ESG Chronik",
+          "ESbloG"
+        ],
+        "optionen": [
+          {
+            "label": "Was bedeutet „1000 Fenster“?",
+            "ziel": "tausend-fenster"
+          },
+          {
+            "label": "Gab es früher schon solche Jubiläen?",
+            "ziel": "fruehere-jubilaeen"
+          },
+          {
+            "label": "Welche Musik macht das ESG berühmt?",
+            "ziel": "musik"
+          }
+        ]
+      },
+      {
+        "id": "tausend-fenster",
+        "antwort": {
+          "kind": "Das Motto spielt auf die vielen Fenster des frisch sanierten Schulhauses an – und auf die vielen Geschichten aus 175 Jahren.",
+          "erwachsene": "Das Motto „175 Jahre ESG – 1000 Fenster, unendlich viele Geschichten“ wurde im April 2026 auf dem ESbloG bekanntgegeben. Es bezieht sich auf die vielen Fenster des sanierten Schulgebäudes und auf die zahllosen Geschichten aus 175 Jahren Schulgeschichte. Hier endet unsere kleine Zeitreise – danke fürs Mitkommen!",
+          "fach": "Das Jubiläumsmotto „1000 Fenster, unendlich viele Geschichten“ wurde am 23. April 2026 auf dem ESbloG veröffentlicht. Die „1000 Fenster“ verweisen konkret auf die Fassade des 2025 sanierten Gebäudes, die „unendlich vielen Geschichten“ auf 175 Jahre gelebte Schulgeschichte – von 16 Schülern 1851 bis zu rund 1.200 heute. Ein passender Schlusspunkt für unsere Zeitreise: Schau gern beim Schulfest am 12. Juni 2026 vorbei!"
+        },
+        "imageBildIds": [],
+        "citations": [
+          "ESbloG"
+        ],
+        "optionen": []
+      },
+      {
+        "id": "fruehere-jubilaeen",
+        "antwort": {
+          "kind": "Ja! 1951 feierte das ESG 100 Jahre, 1976 dann 125 Jahre und 2001 sein 150-jähriges Bestehen.",
+          "erwachsene": "Das ESG hat schon mehrere große Jubiläen gefeiert: 1951 das 100-jährige Bestehen (mit der festlichen Einweihung der wiederaufgebauten Schule), 1976 das 125-jährige und 2001 das 150-jährige Jubiläum mit der Festschrift „In medias res“. Damit schließt sich der Kreis unserer kleinen Zeitreise – vielen Dank!",
+          "fach": "Jubiläen begleiten das ESG durch seine Geschichte: 1926 das 75-jährige (Festschrift von Friedrich Fliedner), 1951 das 100-jährige (verbunden mit der Wiedereinweihung nach dem Krieg), 1976 das 125-jährige und 2001 das 150-jährige Bestehen mit der Festschrift „In medias res“ und dem Medienbuch „Medienbildung in der Schule“. 2026 reiht sich das 175-jährige Jubiläum ein. Danke, dass du diese Zeitreise mitgemacht hast!"
+        },
+        "imageBildIds": [
+          "FEST_S07_01"
+        ],
+        "citations": [
+          "ESG Chronik",
+          "ESG Baugeschichte"
+        ],
+        "optionen": []
+      }
+    ],
+    "reviewed": true
+  },
+  {
+    "slug": "vom-fachwerk-zum-neubau",
+    "titel": "Vom Fachwerk zum Neubau",
+    "icon": "🏗",
+    "kurz": "Eine Klick-Tour durch 175 Jahre ESG-Gebäude – vom Fachwerkhaus 1852 bis zur Sanierung 2025.",
+    "themen": [
+      "Baugeschichte"
+    ],
+    "start": {
+      "intro": "Willkommen auf der Baustelle der Geschichte! Die Mauern des ESG erzählen 175 Jahre – such dir aus, wo wir anfangen.",
+      "optionen": [
+        {
+          "label": "Wie sah die allererste Schule von 1852 eigentlich aus?",
+          "ziel": "erstes-haus"
+        },
+        {
+          "label": "Wann entstand das schöne Backsteingebäude mit dem Türmchen?",
+          "ziel": "neubau-1928"
+        },
+        {
+          "label": "Was passiert gerade frisch beim Bau – die große Sanierung?",
+          "ziel": "sanierung"
+        }
+      ]
+    },
+    "nodes": [
+      {
+        "id": "erstes-haus",
+        "antwort": {
+          "kind": "Die erste Schule war 1852 ein Haus aus Holz und Lehm – ein Fachwerkhaus. Es war das letzte, das in Gütersloh gebaut wurde.",
+          "erwachsene": "Das erste Schulgebäude war ein Fachwerkbau von 1852 und zugleich das letzte Fachwerkhaus, das in Gütersloh errichtet wurde. Es beherbergte die Schule rund 76 Jahre lang, bis 1928. Es stand an der Feldstraße.",
+          "fach": "1852 entstand an der Feldstraße ein Fachwerkbau – das letzte in Gütersloh errichtete Fachwerkhaus. Er diente der 1851 gegründeten Schule etwa 76 Jahre als Heimat, bis der Klinker-Neubau 1928 ihn ablöste. Bereits dieser alte Bau besaß einen Dachreiter, von dem sonntags musiziert wurde."
+        },
+        "imageBildIds": [
+          "SCHIFF_IMG_1624_01",
+          "FEST_S11_01"
+        ],
+        "citations": [
+          "ESG Baugeschichte",
+          "ESG Chronik"
+        ],
+        "optionen": [
+          {
+            "label": "Ein König hat den Grundstein gelegt – wer war das?",
+            "ziel": "koenig-grundstein"
+          },
+          {
+            "label": "Was war denn der berühmte Physikstall?",
+            "ziel": "physikstall"
+          },
+          {
+            "label": "Warum musste das hübsche Fachwerkhaus weichen?",
+            "ziel": "neubau-1928"
+          }
+        ]
+      },
+      {
+        "id": "koenig-grundstein",
+        "antwort": {
+          "kind": "Ein echter König legte 1852 den Grundstein: Friedrich Wilhelm IV. von Preußen.",
+          "erwachsene": "Am 26. März 1852 legte König Friedrich Wilhelm IV. von Preußen den Grundstein für das erste Schulgebäude. Schon ein Jahr zuvor war er 1851 mit Fackelzug in Gütersloh empfangen worden.",
+          "fach": "Den Grundstein des ersten Gebäudes legte am 26. März 1852 König Friedrich Wilhelm IV. von Preußen. Sein Spruch lautete: „Christus der Grundstein – Christen die Steine – Gott führe den Bau.“ Eine Bronzetafel erinnert daran und befindet sich heute in der Aula. Einem Königsbesuch mit Fackelzug am 21. März 1851 wird ebenfalls gedacht."
+        },
+        "imageBildIds": [
+          "PENNE_S03_01"
+        ],
+        "citations": [
+          "ESG Baugeschichte",
+          "ESG Chronik"
+        ],
+        "optionen": [
+          {
+            "label": "Was steht auf der Tafel mit dem Königsspruch?",
+            "ziel": "bronzetafel"
+          },
+          {
+            "label": "Wie war Gütersloh damals überhaupt – wo stand die Schule?",
+            "ziel": "standort"
+          },
+          {
+            "label": "Und wann kam dann der große Neubau von 1928?",
+            "ziel": "neubau-1928"
+          }
+        ]
+      },
+      {
+        "id": "physikstall",
+        "antwort": {
+          "kind": "Der „Physikstall“ war ein kleines Fachwerkhäuschen, in dem Physik unterrichtet wurde.",
+          "erwachsene": "Der „Physikstall“ war ein kleines Fachwerkhäuschen neben dem ersten Schulgebäude an der Feldstraße. Dort fand der Physikunterricht statt. Es gehörte zu den Anfängen der Schule ab 1851.",
+          "fach": "Neben dem ersten Schulgebäude an der Feldstraße stand ein kleines Fachwerkhäuschen, das die Schule liebevoll „Physikstall“ nannte. Hier wurde der Physikunterricht abgehalten. Der Bau gehörte zu den frühen Anfängen der Schule ab 1851 und zeigt, wie bescheiden der naturwissenschaftliche Unterricht begann."
+        },
+        "imageBildIds": [],
+        "citations": [
+          "ESG Chronik"
+        ],
+        "optionen": [
+          {
+            "label": "Wer legte eigentlich den Grundstein der ersten Schule?",
+            "ziel": "koenig-grundstein"
+          },
+          {
+            "label": "Wie kam man vom Fachwerk zum Backsteinbau 1928?",
+            "ziel": "neubau-1928"
+          },
+          {
+            "label": "Was ist das berühmte Türmchen auf dem Dach?",
+            "ziel": "tuermchen"
+          }
+        ]
+      },
+      {
+        "id": "bronzetafel",
+        "antwort": {
+          "kind": "Auf der Tafel steht der Spruch des Königs von 1852. Sie hängt bis heute in der Aula – ein kleines Stück Geschichte zum Anfassen.",
+          "erwachsene": "König Friedrich Wilhelm IV. sprach 1852 bei der Grundsteinlegung: „Christus der Grundstein – Christen die Steine – Gott führe den Bau.“ Eine Bronzetafel erinnert daran und befindet sich bis heute in der Aula des ESG. So bleiben die Anfänge von 1852 mitten im Schulalltag sichtbar.",
+          "fach": "Der Grundsteinspruch von 1852 „Christus der Grundstein – Christen die Steine – Gott führe den Bau“ verweist auf die christlichen Wurzeln der Schule, getragen von der Evangelischen Gesellschaft für Deutschland. Die erinnernde Bronzetafel hängt bis heute in der Aula – ein Bogen von der Grundsteinlegung 1852 über den Neubau 1928 bis in die Gegenwart. Ein schöner Punkt, um innezuhalten."
+        },
+        "imageBildIds": [],
+        "citations": [
+          "ESG Baugeschichte"
+        ],
+        "optionen": []
+      },
+      {
+        "id": "standort",
+        "antwort": {
+          "kind": "Schon 1849 wurde Gütersloh als Ort für die Schule gewählt. Sie steht an der Feldstraße.",
+          "erwachsene": "Bereits 1849 fiel die Standortentscheidung für Gütersloh. Das erste Gebäude entstand 1852 an der Feldstraße. Alte Stadtpläne von 1857 und 1893 zeigen, wie die Schule in der wachsenden Stadt lag.",
+          "fach": "1849 wählte die Evangelische Gesellschaft für Deutschland Gütersloh als Standort, 1851 begann der Unterricht, 1852 entstand der Bau an der Feldstraße. Historische Stadtpläne von 1857 und 1893 dokumentieren die Lage im damals noch kleinen Gütersloh. Bis heute liegt das ESG an der Feldstraße 13."
+        },
+        "imageBildIds": [
+          "BERIC_S04_01",
+          "BERIC_S04_02"
+        ],
+        "citations": [
+          "ESG Chronik",
+          "ESG Baugeschichte"
+        ],
+        "optionen": [
+          {
+            "label": "Wie sah das allererste Schulhaus von 1852 aus?",
+            "ziel": "erstes-haus"
+          },
+          {
+            "label": "Wann entstand das heutige Backstein-Hauptgebäude?",
+            "ziel": "neubau-1928"
+          },
+          {
+            "label": "Was ist das Türmchen auf dem Dach?",
+            "ziel": "tuermchen"
+          }
+        ]
+      },
+      {
+        "id": "neubau-1928",
+        "antwort": {
+          "kind": "Das heutige Hauptgebäude aus rotem Backstein wurde 1928 eingeweiht. Es hat ein kleines Türmchen.",
+          "erwachsene": "Das heutige Hauptgebäude, ein Klinkerbau mit dem markanten Türmchen, wurde am 31. Juli 1928 eingeweiht. Architekt war Gustav Kassbaum. Seit 1984 steht der Bau unter Denkmalschutz.",
+          "fach": "Der Klinkerbau wurde nach Entwürfen des Architekten Gustav Kassbaum errichtet: Grundsteinlegung am 17. August 1926, Richtfest am 26. Februar 1927, Einweihung und Schlüsselübergabe am 31. Juli 1928. Die Gesamtkosten lagen bei 778.000 Reichsmark. Seit 1984 ist der Altbau als Baudenkmal eingetragen (Denkmalnummer A 042)."
+        },
+        "imageBildIds": [
           "SCHIFF_IMG_1625_01",
+          "HEFT_S01_01"
+        ],
+        "citations": [
+          "ESG Baugeschichte",
+          "ESG Chronik"
+        ],
+        "optionen": [
+          {
+            "label": "Was ist das berühmte Türmchen genau?",
+            "ziel": "tuermchen"
+          },
+          {
+            "label": "Wie lange dauerte der Bau – Schritt für Schritt?",
+            "ziel": "bauprozess"
+          },
+          {
+            "label": "Wie kam dieses Gebäude durch den Krieg?",
+            "ziel": "krieg"
+          }
+        ]
+      },
+      {
+        "id": "bauprozess",
+        "antwort": {
+          "kind": "Vom Grundstein 1926 bis zur Einweihung 1928 dauerte der Bau rund zwei Jahre.",
+          "erwachsene": "Der Neubau wuchs in etwa zwei Jahren: Grundsteinlegung 1926, Richtfest 1927, Einweihung 1928. Bei der Schlüsselübergabe am 31. Juli 1928 besuchten rund 370 Schüler die Schule. Zum Festumzug zog man durch die Straßen Güterslohs.",
+          "fach": "Der Bauablauf: Grundsteinlegung 17. August 1926, Richtfest 26. Februar 1927, schließlich Einweihung und Schlüsselübergabe an Direktor Fliedner am 31. Juli 1928 – nun bezugsfertig samt neuer Turnhalle und Aula. Damals zählte die Schule rund 370 Schüler. Ein festlicher Schulumzug 1928 führte durch das von Fachwerk geprägte Gütersloh."
+        },
+        "imageBildIds": [
           "SCHIFF_IMG_1637_01"
         ],
         "citations": [
+          "ESG Chronik",
+          "ESG Baugeschichte"
+        ],
+        "optionen": [
+          {
+            "label": "Was ist das Türmchen auf dem neuen Dach?",
+            "ziel": "tuermchen"
+          },
+          {
+            "label": "Erzähl mir von der Aula im neuen Bau!",
+            "ziel": "aula"
+          },
+          {
+            "label": "Wie kam das Gebäude durch den Krieg?",
+            "ziel": "krieg"
+          }
+        ]
+      },
+      {
+        "id": "tuermchen",
+        "antwort": {
+          "kind": "Das Türmchen ist ein kleiner Dachreiter oben auf dem Dach. An Heiligabend spielt dort der Posaunenchor.",
+          "erwachsene": "Das „Türmchen“ ist der Dachreiter auf dem Hauptgebäude. Schon der alte Fachwerkbau hatte einen Dachreiter, und beim Neubau 1928 übernahm man dieses Detail bewusst. Seit 1986 findet dort am Heiligen Abend das „Türmchenblasen“ statt.",
+          "fach": "Der Dachreiter des 1928er Klinkerbaus knüpft architektonisch bewusst an den Dachreiter des alten Fachwerkbaus an, von dem schon sonntags musiziert wurde. Seit 1986 spielt der Gymnasial-Posaunenchor – gegründet 1871 von Johannes Kuhlo – am Heiligen Abend vom Türmchen eine weihnachtliche Nachtmusik, das „Türmchenblasen“."
+        },
+        "imageBildIds": [
+          "PENNE_S07_03"
+        ],
+        "citations": [
           "ESG Baugeschichte",
           "ESG Chronik"
         ],
-        "weiter": [
-          "bau4"
-        ],
-        "reviewed": true
+        "optionen": [
+          {
+            "label": "Erzähl mir mehr über die Aula!",
+            "ziel": "aula"
+          },
+          {
+            "label": "Wie kam das Gebäude durch den Krieg?",
+            "ziel": "krieg"
+          },
+          {
+            "label": "Was wurde im Lauf der Jahre noch dazugebaut?",
+            "ziel": "erweiterungen"
+          }
+        ]
       },
       {
-        "id": "bau4",
-        "frage": "Wie kam die Schule durch den Krieg?",
+        "id": "aula",
         "antwort": {
-          "kind": "1944/45 zerstörten Bomben Teile der Schule. Sie wurde danach wieder aufgebaut.",
-          "erwachsene": "1944/45 zerstörten schwere Bombenangriffe die Aula und Teile des Hauptgebäudes. Schon 1946 begann der Unterricht wieder, bis 1950/51 war die Schule wiederhergestellt.",
-          "fach": "Schwere Bombenangriffe 1944/45 zerstörten Aula und Teile des Hauptgebäudes. Der Wiederbeginn des Unterrichts erfolgte am 12. März 1946; bis 1950/51 war der Bau wiederhergestellt und wurde zum 100-jährigen Jubiläum eingeweiht. (Quelle: ESG Baugeschichte, ESG Chronik)"
+          "kind": "Die Aula ist der große Versammlungssaal der Schule für Feiern und Andachten.",
+          "erwachsene": "Mit dem Neubau 1928 bekam die Schule eine neue Aula. Sie diente früher der täglichen Andacht und dem sonntäglichen Gottesdienst. Diese alte Aula wurde im Krieg zerstört; heute ist die Aula ein wichtiger Veranstaltungsort.",
+          "fach": "Die 1928 mit dem Neubau eingeweihte Aula diente der täglichen Kurzandacht, dem sonntäglichen Gottesdienst und Konfirmationen (z. B. am 17. März 1929). Diese historische Aula existiert heute nicht mehr – sie wurde am 26. November 1944 (Totensonntag) durch Bomben zerstört. In der heutigen Aula hängt die Bronzetafel mit dem Grundsteinspruch von 1852."
+        },
+        "imageBildIds": [
+          "SCHIFF_IMG1655_02"
+        ],
+        "citations": [
+          "ESG Chronik",
+          "ESG Baugeschichte"
+        ],
+        "optionen": [
+          {
+            "label": "Wie wurde die Aula im Krieg zerstört?",
+            "ziel": "krieg"
+          },
+          {
+            "label": "Was ist das Türmchen auf dem Dach?",
+            "ziel": "tuermchen"
+          },
+          {
+            "label": "Was wurde später noch alles dazugebaut?",
+            "ziel": "erweiterungen"
+          }
+        ]
+      },
+      {
+        "id": "krieg",
+        "antwort": {
+          "kind": "Im Zweiten Weltkrieg 1944/45 wurde die Schule durch Bomben schwer beschädigt. Danach wurde sie wieder aufgebaut.",
+          "erwachsene": "1944/45 zerstörten schwere Bombenangriffe die Aula und Teile des Hauptgebäudes. Schon 1946 begann der Unterricht wieder. Der Wiederaufbau dauerte bis 1950.",
+          "fach": "Am 26. November 1944 (Totensonntag) zerstörten Bomben die alte Aula. Am 28./29. Januar 1945 wurde die Schule durch einen Volltreffer zu einem Drittel zerstört und zu zwei Dritteln schwer beschädigt. Der Wiederbeginn des Unterrichts erfolgte am 12. März 1946, der vollständige Wiederaufbau dauerte bis 1950."
         },
         "imageBildIds": [],
         "citations": [
           "ESG Baugeschichte",
           "ESG Chronik"
         ],
-        "weiter": [
-          "bau5"
-        ],
-        "reviewed": true
+        "optionen": [
+          {
+            "label": "Wie wurde die wiederaufgebaute Schule 1951 gefeiert?",
+            "ziel": "jubilaeum-1951"
+          },
+          {
+            "label": "Was wurde danach im Lauf der Jahre dazugebaut?",
+            "ziel": "erweiterungen"
+          },
+          {
+            "label": "Und was passiert heute bei der Sanierung?",
+            "ziel": "sanierung"
+          }
+        ]
       },
       {
-        "id": "bau5",
-        "frage": "Was wurde bei der großen Sanierung 2023–2025 gemacht?",
+        "id": "jubilaeum-1951",
         "antwort": {
-          "kind": "Von 2023 bis 2025 wurde die Schule gründlich renoviert. So lange lernten alle in einem „Containerdorf“. Im September 2025 war alles fertig.",
-          "erwachsene": "Von 2023 bis 2025 wurde das ESG umfassend saniert. Während der Bauzeit fand der Unterricht in einem Containerdorf statt. Im September 2025 wurde das sanierte Gebäude eingeweiht.",
-          "fach": "Die Großsanierung begann 2023; der Unterricht lief währenddessen im Containerdorf. Die Einweihung des sanierten Gebäudes erfolgte im September 2025 – rechtzeitig vor dem 175-jährigen Jubiläum 2026. (Quelle: ESG Baugeschichte, ESG Chronik)"
+          "kind": "1951 feierte die Schule 100 Jahre. Die wiederaufgebaute Schule wurde festlich eingeweiht – ein schöner Neuanfang nach dem Krieg.",
+          "erwachsene": "1951, nur ein Jahr nach dem Wiederaufbau, feierte das ESG sein 100-jähriges Jubiläum. Die wiederhergestellte Schule wurde festlich eingeweiht. Damit war der schwerste Bruch der Baugeschichte überwunden – und der Weg frei für viele weitere Jahrzehnte.",
+          "fach": "1951 beging das ESG sein 100-jähriges Jubiläum und weihte die nach dem Krieg wiederhergestellte Schule festlich ein. Aus dieser Zeit stammen ein Lehrerkollegium-Gruppenfoto vor dem Gebäude und eine gestaltete Einladungskarte. Das Jubiläum markierte den Übergang von der Kriegszerstörung zum Wiederaufbau – 75 Jahre später folgt 2026 das große 175-jährige Jubiläum. Ein guter Moment, die Tour ausklingen zu lassen."
+        },
+        "imageBildIds": [
+          "FEST_S01_01"
+        ],
+        "citations": [
+          "ESG Baugeschichte",
+          "ESG Chronik"
+        ],
+        "optionen": []
+      },
+      {
+        "id": "erweiterungen",
+        "antwort": {
+          "kind": "Über die Jahre kamen viele neue Gebäude dazu: Klassenräume, eine Sporthalle und eine Mensa.",
+          "erwachsene": "Zwischen 1970 und 1997 wuchs das ESG kräftig: 1970–73 entstanden Klassentrakt, Naturwissenschaftstrakt und eine Sporthalle, 1996/97 ein Erweiterungstrakt mit neuer Sporthalle. 2010/2011 kamen Mensa und Klassenräume an der Daltropstraße dazu.",
+          "fach": "Die Nachkriegserweiterungen reichen von 1970 bis 1997: 1970–73 Klassentrakt, Naturwissenschaftstrakt und Sporthalle, 1993/94 Sportanlage, 1996/97 Erweiterungstrakt und neue Sporthalle. 2010/2011 erwarb und baute die Schule den Komplex Daltropstraße 7 (Mensa, Klassenräume) um. So entstand aus dem 1928er Kern ein ganzer Campus."
+        },
+        "imageBildIds": [],
+        "citations": [
+          "ESG Chronik",
+          "ESG Baugeschichte"
+        ],
+        "optionen": [
+          {
+            "label": "Was genau ist die Mediothek von 1984?",
+            "ziel": "mediothek"
+          },
+          {
+            "label": "Was passiert heute bei der großen Sanierung?",
+            "ziel": "sanierung"
+          },
+          {
+            "label": "Wie kam das Hauptgebäude durch den Krieg?",
+            "ziel": "krieg"
+          }
+        ]
+      },
+      {
+        "id": "mediothek",
+        "antwort": {
+          "kind": "Die Mediothek ist die Bücherei mit Medienräumen. Sie wurde 1984 eröffnet.",
+          "erwachsene": "Die Mediothek wurde 1984 von der Bertelsmann Stiftung finanziert und durch Ministerpräsident Johannes Rau eingeweiht. Im selben Jahr 1984 wurde der Altbau unter Denkmalschutz gestellt. Sie beherbergt Bibliothek und Medienräume.",
+          "fach": "1984 entstand mit Mitteln der Bertelsmann Stiftung die Mediothek; Ministerpräsident Johannes Rau weihte sie ein. Sie vereint Bibliothek, Multimedia-Lernzentrum und Medienräume. Im selben Jahr wurde der 1928er Altbau unter Denkmalschutz gestellt, und vor der Mediothek erinnert seit 1984 ein Gedenkstein an die jüdische Synagoge."
+        },
+        "imageBildIds": [],
+        "citations": [
+          "ESG Chronik",
+          "ESG Baugeschichte"
+        ],
+        "optionen": [
+          {
+            "label": "Was wurde sonst noch im Lauf der Jahre gebaut?",
+            "ziel": "erweiterungen"
+          },
+          {
+            "label": "Was passiert heute bei der großen Sanierung?",
+            "ziel": "sanierung"
+          },
+          {
+            "label": "Was ist das Türmchen auf dem Altbau?",
+            "ziel": "tuermchen"
+          }
+        ]
+      },
+      {
+        "id": "sanierung",
+        "antwort": {
+          "kind": "Von 2023 bis 2025 wurde das ESG rundum saniert. Solange lernten alle in einem Containerdorf. Seit September 2025 ist alles fertig.",
+          "erwachsene": "Von 2023 bis 2025 wurde das ESG umfassend saniert und erweitert. Während der Bauzeit fand der Unterricht in einem Containerdorf statt. Im September 2025 wurde das sanierte Gebäude feierlich eingeweiht.",
+          "fach": "Die Großsanierung begann 2023; der Unterricht wich in ein Containerdorf aus. Im September 2025 wurde das umfassend sanierte und erweiterte Gebäude eingeweiht. Genau diese vielen erneuerten Fenster geben dem Jubiläum 2026 sein Motto: „1000 Fenster, unendlich viele Geschichten.“ Damit schließt sich der Bogen vom Fachwerk 1852 bis zum sanierten Bau."
         },
         "imageBildIds": [],
         "citations": [
           "ESG Baugeschichte",
           "ESG Chronik"
         ],
-        "weiter": [],
-        "reviewed": true
+        "optionen": [
+          {
+            "label": "Was bedeutet das Motto „1000 Fenster“?",
+            "ziel": "fenster-finale"
+          },
+          {
+            "label": "Wie sah denn der allererste Bau von 1852 aus?",
+            "ziel": "erstes-haus"
+          },
+          {
+            "label": "Wie kam das Hauptgebäude früher durch den Krieg?",
+            "ziel": "krieg"
+          }
+        ]
+      },
+      {
+        "id": "fenster-finale",
+        "antwort": {
+          "kind": "„1000 Fenster, unendlich viele Geschichten“ ist das Motto für 175 Jahre ESG im Jahr 2026. Jedes Fenster steht für eine Geschichte aus der Schule.",
+          "erwachsene": "Zum 175-jährigen Jubiläum 2026 lautet das Motto „1000 Fenster, unendlich viele Geschichten“. Es spielt auf die vielen Fenster des frisch sanierten Schulgebäudes an und auf die zahllosen Geschichten aus 175 Jahren. Gefeiert wird mit dem Schulfest am 12. Juni 2026.",
+          "fach": "Das Jubiläumsmotto „1000 Fenster, unendlich viele Geschichten“ verbindet das 2025 sanierte Gebäude – mit seinen vielen Fenstern – und die Schulgeschichte seit 1851. Vom Fachwerkbau 1852 über den Klinkerbau 1928 bis zur Sanierung 2025 spannt sich der Bogen. Höhepunkt ist das Schulfest am 12. Juni 2026 (Festakt am 13. Juni 2026)."
+        },
+        "imageBildIds": [],
+        "citations": [
+          "ESG Baugeschichte",
+          "ESG Chronik"
+        ],
+        "optionen": []
       }
-    ]
+    ],
+    "reviewed": true
   },
   {
     "slug": "musik-am-esg",
@@ -221,14 +868,30 @@
     "themen": [
       "Musik"
     ],
-    "stationen": [
+    "start": {
+      "intro": "Schön, dass du da bist! Am ESG klingt es seit über 150 Jahren – von Posaunen auf dem Dach bis zu swingendem Jazz. Womit möchtest du die Tour beginnen?",
+      "optionen": [
+        {
+          "label": "Blasinstrumente und der älteste Klang der Schule – wo fing das an?",
+          "ziel": "posaunenchor"
+        },
+        {
+          "label": "Eine geheimnisvolle Musik hoch oben auf dem Dach – was ist das?",
+          "ziel": "tuermchenblasen"
+        },
+        {
+          "label": "Lust auf Jazz? Es gibt da eine Band mit eigener Geschichte …",
+          "ziel": "bigband"
+        }
+      ]
+    },
+    "nodes": [
       {
-        "id": "mus1",
-        "frage": "Seit wann gibt es den Posaunenchor?",
+        "id": "posaunenchor",
         "antwort": {
-          "kind": "Den Posaunenchor gibt es schon seit 1871 – das ist einer der ältesten Schul-Posaunenchöre in ganz Deutschland!",
-          "erwachsene": "Der Gymnasial-Posaunenchor besteht seit 1871 und wurde von Johannes Kuhlo gegründet. Er ist einer der ältesten Schulposaunenchöre Deutschlands.",
-          "fach": "Der Gymnasial-Posaunenchor wurde 1871 von Johannes Kuhlo gegründet und zählt zu den ältesten Schulposaunenchören Deutschlands. Schon 1861 war zudem ein Gymnasial-Trommelkorps entstanden. (Quelle: ESG Chronik)"
+          "kind": "Den Posaunenchor gibt es schon seit 1871 – das ist über 150 Jahre her! Hier spielen Schülerinnen und Schüler Trompete und Posaune.",
+          "erwachsene": "Der Gymnasial-Posaunenchor besteht seit 1871 und gehört zu den ältesten Schulposaunenchören Deutschlands. Gegründet wurde er von Johannes Kuhlo, einem Ehemaligen des ESG. Bis heute ist er ein musikalisches Aushängeschild der Schule.",
+          "fach": "Der Gymnasial-Posaunenchor wurde 1871 von Johannes Kuhlo gegründet, der später als Wegbereiter der evangelischen Posaunenchorbewegung gilt. Er zählt zu den ältesten Schulposaunenchören Deutschlands. Der Chor prägt bis heute Schul- und Stadtfeste mit und tritt 2026 auch zum 175-jährigen Jubiläum auf."
         },
         "imageBildIds": [
           "PENNE_S07_01"
@@ -236,65 +899,326 @@
         "citations": [
           "ESG Chronik"
         ],
-        "weiter": [
-          "mus2"
-        ],
-        "reviewed": true
+        "optionen": [
+          {
+            "label": "Wer war eigentlich dieser Johannes Kuhlo?",
+            "ziel": "kuhlo"
+          },
+          {
+            "label": "Gab es vor dem Posaunenchor noch andere Musikgruppen?",
+            "ziel": "trommelkorps"
+          },
+          {
+            "label": "Spielt der Chor auch an einem ganz besonderen Ort?",
+            "ziel": "tuermchenblasen"
+          }
+        ]
       },
       {
-        "id": "mus2",
-        "frage": "Was ist das Türmchenblasen?",
+        "id": "kuhlo",
         "antwort": {
-          "kind": "An Heiligabend klettern Bläser hoch zum Türmchen und spielen von dort Weihnachtslieder über die Stadt. Das gibt es seit 1986.",
-          "erwachsene": "Seit 1986 spielt der Posaunenchor an Heiligabend vom Türmchen des Schulgebäudes – das „Türmchenblasen“ ist eine feste Gütersloher Weihnachtstradition.",
-          "fach": "Das Türmchenblasen wurde 1986 eingeführt: Am Heiligen Abend spielt der Gymnasial-Posaunenchor vom Dachreiter („Türmchen“) des 1928er Klinkerbaus. (Quelle: ESG Chronik, ESG Baugeschichte)"
+          "kind": "Johannes Kuhlo war ein Ehemaliger des ESG. Im Jahr 1871 gründete er den Posaunenchor.",
+          "erwachsene": "Johannes Kuhlo gründete 1871 den Gymnasial-Posaunenchor und gehört zu den dokumentierten Ehemaligen des ESG. Später wurde er zu einem der wichtigsten Wegbereiter der evangelischen Posaunenchorbewegung in Deutschland.",
+          "fach": "Johannes Kuhlo gründete 1871 den Gymnasial-Posaunenchor und gilt als Pionier der evangelischen Posaunenchorbewegung. Er steht damit in einer Reihe bekannter ESG-Ehemaliger. Sein Wirken verbindet die Schulgeschichte eng mit der überregionalen Kirchenmusik-Tradition."
+        },
+        "imageBildIds": [],
+        "citations": [
+          "ESG Chronik",
+          "Wikipedia"
+        ],
+        "optionen": [
+          {
+            "label": "Und was spielt der Chor heute Besonderes auf dem Dach?",
+            "ziel": "tuermchenblasen"
+          },
+          {
+            "label": "Gibt es auch ein Weihnachtskonzert?",
+            "ziel": "weihnachtskonzert"
+          },
+          {
+            "label": "Welche Musikgruppen gibt es sonst noch?",
+            "ziel": "weitere-gruppen"
+          }
+        ]
+      },
+      {
+        "id": "trommelkorps",
+        "antwort": {
+          "kind": "Ja! Schon 1861 gab es ein Trommelkorps an der Schule – noch vor dem Posaunenchor.",
+          "erwachsene": "Bereits 1861 wurde das Gymnasial-Trommelkorps gegründet, zehn Jahre vor dem Posaunenchor von 1871. Es zählte zu den historischen Schulvereinen des ESG. Überlieferte Aufnahmen im Bildarchiv zeigen eine Trommlergruppe in Uniform mit Trommeln (datiert 1935).",
+          "fach": "Das Gymnasial-Trommelkorps entstand 1861 und ist damit die älteste dokumentierte Musikgruppe des ESG – noch vor dem Posaunenchor von 1871. Im Bildarchiv der Schule sind zwei Aufnahmen einer Trommlergruppe überliefert: eine vor dem Hermannsdenkmal (datiert 1928) und eine in Uniform (datiert 1935). Das Korps steht für die lange Tradition schulischer Musikkultur am ESG."
+        },
+        "imageBildIds": [
+          "PENNE_S05_01"
+        ],
+        "citations": [
+          "ESG Chronik",
+          "Bildquellen-Index (PENNE)"
+        ],
+        "optionen": [
+          {
+            "label": "Zurück zum Posaunenchor – was macht ihn besonders?",
+            "ziel": "posaunenchor"
+          },
+          {
+            "label": "Was ist dieses 'Türmchenblasen'?",
+            "ziel": "tuermchenblasen"
+          },
+          {
+            "label": "Welche Musikgruppen gibt es heute noch?",
+            "ziel": "weitere-gruppen"
+          }
+        ]
+      },
+      {
+        "id": "tuermchenblasen",
+        "antwort": {
+          "kind": "An Heiligabend spielt der Posaunenchor hoch oben vom kleinen Türmchen des Schuldachs. Das nennt man 'Türmchenblasen'.",
+          "erwachsene": "Seit 1986 spielt der Posaunenchor jedes Jahr an Heiligabend vom Türmchen – dem Dachreiter des Schulgebäudes. Dieses 'Türmchenblasen' ist eine beliebte Weihnachtstradition für die Schule und die ganze Stadt Gütersloh.",
+          "fach": "Das 'Türmchenblasen' findet seit 1986 jeweils am Heiligen Abend statt: Der Posaunenchor spielt eine 'Weihnachtliche Nachtmusik' vom Dachreiter des 1928 eingeweihten Klinkerbaus. Schon der alte Fachwerkbau besaß einen Dachreiter, von dem sonntags geblasen wurde – beim Neubau wurde dieses Detail bewusst übernommen. So verbindet das Türmchenblasen Architektur- und Musikgeschichte des ESG."
         },
         "imageBildIds": [
           "HEFT_S01_01"
         ],
         "citations": [
+          "ESG Chronik",
+          "ESG Baugeschichte"
+        ],
+        "optionen": [
+          {
+            "label": "Wer hat die Weihnachtsmusik am ESG ins Leben gerufen?",
+            "ziel": "weihnachtsmusik"
+          },
+          {
+            "label": "Gibt es auch ein großes Weihnachtskonzert?",
+            "ziel": "weihnachtskonzert"
+          },
+          {
+            "label": "Seit wann gibt es den Posaunenchor überhaupt?",
+            "ziel": "posaunenchor"
+          }
+        ]
+      },
+      {
+        "id": "weihnachtsmusik",
+        "antwort": {
+          "kind": "Die Weihnachtsmusik am ESG hat eine lange Tradition. Sie geht auf eine Idee aus den 1980er Jahren zurück.",
+          "erwachsene": "Die ökumenisch geprägte Weihnachtsmusik am ESG geht auf eine Initiative von Horst Reinkemeier und seinen Weggefährten Mitte der 1980er Jahre zurück. Seitdem ist sie ein fester Bestandteil des Schuljahres.",
+          "fach": "Die ökumenische Weihnachtsmusik am ESG wurde Mitte der 1980er Jahre von Horst Reinkemeier und Weggefährten begründet und ist seither fest im Schuljahr verankert. Sie steht zeitlich und inhaltlich in engem Zusammenhang mit dem 1986 eingeführten Türmchenblasen. Beide Traditionen prägen bis heute die Adventszeit der Schulgemeinde."
+        },
+        "imageBildIds": [],
+        "citations": [
+          "ESG Aktuelles"
+        ],
+        "optionen": [
+          {
+            "label": "Wo findet das große Weihnachtskonzert statt?",
+            "ziel": "weihnachtskonzert"
+          },
+          {
+            "label": "Welche Musikgruppen gibt es sonst noch?",
+            "ziel": "weitere-gruppen"
+          },
+          {
+            "label": "Erzähl mir vom Jazz – die Big Band!",
+            "ziel": "bigband"
+          }
+        ]
+      },
+      {
+        "id": "weihnachtskonzert",
+        "antwort": {
+          "kind": "Jedes Jahr gibt es ein Weihnachtskonzert in einer großen Kirche in Gütersloh.",
+          "erwachsene": "Das jährliche Weihnachtskonzert findet traditionell in der Martin-Luther-Kirche in Gütersloh statt. Hier treten Musikgruppen des ESG auf – ein fester Termin in der Adventszeit.",
+          "fach": "Das jährliche Weihnachtskonzert des ESG wird in der Martin-Luther-Kirche in Gütersloh ausgerichtet und bündelt das musikalische Schulleben in der Adventszeit. Ein historisches Plakat belegt das Weihnachtskonzert des Gymnasial-Posaunenchors bereits für das Jahr 1976. Solche Konzerte zeigen das enge Zusammenspiel von Schule, Kirchenmusik und Stadtgesellschaft."
+        },
+        "imageBildIds": [
+          "PENNE_S07_02"
+        ],
+        "citations": [
+          "ESG Chronik",
+          "Pressearchiv"
+        ],
+        "optionen": [
+          {
+            "label": "Welche Musikgruppen treten dort alle auf?",
+            "ziel": "weitere-gruppen"
+          },
+          {
+            "label": "Jetzt aber zur Big Band – wie swingt das ESG?",
+            "ziel": "bigband"
+          },
+          {
+            "label": "Welche Musik gibt es zum Jubiläum 2026?",
+            "ziel": "jubilaeum"
+          }
+        ]
+      },
+      {
+        "id": "bigband",
+        "antwort": {
+          "kind": "Die Big Band des ESG spielt Jazz – und das schon seit 1994!",
+          "erwachsene": "Die ESG-Big-Band besteht seit 1994 und tritt regelmäßig im Theater Gütersloh auf. Ihre Wurzeln reichen bis zur Jazz AG von 1989 zurück. 2024 feierte sie ihr 30-jähriges Bestehen.",
+          "fach": "Die Big Band des ESG wurde 1994 gegründet; ihre Ursprünge liegen in der Jazz AG von 1989. Sie tritt regelmäßig im Theater Gütersloh auf und unternahm 2012 eine Reise nach Moskau. Zum 30-jährigen Bestehen 2024 gab sie ein Jazznight-Konzert im Theater Gütersloh, bei dem auch das Jazzorchester OWL und die Sängerin Dörte Stippich mitwirkten."
+        },
+        "imageBildIds": [],
+        "citations": [
+          "ESG Chronik",
+          "Pressearchiv"
+        ],
+        "optionen": [
+          {
+            "label": "Ist die Band auch schon weit gereist?",
+            "ziel": "bigband-reise"
+          },
+          {
+            "label": "Wie hat das 30-jährige Jubiläum geklungen?",
+            "ziel": "bigband-jubilaeum"
+          },
+          {
+            "label": "Welche Musikgruppen gibt es sonst noch?",
+            "ziel": "weitere-gruppen"
+          }
+        ]
+      },
+      {
+        "id": "bigband-reise",
+        "antwort": {
+          "kind": "Ja! 2012 ist die Big Band sogar bis nach Moskau gereist.",
+          "erwachsene": "2012 reiste die ESG-Big-Band nach Moskau und spielte dort Konzerte. Solche Reisen zeigen, wie weit die Musik die Schülerinnen und Schüler des ESG bringen kann.",
+          "fach": "Die ESG-Big-Band (seit 1994) unternahm 2012 eine Konzertreise nach Moskau und verbindet damit Musik mit internationaler Begegnung. Auch im Schulalltag tritt sie regelmäßig im Theater Gütersloh auf. Solche Auftritte unterstreichen den hohen musikalischen Anspruch der Schule."
+        },
+        "imageBildIds": [],
+        "citations": [
+          "ESG Chronik",
+          "Pressearchiv"
+        ],
+        "optionen": [
+          {
+            "label": "Wie hat das 30-jährige Jubiläum 2024 geklungen?",
+            "ziel": "bigband-jubilaeum"
+          },
+          {
+            "label": "Welche Musikgruppen gibt es sonst noch?",
+            "ziel": "weitere-gruppen"
+          },
+          {
+            "label": "Welche Musik gibt es zum großen Jubiläum 2026?",
+            "ziel": "jubilaeum"
+          }
+        ]
+      },
+      {
+        "id": "bigband-jubilaeum",
+        "antwort": {
+          "kind": "2024 wurde die Big Band 30 Jahre alt und feierte mit einem großen Jazzkonzert.",
+          "erwachsene": "2024 feierte die Big Band ihr 30-jähriges Bestehen mit einem Jazznight-Konzert im Theater Gütersloh. Mit dabei waren auch das Jazzorchester OWL und die Sängerin Dörte Stippich.",
+          "fach": "Zum 30-jährigen Jubiläum 2024 gab die ESG-Big-Band ein Jazznight-Konzert im Theater Gütersloh. Gäste waren das Jazzorchester OWL und die Sängerin Dörte Stippich. Das Konzert knüpft an die Tradition regelmäßiger Big-Band-Auftritte im Theater Gütersloh seit 1994 an."
+        },
+        "imageBildIds": [],
+        "citations": [
+          "ESG Chronik",
+          "ESG Aktuelles"
+        ],
+        "optionen": [
+          {
+            "label": "Welche anderen Musikgruppen gibt es am ESG?",
+            "ziel": "weitere-gruppen"
+          },
+          {
+            "label": "Welche Musik gibt es zum Jubiläum 2026?",
+            "ziel": "jubilaeum"
+          },
+          {
+            "label": "Das war ein schöner Schlusston – Tour beenden.",
+            "ziel": "abschluss-bigband"
+          }
+        ]
+      },
+      {
+        "id": "weitere-gruppen",
+        "antwort": {
+          "kind": "Es gibt noch mehr Musik am ESG: einen Chor (die Kantorei) und Klassen, in denen alle ein Streichinstrument lernen.",
+          "erwachsene": "Neben Posaunenchor und Big Band gibt es am ESG die Kantorei, einen Chor, der seit 1949 besteht. Seit 1995 gibt es außerdem Streicherklassen, in denen Schülerinnen und Schüler gemeinsam Geige, Bratsche oder Cello lernen.",
+          "fach": "Das musikalische Angebot des ESG umfasst neben dem Gymnasial-Posaunenchor (1871) und der Big Band (1994) auch die Kantorei, die 1949 vom Schulkollegium genehmigt wurde, sowie Streicherklassen seit 1995. Diese Ensembles decken Blas-, Vokal- und Streichermusik ab. Gemeinsam gestalten sie Konzerte wie das jährliche Weihnachtskonzert in der Martin-Luther-Kirche."
+        },
+        "imageBildIds": [],
+        "citations": [
           "ESG Chronik"
         ],
-        "weiter": [
-          "mus3"
-        ],
-        "reviewed": true
+        "optionen": [
+          {
+            "label": "Wo treten alle gemeinsam zu Weihnachten auf?",
+            "ziel": "weihnachtskonzert"
+          },
+          {
+            "label": "Erzähl mir vom ältesten Klang: dem Posaunenchor.",
+            "ziel": "posaunenchor"
+          },
+          {
+            "label": "Welche Musik gibt es zum Jubiläum 2026?",
+            "ziel": "jubilaeum"
+          }
+        ]
       },
       {
-        "id": "mus3",
-        "frage": "Was hat es mit der Big Band auf sich?",
+        "id": "jubilaeum",
         "antwort": {
-          "kind": "Die Big Band ist die Jazz-Band der Schule. Sie war sogar schon in Moskau und feierte 2024 ihren 30. Geburtstag.",
-          "erwachsene": "Die ESG-Big-Band besteht seit 1994. 2012 reiste sie nach Moskau, 2024 feierte sie ihr 30-jähriges Bestehen. Ihre Wurzeln reichen zur Jazz AG von 1989 zurück.",
-          "fach": "Die Big Band wurde 1994 gegründet (Vorläufer: Jazz AG, 1989). 2012 unternahm sie eine Reise nach Moskau, 2024 feierte sie ihr 30-jähriges Jubiläum. (Quelle: ESG Chronik, Pressearchiv)"
+          "kind": "Zum 175. Geburtstag 2026 gibt es viel Musik – zum Beispiel ein Konzert des Posaunenchors im Stadtpark.",
+          "erwachsene": "Zum 175-jährigen Jubiläum 2026 spielt der Gymnasial-Posaunenchor am 24. Mai 2026 um 15 Uhr ein Pfingstkonzert im Stadtpark am Ibrüggers Teich. Beim Schulfest am 12. Juni 2026 (15–19 Uhr) ist Musik ebenfalls fester Bestandteil.",
+          "fach": "Im Jubiläumsjahr 2026 ('175 Jahre ESG – 1000 Fenster, unendlich viele Geschichten') prägt Musik das Programm: Am 24. Mai 2026 gibt der Gymnasial-Posaunenchor ein Pfingstkonzert im Stadtpark am Ibrüggers Teich. Am 10. und 11. Juni 2026 zeigen die Dramakurse der Q1 die ESG-Revue, bevor am 12. Juni 2026 das Schulfest (15–19 Uhr) und am 13. Juni 2026 der Festakt folgen."
+        },
+        "imageBildIds": [],
+        "citations": [
+          "ESG Jubiläum 175 Jahre",
+          "Gymnasial-Posaunenchor Website"
+        ],
+        "optionen": [
+          {
+            "label": "Seit wann macht der Posaunenchor schon Musik?",
+            "ziel": "posaunenchor"
+          },
+          {
+            "label": "Erzähl mir von der Big Band.",
+            "ziel": "bigband"
+          },
+          {
+            "label": "Schöner Abschluss zum Jubiläum – Tour beenden.",
+            "ziel": "abschluss-posaune"
+          }
+        ]
+      },
+      {
+        "id": "abschluss-posaune",
+        "antwort": {
+          "kind": "Schön, dass du dabei warst! Vom Posaunenchor bis zum Türmchenblasen: Musik gehört am ESG einfach dazu. Vielleicht hörst du sie beim Schulfest selbst.",
+          "erwachsene": "Damit endet unsere kleine Musiktour. Vom 1871 gegründeten Posaunenchor über das Türmchenblasen bis zur Big Band zieht sich Musik wie ein roter Faden durch 175 Jahre ESG. Beim Schulfest am 12. Juni 2026 kannst du vieles davon live erleben.",
+          "fach": "Damit schließt die Tour durch die Musikgeschichte des ESG: Posaunenchor (1871), Türmchenblasen (seit 1986), Kantorei (1949), Streicherklassen (1995) und Big Band (1994) bilden zusammen ein dichtes musikalisches Profil. Im Jubiläumsjahr 2026 wird dieses Erbe bei Pfingstkonzert, ESG-Revue und Schulfest sichtbar. Wir freuen uns, wenn du am 12. Juni 2026 selbst vorbeischaust."
+        },
+        "imageBildIds": [
+          "PENNE_S07_01"
+        ],
+        "citations": [
+          "ESG Chronik"
+        ],
+        "optionen": []
+      },
+      {
+        "id": "abschluss-bigband",
+        "antwort": {
+          "kind": "Danke fürs Mitmachen! Egal ob Posaune oder Saxofon – am ESG ist für jeden Klang etwas dabei. Bis bald beim Schulfest!",
+          "erwachsene": "Das war unsere Musiktour. Ob traditioneller Posaunenchor oder swingende Big Band: Am ESG hat Musik viele Gesichter und eine lange Geschichte. Zum Jubiläum 2026 gibt es besonders viel davon zu hören.",
+          "fach": "Hier endet die Tour. Von der Jazz AG (1989) über die Big Band (1994) bis zu ihren Auftritten im Theater Gütersloh und der Moskau-Reise 2012 zeigt sich, wie lebendig die Musikkultur am ESG ist. Ergänzt um Posaunenchor, Kantorei und Streicherklassen ergibt sich ein breites Ensemble-Spektrum, das 2026 zum 175-jährigen Jubiläum gefeiert wird."
         },
         "imageBildIds": [],
         "citations": [
           "ESG Chronik",
           "Pressearchiv"
         ],
-        "weiter": [
-          "mus4"
-        ],
-        "reviewed": true
-      },
-      {
-        "id": "mus4",
-        "frage": "Welche Musikgruppen gibt es noch?",
-        "antwort": {
-          "kind": "Es gibt auch einen Chor (die Kantorei) und Klassen, in denen alle ein Streichinstrument lernen. Jedes Jahr gibt es ein großes Weihnachtskonzert.",
-          "erwachsene": "Neben Posaunenchor und Big Band gibt es die Kantorei (seit 1949) und Streicherklassen (seit 1995). Jährlich findet ein Weihnachtskonzert in der Martin-Luther-Kirche statt.",
-          "fach": "Zur Musiktradition gehören die Kantorei (seit 1949), Streicherklassen (seit 1995) sowie das jährliche Weihnachtskonzert in der Martin-Luther-Kirche. (Quelle: ESG Chronik, Pressearchiv)"
-        },
-        "imageBildIds": [],
-        "citations": [
-          "ESG Chronik",
-          "Pressearchiv"
-        ],
-        "weiter": [],
-        "reviewed": true
+        "optionen": []
       }
-    ]
+    ],
+    "reviewed": true
   },
   {
     "slug": "forschen-und-digital",
@@ -305,67 +1229,321 @@
       "MINT",
       "Digitalisierung"
     ],
-    "stationen": [
+    "start": {
+      "intro": "Schön, dass du da bist! Das ESG tüftelt, forscht und probiert Technik aus – manchmal schon, lange bevor es cool war. Womit möchtest du anfangen?",
+      "optionen": [
+        {
+          "label": "Wie wurde aus einer alten Schule eine Hightech-Schule?",
+          "ziel": "von-kreide-zu-computer"
+        },
+        {
+          "label": "Stimmt es, dass hier schon 1999 alle mit Laptops lernten?",
+          "ziel": "laptop-pioniere"
+        },
+        {
+          "label": "Welche Preise hat das ESG beim Forschen schon geholt?",
+          "ziel": "forscher-erfolge"
+        }
+      ]
+    },
+    "nodes": [
       {
-        "id": "mint1",
-        "frage": "Wie modern war das ESG in der Forschung?",
+        "id": "von-kreide-zu-computer",
         "antwort": {
-          "kind": "Schon 1989 konnte das ESG Bilder von einem Wettersatelliten empfangen – ziemlich früh für eine Schule!",
-          "erwachsene": "Der Naturwissenschaftstrakt entstand 1970–73. 1989 empfing das ESG Bilder eines Wettersatelliten, und seit 1985 wird Informatik unterrichtet.",
-          "fach": "Der Naturwissenschaftstrakt wurde Anfang der 1970er gebaut (1970–73), Informatik seit 1985 unterrichtet; 1989 empfing die Schule Wettersatelliten-Bilder. Seit 2016 ist das ESG MINT-EC-Schule. (Quelle: ESG Chronik)"
+          "kind": "Das ESG mag Technik! Schon 1985 konnte man hier Informatik lernen, lange bevor das normal war.",
+          "erwachsene": "Das ESG hat sich früh der Technik geöffnet: 1970 bis 1973 entstand ein eigener Naturwissenschaftstrakt, und seit 1985 wird Informatik unterrichtet. Schon damals war das modern für eine Schule.",
+          "fach": "Die naturwissenschaftliche Ausrichtung wurde baulich verankert: Von 1970 bis 1973 entstanden Klassentrakt, Naturwissenschaftstrakt und Sporthalle. 1985 kam Informatik als Oberstufenkurs dazu. Diese frühe Verbindung von Forschung und Technik prägt das ESG bis heute (Quelle: ESG Chronik)."
         },
         "imageBildIds": [],
         "citations": [
           "ESG Chronik"
         ],
-        "weiter": [
-          "mint2"
-        ],
-        "reviewed": true
+        "optionen": [
+          {
+            "label": "Was war die berühmte Mediothek von 1984?",
+            "ziel": "mediothek"
+          },
+          {
+            "label": "Stimmt es, dass die Schule Satellitenbilder empfing?",
+            "ziel": "wettersatellit"
+          },
+          {
+            "label": "Und wie sieht digitaler Unterricht heute aus?",
+            "ziel": "lernen-heute"
+          }
+        ]
       },
       {
-        "id": "mint2",
-        "frage": "Was ist die Mediothek?",
+        "id": "mediothek",
         "antwort": {
-          "kind": "Die Mediothek ist die große Bücherei der Schule. Sie wurde 1984 vom damaligen Ministerpräsidenten Johannes Rau eröffnet.",
-          "erwachsene": "Die Mediothek wurde 1984 in Zusammenarbeit mit der Bertelsmann Stiftung eingerichtet und von Ministerpräsident Johannes Rau eingeweiht.",
-          "fach": "Die Mediothek entstand 1984 im Rahmen der Kooperation mit der Bertelsmann Stiftung (1979–99) und wurde von Ministerpräsident Johannes Rau eingeweiht – ein früher Baustein der ESG-Medienarbeit. (Quelle: ESG Chronik, ESG Baugeschichte)"
+          "kind": "1984 bekam das ESG eine besondere Bücherei mit Medien und Computern – die Mediothek. Ein Ministerpräsident eröffnete sie!",
+          "erwachsene": "Die Mediothek wurde 1984 zusammen mit der Bertelsmann Stiftung eingerichtet. Eröffnet wurde sie von Ministerpräsident Johannes Rau. Sie war damals etwas ganz Besonderes: Bibliothek, Medien und Lernzentrum unter einem Dach.",
+          "fach": "1984 entstand mit Unterstützung der Bertelsmann Stiftung die Mediothek – eingeweiht von NRW-Ministerpräsident Johannes Rau. Sie vereinte Bibliothek, ein Multimedia-Lernzentrum sowie ein Studio mit Computer- und Filmschneideraum. Die Bertelsmann Stiftung blieb von etwa 1979 bis 1999 ein wichtiger Partner für Medienbildung am ESG (Quelle: ESG Chronik, ESG Baugeschichte)."
         },
         "imageBildIds": [],
         "citations": [
           "ESG Chronik",
           "ESG Baugeschichte"
         ],
-        "weiter": [
-          "mint3"
-        ],
-        "reviewed": true
+        "optionen": [
+          {
+            "label": "Was kam nach der Mediothek – wurde es noch digitaler?",
+            "ziel": "laptop-pioniere"
+          },
+          {
+            "label": "Stimmt es, dass die Schule Satellitenbilder empfing?",
+            "ziel": "wettersatellit"
+          },
+          {
+            "label": "Was steckt hinter der Bertelsmann-Partnerschaft?",
+            "ziel": "bertelsmann"
+          }
+        ]
       },
       {
-        "id": "mint3",
-        "frage": "Seit wann arbeitet das ESG mit Laptops und iPads?",
+        "id": "wettersatellit",
         "antwort": {
-          "kind": "Schon seit 1999 gibt es am ESG Laptop-Klassen. Heute lernen alle mit iPads und Laptops.",
-          "erwachsene": "Das Laptop-Projekt startete 1999 (mit der Bertelsmann Stiftung). 2019 wurde das ESG als „Smart School“ ausgezeichnet; heute arbeiten die Klassen mit iPads (Kl. 5/6) und Laptops (ab Kl. 7).",
-          "fach": "Das Laptop-Projekt begann 1999 (Bertelsmann Stiftung); Michael Kerber gilt als „Vater der Laptop-Klassen“. 2019 folgte die Bitkom-Auszeichnung „Smart School“, 2020 die Lernplattform NERDL und iPads. Die Medienscouts gewannen 2015 bundesweit den 1. Platz. (Quelle: ESG Chronik, Pressearchiv)"
+          "kind": "Ja! 1989 konnte das ESG Bilder von einem Wettersatelliten empfangen. Das war richtig spannende Technik.",
+          "erwachsene": "1989 empfing das ESG Bilder eines Wettersatelliten – ein echtes Technik-Highlight für eine Schule dieser Zeit. Es zeigt, wie neugierig das ESG schon damals auf neue Möglichkeiten war.",
+          "fach": "Im Jahr 1989 empfing das ESG Bilder eines Wettersatelliten – ein bemerkenswertes Beispiel für die frühe technische Experimentierfreude der Schule. Es passte zur naturwissenschaftlichen Ausrichtung seit dem Naturwissenschaftstrakt von 1970 bis 1973 (Quelle: ESG Chronik)."
+        },
+        "imageBildIds": [],
+        "citations": [
+          "ESG Chronik"
+        ],
+        "optionen": [
+          {
+            "label": "Was war die Mediothek von 1984?",
+            "ziel": "mediothek"
+          },
+          {
+            "label": "Wann kamen die Laptops für alle?",
+            "ziel": "laptop-pioniere"
+          },
+          {
+            "label": "Bei welchen Wettbewerben forscht das ESG mit?",
+            "ziel": "forscher-erfolge"
+          }
+        ]
+      },
+      {
+        "id": "bertelsmann",
+        "antwort": {
+          "kind": "Die Bertelsmann Stiftung half dem ESG lange mit Technik – zum Beispiel bei der Mediothek und den ersten Laptops.",
+          "erwachsene": "Von etwa 1979 bis 1999 war die Bertelsmann Stiftung ein wichtiger Partner des ESG. Gemeinsam entstanden Projekte zur Medienbildung – darunter die Mediothek 1984 und das Laptop-Projekt 1999.",
+          "fach": "Die Bertelsmann Stiftung kooperierte von rund 1979 bis 1999 mit dem ESG, in mehreren Vertragsperioden (1981, 1989, 1994, 1999) zu Medienbildung und Laptop-Nutzung. Dieser Stiftung verdankt die Schule unter anderem die Mediothek (1984) und den Start des Laptop-Projekts (1999) – ein Grund, warum das ESG bei der Digitalisierung früh vorne lag (Quelle: ESG Chronik)."
+        },
+        "imageBildIds": [],
+        "citations": [
+          "ESG Chronik"
+        ],
+        "optionen": [
+          {
+            "label": "Erzähl mir vom Laptop-Projekt 1999!",
+            "ziel": "laptop-pioniere"
+          },
+          {
+            "label": "Wie wurde aus dem ESG eine Smart School?",
+            "ziel": "smart-school"
+          },
+          {
+            "label": "Wie sieht der Unterricht heute aus?",
+            "ziel": "lernen-heute"
+          }
+        ]
+      },
+      {
+        "id": "laptop-pioniere",
+        "antwort": {
+          "kind": "Ja, schon 1999 lernten Schüler am ESG mit eigenen Laptops – das war damals etwas ganz Neues!",
+          "erwachsene": "Das Laptop-Projekt startete 1999 in Jahrgangsstufe 7, unterstützt von der Bertelsmann Stiftung. Damit war das ESG ein echter Vorreiter beim digitalen Lernen, lange bevor das an anderen Schulen üblich wurde.",
+          "fach": "1999 begann das Laptop-Projekt in Jahrgangsstufe 7 mit Unterstützung der Bertelsmann Stiftung. Seit 2004 konnte jede Schülerin und jeder Schüler der Stufe 7 teilnehmen; die Geräte wurden über die Schule geleast und gingen nach Stufe 10 ins Eigentum über. Das ESG zählte damit zu den Pionieren der 1:1-Ausstattung in Deutschland (Quelle: ESG Chronik)."
+        },
+        "imageBildIds": [],
+        "citations": [
+          "ESG Chronik"
+        ],
+        "optionen": [
+          {
+            "label": "Wer hatte die Idee mit den Laptop-Klassen?",
+            "ziel": "vater-laptop"
+          },
+          {
+            "label": "Wie wurde das ESG zur Smart School?",
+            "ziel": "smart-school"
+          },
+          {
+            "label": "Und womit lernt man heute am ESG?",
+            "ziel": "lernen-heute"
+          }
+        ]
+      },
+      {
+        "id": "vater-laptop",
+        "antwort": {
+          "kind": "Ein Lehrer namens Michael Kerber gilt als „Vater der Laptop-Klassen“ am ESG. Er brachte die Idee mit voran.",
+          "erwachsene": "Der stellvertretende Schulleiter Michael Kerber wird als „Vater der Laptop-Klassen“ am ESG bezeichnet. Er prägte das frühe digitale Lernen an der Schule stark. Er wurde 2012 bei seiner Verabschiedung als Vater der Laptop-Klassen gewürdigt.",
+          "fach": "Michael Kerber, stellvertretender Schulleiter, gilt als „Vater der Laptop-Klassen“ am ESG und prägte den Aufbau des Laptop-Projekts ab 1999 maßgeblich. Er wurde 2012 bei seiner Verabschiedung als Vater der Laptop-Klassen gewürdigt. Sein Engagement steht beispielhaft dafür, dass die Digitalisierung am ESG nicht nur Technik, sondern auch von einzelnen Lehrkräften getragene Pädagogik war (Quelle: Pressearchiv 2012)."
         },
         "imageBildIds": [],
         "citations": [
           "ESG Chronik",
           "Pressearchiv"
         ],
-        "weiter": [
-          "mint4"
-        ],
-        "reviewed": true
+        "optionen": [
+          {
+            "label": "Wie ging die digitale Geschichte weiter?",
+            "ziel": "smart-school"
+          },
+          {
+            "label": "Was war die Mediothek davor?",
+            "ziel": "mediothek"
+          },
+          {
+            "label": "Womit lernt man heute am ESG?",
+            "ziel": "lernen-heute"
+          }
+        ]
       },
       {
-        "id": "mint4",
-        "frage": "Bei welchen Wettbewerben ist das ESG erfolgreich?",
+        "id": "smart-school",
         "antwort": {
-          "kind": "ESG-Schüler machen bei vielen Wettbewerben mit – zum Beispiel „Jugend forscht“, Mathe-Olympiade oder dem Bobby Car Solar Cup.",
-          "erwachsene": "Das ESG nimmt an Wettbewerben wie „Jugend forscht“, der Mathematik-Olympiade, dem Känguru-Wettbewerb und dem Bobby Car Solar Cup teil – oft mit vorderen Plätzen.",
-          "fach": "Als MINT-EC-Schule (seit 2016) ist das ESG bei „Jugend forscht“ (u. a. Falk Wannhof, 1. Platz 2023), Mathematik-Olympiade, Känguru-Wettbewerb und Bobby Car Solar Cup aktiv; die CompuTecS-AG wird von der Telekom-Stiftung gefördert. (Quelle: ESG Chronik, Pressearchiv, ESbloG)"
+          "kind": "2019 bekam das ESG einen tollen Titel: „Smart School“. Das heißt, es ist besonders digital.",
+          "erwachsene": "2019 wurde das ESG vom Digitalverband Bitkom als „Smart School“ ausgezeichnet. Die Preisübergabe fand in Berlin statt. Der Titel würdigt Schulen, die digitales Lernen besonders gut umsetzen.",
+          "fach": "2019 zeichnete der Digitalverband Bitkom das ESG als „Smart School“ aus; die Preisübergabe erfolgte in Berlin. Die Auszeichnung baut auf einer langen digitalen Tradition auf – von der Mediothek 1984 über das Laptop-Projekt 1999 bis zu modernen Lernplattformen. Sie bestätigt das ESG als digitale Vorreiterschule (Quelle: ESG Chronik, Pressearchiv)."
+        },
+        "imageBildIds": [],
+        "citations": [
+          "ESG Chronik",
+          "Pressearchiv"
+        ],
+        "optionen": [
+          {
+            "label": "Was machen eigentlich die Medienscouts?",
+            "ziel": "medienscouts"
+          },
+          {
+            "label": "Was passierte in der Corona-Zeit 2020?",
+            "ziel": "corona-digital"
+          },
+          {
+            "label": "Womit lernt man heute konkret?",
+            "ziel": "lernen-heute"
+          }
+        ]
+      },
+      {
+        "id": "medienscouts",
+        "antwort": {
+          "kind": "Die Medienscouts sind Schüler, die anderen bei Handy, Internet und Co. helfen. 2015 waren sie sogar die Besten in ganz Deutschland!",
+          "erwachsene": "Die Medienscouts sind eine Schülergruppe am ESG, die sich für Medienkompetenz und sicheren Umgang mit dem Internet einsetzt. 2015 erreichten sie bundesweit den 1. Platz – ein großer Erfolg.",
+          "fach": "Die Medienscouts des ESG fördern Medienkompetenz und unterstützen Mitschülerinnen und Mitschüler im verantwortungsvollen Umgang mit digitalen Medien. 2015 errangen sie bundesweit den 1. Platz. Das Projekt zeigt, dass Digitalisierung am ESG auch Prävention und Peer-Education umfasst, nicht nur Geräte (Quelle: ESG Chronik, Pressearchiv)."
+        },
+        "imageBildIds": [],
+        "citations": [
+          "ESG Chronik",
+          "Pressearchiv"
+        ],
+        "optionen": [
+          {
+            "label": "Was passierte digital in der Corona-Zeit?",
+            "ziel": "corona-digital"
+          },
+          {
+            "label": "Womit lernt man heute am ESG?",
+            "ziel": "lernen-heute"
+          },
+          {
+            "label": "Bei welchen Forscher-Wettbewerben glänzt das ESG?",
+            "ziel": "forscher-erfolge"
+          }
+        ]
+      },
+      {
+        "id": "corona-digital",
+        "antwort": {
+          "kind": "In der Corona-Zeit 2020 lernte das ESG plötzlich von zu Hause aus – mit einer eigenen Lernplattform und neuen iPads.",
+          "erwachsene": "Während der Corona-Pandemie 2020 führte das ESG die Lernplattform NERDL und iPads ein. So konnte der Unterricht auch digital von zu Hause weitergehen. Seit 2022 nutzt die Schule die Plattform itslearning.",
+          "fach": "2020 reagierte das ESG auf die Corona-Pandemie mit der Einführung des Lernmanagement-Systems NERDL und von iPads. NERDL wurde später durch itslearning (seit 2022) abgelöst. Die jahrzehntelange digitale Erfahrung half der Schule, schnell auf Distanzunterricht umzustellen (Quelle: ESG Chronik)."
+        },
+        "imageBildIds": [],
+        "citations": [
+          "ESG Chronik"
+        ],
+        "optionen": [
+          {
+            "label": "Und womit lernt man heute ganz konkret?",
+            "ziel": "lernen-heute"
+          },
+          {
+            "label": "Was machen die Medienscouts?",
+            "ziel": "medienscouts"
+          },
+          {
+            "label": "Gibt es eine Technik-AG zum Selbermachen?",
+            "ziel": "computecs"
+          }
+        ]
+      },
+      {
+        "id": "lernen-heute",
+        "antwort": {
+          "kind": "Heute lernen die Jüngeren mit iPads und die Älteren mit Laptops. Fast alles läuft digital!",
+          "erwachsene": "Laut Archivstand Mai 2026 arbeiten am ESG die Klassen 5 und 6 mit iPads, ab Klasse 7 mit Laptops. Gelernt wird über die Plattform itslearning. Digitales Arbeiten gehört hier zum Alltag.",
+          "fach": "Laut Archivstand Mai 2026 setzt das ESG auf eine 1:1-Ausstattung: iPads in den Klassen 5 und 6, Laptops ab Klasse 7, organisiert über die Lernplattform itslearning (seit 2022). Diese Struktur ist die konsequente Fortführung des Laptop-Projekts von 1999 und der Smart-School-Auszeichnung von 2019 (Quelle: ESG Chronik)."
+        },
+        "imageBildIds": [],
+        "citations": [
+          "ESG Chronik"
+        ],
+        "optionen": [
+          {
+            "label": "Gibt es eine Technik-AG zum Selbermachen?",
+            "ziel": "computecs"
+          },
+          {
+            "label": "Bei welchen Wettbewerben forscht das ESG mit?",
+            "ziel": "forscher-erfolge"
+          },
+          {
+            "label": "Was machen die Medienscouts?",
+            "ziel": "medienscouts"
+          }
+        ]
+      },
+      {
+        "id": "computecs",
+        "antwort": {
+          "kind": "Ja! Die CompuTecS sind eine Technik-AG. Dort basteln und tüfteln Schüler mit Computern und Technik.",
+          "erwachsene": "Die CompuTecS-AG ist die Technik-AG des ESG. Sie wird von der Telekom-Stiftung unterstützt und tauscht sich bei Netzwerktagungen mit anderen Schulen aus. Hier können Schülerinnen und Schüler praktisch mit Technik arbeiten.",
+          "fach": "Die CompuTecS-AG des ESG ist eine von der Telekom-Stiftung geförderte Technik-AG, die an der Technik-Scouts-Netzwerktagung teilnimmt und sich regelmäßig mit anderen Schulen vernetzt. Sie ergänzt den Informatikunterricht (seit 1985) um praktisches, projektbezogenes Arbeiten an Hard- und Software (Quelle: ESG Chronik, ESbloG)."
+        },
+        "imageBildIds": [],
+        "citations": [
+          "ESG Chronik",
+          "ESbloG"
+        ],
+        "optionen": [
+          {
+            "label": "Bei welchen Wettbewerben tritt das ESG an?",
+            "ziel": "forscher-erfolge"
+          },
+          {
+            "label": "Wie ist das ESG offiziell als MINT-Schule anerkannt?",
+            "ziel": "mint-ec"
+          },
+          {
+            "label": "Wie sieht der digitale Alltag heute aus?",
+            "ziel": "lernen-heute"
+          }
+        ]
+      },
+      {
+        "id": "forscher-erfolge",
+        "antwort": {
+          "kind": "Das ESG ist oft erfolgreich: zum Beispiel bei „Jugend forscht“ oder dem Bobby Car Solar Cup mit selbstgebauten Solar-Autos!",
+          "erwachsene": "Das ESG nimmt an vielen Wettbewerben teil – etwa „Jugend forscht“, dem Känguru-Wettbewerb und der Mathematik-Olympiade. 2023 holte Falk Wannhof bei „Jugend forscht“ einen 1. Platz, 2013 siegte das ESG beim Bobby Car Solar Cup.",
+          "fach": "Das ESG ist bei zahlreichen Wettbewerben erfolgreich: „Jugend forscht“/„Schüler experimentieren“ (Falk Wannhof: 1. Platz 2023), Bobby Car Solar Cup (Sieg 2013), Känguru-Wettbewerb und Mathematik-Olympiade. Diese Erfolge spiegeln die forschungsorientierte MINT-Ausrichtung der Schule wider (Quelle: ESG Chronik, Pressearchiv, ESbloG)."
         },
         "imageBildIds": [],
         "citations": [
@@ -373,28 +1551,85 @@
           "Pressearchiv",
           "ESbloG"
         ],
-        "weiter": [],
-        "reviewed": true
+        "optionen": [
+          {
+            "label": "Gab es auch ein Kopfrechen-Wunder?",
+            "ziel": "kopfrechnen"
+          },
+          {
+            "label": "Ist das ESG offiziell eine MINT-Schule?",
+            "ziel": "mint-ec"
+          },
+          {
+            "label": "Gibt es eine Technik-AG zum Mitmachen?",
+            "ziel": "computecs"
+          }
+        ]
+      },
+      {
+        "id": "kopfrechnen",
+        "antwort": {
+          "kind": "Ja! 2012 war eine Schülerin namens Amy Zhou bei der Kopfrechen-Weltmeisterschaft dabei. Ganz ohne Taschenrechner!",
+          "erwachsene": "2012 nahm Amy Zhou vom ESG an der Kopfrechen-Weltmeisterschaft teil – ein beeindruckendes Beispiel für mathematisches Talent an der Schule. Solche Erfolge zeigen die starke MINT-Förderung am ESG.",
+          "fach": "2012 trat Amy Zhou vom ESG bei der Kopfrechen-Weltmeisterschaft an. Neben dieser Einzelleistung pflegt das ESG eine breite mathematische Wettbewerbskultur mit Mathematik-Olympiade und Känguru-Wettbewerb. Solche Aktivitäten sind Teil des MINT-Profils der Schule (Quelle: ESG Chronik, Pressearchiv)."
+        },
+        "imageBildIds": [],
+        "citations": [
+          "ESG Chronik",
+          "Pressearchiv"
+        ],
+        "optionen": []
+      },
+      {
+        "id": "mint-ec",
+        "antwort": {
+          "kind": "Das ESG ist eine anerkannte MINT-Schule. MINT heißt: Mathe, Informatik, Naturwissenschaften und Technik.",
+          "erwachsene": "Seit 2016 ist das ESG MINT-EC-Schule und gehört damit zu einem bundesweiten Netzwerk besonders guter Schulen in Mathematik, Informatik, Naturwissenschaften und Technik. Das unterstreicht den Forschungsschwerpunkt der Schule.",
+          "fach": "Seit 2016 ist das ESG Mitglied im nationalen Excellence-Schulnetzwerk MINT-EC – einem Verbund von Schulen mit ausgeprägtem MINT-Profil. Zusammen mit Informatik seit 1985, der CompuTecS-AG und zahlreichen Wettbewerbserfolgen bildet die MINT-EC-Mitgliedschaft das Fundament des forschenden Lernens am ESG (Quelle: ESG Chronik, ESG Website)."
+        },
+        "imageBildIds": [],
+        "citations": [
+          "ESG Chronik",
+          "ESG Website"
+        ],
+        "optionen": []
       }
-    ]
+    ],
+    "reviewed": true
   },
   {
     "slug": "sport-schach-kurioses",
     "titel": "Sport, Schach & Kurioses",
     "icon": "⚽",
-    "kurz": "Der erste Fußballverein in NRW, Schach-Erfolge und kuriose Details.",
+    "kurz": "Der erste Fußballverein in NRW, Deutsche-Meister-Schach und kuriose Geheimnisse über dem Eingang.",
     "themen": [
       "Sport",
       "Kurioses"
     ],
-    "stationen": [
+    "start": {
+      "intro": "Willkommen! Hinter dem ESG stecken überraschend viele Rekorde, Erfolge und kleine Geheimnisse. Worauf hast du Lust?",
+      "optionen": [
+        {
+          "label": "Wo soll in NRW der allererste Fußballverein entstanden sein?",
+          "ziel": "fussball-erster"
+        },
+        {
+          "label": "Eine Deutsche Meisterin im Schach an einer Schule? Erzähl!",
+          "ziel": "schach-meisterin"
+        },
+        {
+          "label": "Was steht da eigentlich geheimnisvoll über dem Eingang?",
+          "ziel": "spruch-eingang"
+        }
+      ]
+    },
+    "nodes": [
       {
-        "id": "spo1",
-        "frage": "Stimmt es, dass hier der erste Fußballverein in NRW entstand?",
+        "id": "fussball-erster",
         "antwort": {
-          "kind": "Ja! Am ESG gab es einen der allerersten Fußballvereine in ganz Nordrhein-Westfalen.",
-          "erwachsene": "Ja – der Gymnasial-Spielverein am ESG gilt als erster Fußballverein in NRW. Das Archiv nennt dazu 1877 (ESG-Chronik) bzw. 1878 (Wikipedia).",
-          "fach": "Der Gymnasial-Spielverein gilt als erster Fußballverein in NRW. Zur Jahreszahl dokumentiert das Archiv zwei Angaben: die ESG-Chronik nennt 1877, Wikipedia 1878. (Quelle: ESG Chronik, Wikipedia)"
+          "kind": "Ja! 1877 gründeten Schüler hier den ersten Fußballverein in NRW.",
+          "erwachsene": "Tatsächlich gilt der 1877 gegründete Gymnasial-Spielverein am ESG als erster Fußballverein im heutigen Nordrhein-Westfalen. Die ESG-Chronik nennt 1877, Wikipedia 1878 – beide Angaben sind im Archiv dokumentiert.",
+          "fach": "Der Gymnasial-Spielverein wurde 1877 gegründet (so die ESG-Chronik; Wikipedia datiert ihn auf 1878) und gilt als erster Fußballverein im heutigen NRW. Er reiht sich in eine Reihe historischer Schulvereine ein – Trommelkorps (1861), Posaunenchor (1871), später ein Turnverein und Spielverein."
         },
         "imageBildIds": [
           "PENNE_S05_03"
@@ -403,56 +1638,178 @@
           "ESG Chronik",
           "Wikipedia"
         ],
-        "weiter": [
-          "spo2"
-        ],
-        "reviewed": true
+        "optionen": [
+          {
+            "label": "Gab es damals noch mehr Schülervereine?",
+            "ziel": "alte-vereine"
+          },
+          {
+            "label": "Und wo spielt das ESG heute Fußball?",
+            "ziel": "sport-heute"
+          },
+          {
+            "label": "Gibt es ein legendäres Fußball-Duell?",
+            "ziel": "stifter-staedter"
+          }
+        ]
       },
       {
-        "id": "spo2",
-        "frage": "Wie ist das ESG sportlich heute aufgestellt?",
+        "id": "alte-vereine",
         "antwort": {
-          "kind": "Das ESG hat eine große eigene Sportanlage. Dort wird viel Sport gemacht und auch gefeiert.",
-          "erwachsene": "1879 entstand ein Turnverein; 1994 wurde die rund 7.500 qm große Sportanlage eingeweiht, 1996/97 kam eine neue Sporthalle hinzu. Eine bekannte Tradition ist das Abi-Duell „Stifter gegen Städter“.",
-          "fach": "Auf den frühen Turnverein (1879) folgten 1994 die Einweihung der Sportanlage (ca. 7.500 qm) und 1996/97 eine neue Sporthalle. Zu den Traditionen zählt das Abi-Duell „Stifter gegen Städter“. (Quelle: ESG Chronik, Pressearchiv)"
+          "kind": "Früher gab es viele Schülervereine: Trommler, Bläser, Turner und Fußballer.",
+          "erwachsene": "Zu den historischen Schulvereinen zählten das Gymnasial-Trommelkorps (1861), der Posaunenchor (1871), ein Turnverein und der Spielverein. Von all diesen alten Vereinen blieb nur der Posaunenchor erhalten.",
+          "fach": "Das ESG hatte ein reiches Vereinsleben: Trommelkorps (1861), Gymnasial-Posaunenchor (1871, durch Johannes Kuhlo), Turnverein, Spielverein und die „Gesellige Prima“. Der Posaunenchor feierte 1971 sein 100-jähriges Bestehen und ist der einzige der alten Vereine, der bis heute besteht."
         },
         "imageBildIds": [
           "PENNE_S05_04"
         ],
         "citations": [
           "ESG Chronik",
-          "Pressearchiv"
+          "PENNE"
         ],
-        "weiter": [
-          "spo3"
-        ],
-        "reviewed": true
+        "optionen": [
+          {
+            "label": "Was wurde aus dem Posaunenchor – gibt es ihn noch?",
+            "ziel": "tuermchen"
+          },
+          {
+            "label": "Und wie sieht der Sport heute aus?",
+            "ziel": "sport-heute"
+          },
+          {
+            "label": "Was steht über dem Eingang?",
+            "ziel": "spruch-eingang"
+          }
+        ]
       },
       {
-        "id": "spo3",
-        "frage": "Wie erfolgreich ist die Schach-AG?",
+        "id": "sport-heute",
         "antwort": {
-          "kind": "Sehr erfolgreich! Eine Schülerin, Helena Neumann, wurde sogar Deutsche Meisterin im Schach.",
-          "erwachsene": "Die Schach-AG (Leitung Rüdiger Mönig) ist sehr erfolgreich: Helena Neumann wurde Deutsche Meisterin, und 2026 holte das ESG einen Wanderpokal.",
-          "fach": "Die Schach-AG unter Rüdiger Mönig zählt zu den sportlichen Aushängeschildern: Helena Neumann wurde Deutsche Meisterin, 2026 gewann das ESG einen Wanderpokal. (Quelle: ESG Themenwissen, Pressearchiv, ESbloG)"
+          "kind": "Das ESG hat seit 1994 eine große eigene Sportanlage und eine Sporthalle.",
+          "erwachsene": "1993/94 entstand eine rund 7.500 qm große Sportanlage, 1997 kam eine Sporthalle an der Herzebrocker Straße hinzu. Die Anlage bietet Kunststoffflächen, eine 100-m-Bahn und eine 270-m-Rundlaufbahn.",
+          "fach": "Die 1993/94 gebaute Sportanlage umfasst rund 7.500 qm mit Kunststoffflächen, einer 100-m-Bahn, einer 270-m-Rundlaufbahn und Leichtathletikeinrichtungen; 1997 folgte eine Sporthalle an der Herzebrocker Straße. Schon davor war Sport am ESG fest verankert – bis hin zum traditionsreichen Abi-Fußballduell."
+        },
+        "imageBildIds": [],
+        "citations": [
+          "ESG Chronik",
+          "ESG Baugeschichte"
+        ],
+        "optionen": [
+          {
+            "label": "Erzähl mir von diesem Abi-Duell!",
+            "ziel": "stifter-staedter"
+          },
+          {
+            "label": "Gibt es auch verrückte Wettbewerbe?",
+            "ziel": "kuriose-wettbewerbe"
+          },
+          {
+            "label": "Was ist mit Schach?",
+            "ziel": "schach-meisterin"
+          }
+        ]
+      },
+      {
+        "id": "stifter-staedter",
+        "antwort": {
+          "kind": "Jedes Jahr spielen die Abi-Jahrgänge des ESG gegen das Städtische Gymnasium Fußball.",
+          "erwachsene": "Das Abi-Duell „Stifter gegen Städter“ ist eine langjährige Tradition: Die Abiturienten des ESG („Stifter“) treten gegen das Städtische Gymnasium an – ausgetragen im Heidewaldstadion.",
+          "fach": "„Stifter gegen Städter“ ist das traditionelle Abi-Fußballspiel zwischen dem Evangelisch Stiftischen und dem Städtischen Gymnasium, ausgetragen im Heidewaldstadion. Der ESbloG verlost dazu regelmäßig Freikarten – ein fester Programmpunkt im Schuljahr der Oberstufe."
         },
         "imageBildIds": [],
         "citations": [
           "Pressearchiv",
           "ESbloG"
         ],
-        "weiter": [
-          "spo4"
-        ],
-        "reviewed": true
+        "optionen": [
+          {
+            "label": "Gibt es noch kuriosere Wettbewerbe?",
+            "ziel": "kuriose-wettbewerbe"
+          },
+          {
+            "label": "Jetzt aber zum Schach!",
+            "ziel": "schach-meisterin"
+          },
+          {
+            "label": "Was hat es mit dem Türmchen auf sich?",
+            "ziel": "tuermchen"
+          }
+        ]
       },
       {
-        "id": "spo4",
-        "frage": "Was steht eigentlich über dem Eingang?",
+        "id": "schach-meisterin",
         "antwort": {
-          "kind": "Über dem Eingang steht auf Latein „Soli Deo Gloria“ – das heißt „Allein Gott die Ehre“.",
-          "erwachsene": "Über dem Eingang steht der lateinische Wahlspruch „Soli Deo Gloria“ – „Allein Gott die Ehre“. Er passt zur evangelischen Tradition der Schule.",
-          "fach": "Der lateinische Wahlspruch „Soli Deo Gloria“ („Allein Gott die Ehre“) über dem Eingang verweist auf die evangelische Gründungstradition. (Quelle: Wikipedia, ESG Chronik)"
+          "kind": "Ja! Helena Neumann vom ESG ist Deutsche Meisterin im Schach.",
+          "erwachsene": "Die ESG-Schülerin Helena Neumann (Jahrgangsstufe EF) wurde Deutsche Meisterin im Schach. Sie gehört zur erfolgreichen Schach-AG der Schule, die regelmäßig bei Meisterschaften vorne mitspielt.",
+          "fach": "Helena Neumann (EF) ist Deutsche Meisterin im Schach und ESG-Schülerin. Sie ist Teil der Schach-AG, die 2025 und 2026 große Erfolge bei Kreismeisterschaften und dem Gütersloher Schülerschachturnier feierte (Quelle: ESbloG März 2025). Geleitet wird die AG von Rüdiger Mönig."
+        },
+        "imageBildIds": [],
+        "citations": [
+          "Pressearchiv",
+          "ESbloG"
+        ],
+        "optionen": [
+          {
+            "label": "Wer steckt hinter dieser starken Schach-AG?",
+            "ziel": "schach-ag"
+          },
+          {
+            "label": "Gab es 2026 einen besonderen Pokal?",
+            "ziel": "wanderpokal"
+          },
+          {
+            "label": "Und was ist mit Fußball am ESG?",
+            "ziel": "fussball-erster"
+          }
+        ]
+      },
+      {
+        "id": "schach-ag",
+        "antwort": {
+          "kind": "Die Schach-AG wird von Rüdiger Mönig geleitet und ist sehr erfolgreich.",
+          "erwachsene": "Die Schach-AG des ESG wird seit Jahren von Rüdiger Mönig geleitet. Ihre Spielerinnen und Spieler erzielen regelmäßig Erfolge bei Kreismeisterschaften und NRW-Landesmeisterschaften.",
+          "fach": "Unter Leitung von Rüdiger Mönig erreicht die ESG-Schach-AG regelmäßig Spitzenplätze bei Kreis- und NRW-Landesmeisterschaften. Aus ihren Reihen stammt mit Helena Neumann sogar eine Deutsche Meisterin – ein Beleg für die Breite und Tiefe der schulischen Schachförderung."
+        },
+        "imageBildIds": [],
+        "citations": [
+          "ESG Aktuelles",
+          "ESbloG"
+        ],
+        "optionen": [
+          {
+            "label": "Erzähl vom Wanderpokal 2026!",
+            "ziel": "wanderpokal"
+          },
+          {
+            "label": "Gibt es noch andere ungewöhnliche Erfolge?",
+            "ziel": "kuriose-wettbewerbe"
+          },
+          {
+            "label": "Zurück zum Sport am ESG",
+            "ziel": "sport-heute"
+          }
+        ]
+      },
+      {
+        "id": "wanderpokal",
+        "antwort": {
+          "kind": "2026 gewann das ESG einen Schach-Wanderpokal gegen 20 Schulen.",
+          "erwachsene": "Beim Gütersloher Schülerschachturnier 2026 holte das ESG den Wanderpokal – und setzte sich dabei gegen 20 Schulen durch. Ein großer Erfolg für die Schach-AG.",
+          "fach": "2026 gewann die ESG-Schach-AG den Wanderpokal des Gütersloher Schülerschachturniers und setzte sich gegen 20 teilnehmende Schulen durch. Dieser Mannschaftserfolg ergänzt die Einzelleistung von Helena Neumann als Deutsche Meisterin – die AG ist also auf beiden Ebenen erfolgreich."
+        },
+        "imageBildIds": [],
+        "citations": [
+          "ESbloG",
+          "Pressearchiv"
+        ],
+        "optionen": []
+      },
+      {
+        "id": "spruch-eingang",
+        "antwort": {
+          "kind": "Über dem Eingang steht „Soli Deo Gloria“ – „Allein Gott die Ehre“.",
+          "erwachsene": "Über dem Haupteingang prangt der lateinische Wahlspruch „Soli Deo Gloria“ – „Allein Gott die Ehre“. Er passt zur evangelischen Tradition der Schule.",
+          "fach": "„Soli Deo Gloria“ („Allein Gott die Ehre“) steht über dem Haupteingang und verweist auf die protestantischen Wurzeln des Evangelisch Stiftischen Gymnasiums. Auf dem Schulsiegel findet sich zusätzlich ein Kreuz mit der Devise „In hoc signo vinces“ („In diesem Zeichen wirst du siegen“)."
         },
         "imageBildIds": [
           "PENNE_S01_02"
@@ -461,90 +1818,499 @@
           "Wikipedia",
           "ESG Chronik"
         ],
-        "weiter": [],
-        "reviewed": true
-      }
-    ]
-  },
-  {
-    "slug": "die-welt-zu-gast",
-    "titel": "Die Welt zu Gast",
-    "icon": "🌍",
-    "kurz": "Partnerschulen auf drei Kontinenten, IB World School und soziales Engagement.",
-    "themen": [
-      "Internationales",
-      "Soziales"
-    ],
-    "stationen": [
+        "optionen": [
+          {
+            "label": "Es gibt noch einen zweiten Spruch? Welcher?",
+            "ziel": "siegel-spruch"
+          },
+          {
+            "label": "Hatte die Schule lustige Spitznamen?",
+            "ziel": "spitznamen"
+          },
+          {
+            "label": "Was ist dieses Türmchen ganz oben?",
+            "ziel": "tuermchen"
+          }
+        ]
+      },
       {
-        "id": "int1",
-        "frage": "Mit welchen Ländern arbeitet das ESG zusammen?",
+        "id": "siegel-spruch",
         "antwort": {
-          "kind": "Das ESG hat Partnerschulen in vielen Ländern – zum Beispiel in Frankreich, den USA, Polen und Kenia.",
-          "erwachsene": "Das ESG pflegt Partnerschaften u. a. mit Douai und Châteauroux (Frankreich), der Athens Academy (USA), Grudziądz (Polen), Selby (Großbritannien) und Nairobi (Kenia). In Jahrgang 5 gibt es seit 1990 die Spiekeroog-Fahrt.",
-          "fach": "Schulpartnerschaften bestehen u. a. mit Douai und Châteauroux (F, ab 1990), der Athens Academy (USA, ab 1990), Grudziądz (PL, ab 1991), Selby (GB) und Nairobi (Kenia). Seit 1990 gibt es die Spiekeroog-Fahrt für Jahrgang 5. (Quelle: ESG Chronik, Pressearchiv)"
+          "kind": "Auf dem Schulsiegel steht „In hoc signo vinces“ – mit einem Kreuz.",
+          "erwachsene": "Das Schulsiegel zeigt ein Kreuz mit dem lateinischen Spruch „In hoc signo vinces“ – „In diesem Zeichen wirst du siegen“. Gemeinsam mit „Soli Deo Gloria“ über dem Eingang betont es die protestantischen Wurzeln der Schule.",
+          "fach": "Das Schulsiegel des ESG vereint ein Kreuz mit der Devise „In hoc signo vinces“ („In diesem Zeichen wirst du siegen“). Zusammen mit dem Eingangsspruch „Soli Deo Gloria“ bildet es ein Begriffspaar, das die konfessionelle Prägung der 1851 gegründeten Schule sichtbar macht (Quelle u. a. SCHIFF)."
+        },
+        "imageBildIds": [
+          "PENNE_S01_01"
+        ],
+        "citations": [
+          "Wikipedia",
+          "SCHIFF"
+        ],
+        "optionen": [
+          {
+            "label": "Und die Spitznamen der Schule?",
+            "ziel": "spitznamen"
+          },
+          {
+            "label": "Erzähl mir vom Türmchen!",
+            "ziel": "tuermchen"
+          },
+          {
+            "label": "Gab es kuriose Wettbewerbserfolge?",
+            "ziel": "kuriose-wettbewerbe"
+          }
+        ]
+      },
+      {
+        "id": "spitznamen",
+        "antwort": {
+          "kind": "Früher nannte man die Schule scherzhaft „Pastorenfabrik“ oder „Nazareth“.",
+          "erwachsene": "Wegen ihrer kirchlichen Prägung trug die Schule früher die Schüler-Spitznamen „Pastorenfabrik“ und „Nazareth“. Beide spielen augenzwinkernd auf die evangelische Tradition an.",
+          "fach": "Überliefert sind die historischen Schüler-Spitznamen „Pastorenfabrik“ und „Nazareth“ (Quelle: SCHIFF). Sie spiegeln den Ruf der Schule als evangelisch geprägte Bildungsstätte wider – passend zu den Devisen „Soli Deo Gloria“ und „In hoc signo vinces“."
         },
         "imageBildIds": [],
         "citations": [
-          "ESG Chronik",
-          "Pressearchiv"
+          "SCHIFF"
         ],
-        "weiter": [
-          "int2"
-        ],
-        "reviewed": true
+        "optionen": [
+          {
+            "label": "Was hat es mit dem Türmchen auf sich?",
+            "ziel": "tuermchen"
+          },
+          {
+            "label": "Gibt es kuriose Wettbewerbe?",
+            "ziel": "kuriose-wettbewerbe"
+          },
+          {
+            "label": "Zurück zum Fußball-Rekord",
+            "ziel": "fussball-erster"
+          }
+        ]
       },
       {
-        "id": "int2",
-        "frage": "Was bedeutet „IB World School“?",
+        "id": "tuermchen",
         "antwort": {
-          "kind": "Das ESG bietet einen internationalen Schulabschluss an, der auf der ganzen Welt anerkannt ist. Seit 2013 darf es sich „IB World School“ nennen.",
-          "erwachsene": "Seit 2013 ist das ESG „IB World School“ und bietet das international anerkannte International Baccalaureate an. Seit 2011/12 gibt es zudem einen bilingualen Zweig (verstärkt Englisch).",
-          "fach": "Das ESG ist seit 2013 IB World School (International Baccalaureate); 2013 verließ auch der letzte G9-Jahrgang die Schule. Der bilinguale Zweig besteht seit 2011/12. (Quelle: ESG Chronik)"
+          "kind": "Ganz oben sitzt ein kleines Türmchen – dort wird zu Weihnachten geblasen.",
+          "erwachsene": "Das „Türmchen“ ist der Dachreiter auf dem Hauptgebäude von 1928. Seit 1986 spielt der Gymnasial-Posaunenchor an jedem Heiligen Abend von dort oben – das „Türmchenblasen“.",
+          "fach": "Der Dachreiter („Türmchen“) krönt den 1928 errichteten Klinkerbau. Seit 1986 pflegt der Gymnasial-Posaunenchor (gegründet 1871) das „Türmchenblasen“: An Heiligabend erklingt vom Dachreiter Weihnachtsmusik über Gütersloh – eine der bekanntesten ESG-Traditionen."
         },
         "imageBildIds": [],
         "citations": [
           "ESG Chronik"
         ],
-        "weiter": [
-          "int3"
-        ],
-        "reviewed": true
+        "optionen": [
+          {
+            "label": "Welche kuriosen Wettbewerbe hat das ESG gewonnen?",
+            "ziel": "kuriose-wettbewerbe"
+          },
+          {
+            "label": "Was steht über dem Eingang?",
+            "ziel": "spruch-eingang"
+          },
+          {
+            "label": "Fass mal alles zusammen!",
+            "ziel": "abschluss-sport"
+          }
+        ]
       },
       {
-        "id": "int3",
-        "frage": "Wie engagiert sich das ESG sozial?",
+        "id": "kuriose-wettbewerbe",
         "antwort": {
-          "kind": "Das ESG hilft einer Partnerschule in Kenia. Bei einem Sponsorenlauf kamen 2021 über 33.000 Euro zusammen!",
-          "erwachsene": "Seit 2020 unterstützt das ESG die Partnerschule St. Joseph in Nairobi (Kenia). Ein Sponsorenlauf erbrachte 2021 rund 33.600 Euro. Seit 2025 gibt es den ESG Social Day.",
-          "fach": "Seit 2020 besteht die Partnerschaft mit der St.-Joseph-Schule in Nairobi; ein Sponsorenlauf 2021 erbrachte 33.600 €. Hinzu kommen der ESG Social Day (seit 2025), Ukraine-Hilfe (2022) und Schülerfirmen wie KLEM (2022) und ESGoods (2025). (Quelle: Pressearchiv, ESbloG)"
+          "kind": "Das ESG gewann mit Solar-Bobby-Cars und hatte sogar eine Kopfrechen-Weltmeisterin.",
+          "erwachsene": "Beim Bobby Car Solar Cup holte das ESG 2013 Siege. Und 2012 nahm Amy Zhou aus der Jahrgangsstufe 7 an einer Kopfrechen-Weltmeisterschaft teil – kuriose Glanzlichter neben dem klassischen Sport.",
+          "fach": "Zu den ungewöhnlicheren Erfolgen zählen Siege beim Bobby Car Solar Cup (2013) und die Teilnahme von Amy Zhou (Jgst. 7) an der Kopfrechen-WM 2012. Sie ergänzen das breite Wettbewerbsspektrum von Jugend forscht bis Schülerschachturnier."
         },
         "imageBildIds": [],
         "citations": [
           "Pressearchiv",
           "ESbloG"
         ],
-        "weiter": [
-          "int4"
-        ],
-        "reviewed": true
+        "optionen": []
       },
       {
-        "id": "int4",
-        "frage": "Gab es früher schon internationale Schüler?",
+        "id": "abschluss-sport",
         "antwort": {
-          "kind": "Ja, sogar vor über 130 Jahren: Paul Mavanzilla aus Angola ging von 1886 bis 1889 am ESG zur Schule.",
-          "erwachsene": "Schon früh kamen Schüler aus dem Ausland: Paul Mavanzilla aus Angola besuchte das ESG von 1886 bis 1889 – ein bemerkenswertes Beispiel für die frühe internationale Geschichte der Schule.",
-          "fach": "Paul Mavanzilla aus Angola war 1886–1889 Schüler am ESG. Sein Porträt ist im Schularchiv überliefert und zeigt die internationale Dimension der Schulgeschichte lange vor den heutigen Partnerschaften. (Quelle: ESG Chronik, ESG Website)"
+          "kind": "Vom ersten Fußballverein 1877 bis zur Deutschen Schach-Meisterin – das ESG steckt voller Rekorde. Schau dich beim Schulfest ruhig weiter um!",
+          "erwachsene": "Vom ersten Fußballverein in NRW (1877) über die Schach-Erfolge bis zu den kleinen Geheimnissen am Gebäude: Das ESG hat eine erstaunlich vielseitige Geschichte. Beim Schulfest am 12. Juni 2026 lässt sich vieles davon hautnah entdecken.",
+          "fach": "Sport, Schach und Kuriositäten bilden nur einen Ausschnitt der 175-jährigen ESG-Geschichte (1851–2026). Beim Schulfest am 12. Juni 2026 unter dem Motto „175 Jahre ESG – 1000 Fenster, unendlich viele Geschichten“ werden viele dieser Fäden wieder sichtbar."
+        },
+        "imageBildIds": [
+          "SCHIFF_IMG_1637_01"
+        ],
+        "citations": [
+          "ESG Chronik"
+        ],
+        "optionen": []
+      }
+    ],
+    "reviewed": true
+  },
+  {
+    "slug": "die-welt-zu-gast",
+    "titel": "Die Welt zu Gast",
+    "icon": "🌍",
+    "kurz": "Eine Tour rund um den Globus: Partnerschulen auf drei Kontinenten, das IB-Diplom und ein großes Herz für andere.",
+    "themen": [
+      "Internationales",
+      "Soziales"
+    ],
+    "start": {
+      "intro": "Willkommen auf der Weltreise des ESG! Von Frankreich bis Kenia, von 1886 bis heute - such dir aus, wohin die Reise zuerst gehen soll.",
+      "optionen": [
+        {
+          "label": "In welche Länder reisen ESG-Schüler eigentlich?",
+          "ziel": "partner-laender"
+        },
+        {
+          "label": "Was ist diese geheimnisvolle IB World School?",
+          "ziel": "ib-was"
+        },
+        {
+          "label": "Wie hilft die Schule Menschen in anderen Ländern?",
+          "ziel": "sozial-nairobi"
+        }
+      ]
+    },
+    "nodes": [
+      {
+        "id": "partner-laender",
+        "antwort": {
+          "kind": "Das ESG hat Partnerschulen in Frankreich, England, Polen, den USA und sogar in Kenia. Man kann also in viele Länder reisen!",
+          "erwachsene": "Das ESG pflegt Schulpartnerschaften in Frankreich (Douai und Châteauroux), den USA (Athens Academy), Polen (Grudziądz), Großbritannien (Selby) und Kenia (Nairobi). Dazu kommen Kontakte nach Indien und Mallorca.",
+          "fach": "Die internationalen Partnerschaften des ESG umfassen das Collège Châtelet in Douai und das Lycée Pierre et Marie Curie in Châteauroux (beide Frankreich), die Athens Academy in Georgia/USA, das Jan-Sobieski-III-Lyzeum in Grudziądz (Polen), das Selby College (GB) und die St. Joseph Junior School in Nairobi (Kenia). Hinzu kommen Verbindungen nach Indien und Mallorca - drei Kontinente sind so im Schulleben vertreten."
         },
         "imageBildIds": [],
         "citations": [
           "ESG Chronik",
+          "Pressearchiv"
+        ],
+        "optionen": [
+          {
+            "label": "Seit wann gibt es diese Partnerschaften schon?",
+            "ziel": "partner-geschichte"
+          },
+          {
+            "label": "Reisen schon die Jüngsten ans Meer?",
+            "ziel": "spiekeroog"
+          },
+          {
+            "label": "Und was ist mit diesem IB-Diplom?",
+            "ziel": "ib-was"
+          }
+        ]
+      },
+      {
+        "id": "partner-geschichte",
+        "antwort": {
+          "kind": "Die ersten Partnerschaften begannen 1990 mit Frankreich und den USA. Polen kam 1991 dazu, England 1996.",
+          "erwachsene": "Die internationalen Partnerschaften wuchsen Schritt für Schritt: 1990 entstanden die Verbindungen nach Douai, Châteauroux und zur Athens Academy in den USA. 1991 folgte Grudziądz in Polen, 1996 das Selby College in England.",
+          "fach": "Der Aufbau des Partnerschafts-Netzwerks begann 1990 mit Douai, Châteauroux (reaktiviert) und der Athens Academy. 1991 kam das Jan-Sobieski-III-Lyzeum in Grudziądz hinzu, 1996 das Selby College. Diese kontinuierliche Internationalisierung wurde ab 2016 unter Schulleiter Martin Fugmann zu einem erklärten Schwerpunkt - ergänzt durch die jüngere Partnerschaft mit Nairobi (seit 2020)."
+        },
+        "imageBildIds": [],
+        "citations": [
+          "ESG Chronik"
+        ],
+        "optionen": [
+          {
+            "label": "Erzähl mir von der Schule in Kenia!",
+            "ziel": "sozial-nairobi"
+          },
+          {
+            "label": "Reisen Schüler auch zum Musizieren ins Ausland?",
+            "ziel": "musik-moskau"
+          },
+          {
+            "label": "Gab es früher schon Schüler aus fernen Ländern?",
+            "ziel": "mavanzilla"
+          }
+        ]
+      },
+      {
+        "id": "spiekeroog",
+        "antwort": {
+          "kind": "Schon in Klasse 5 fahren alle gemeinsam auf die Nordsee-Insel Spiekeroog. Das gibt es seit 1990!",
+          "erwachsene": "Bevor es ins Ausland geht, beginnt das Reisen klein: Seit 1990 fahren die Schülerinnen und Schüler des Jahrgangs 5 gemeinsam auf die ostfriesische Insel Spiekeroog. Diese Klassenfahrt schweißt die neue Klassengemeinschaft zusammen.",
+          "fach": "Die Spiekeroog-Fahrt für den Jahrgang 5 gehört seit 1990 fest zum ESG-Schulleben. Sie steht am Beginn einer ganzen Reise-Biografie, die später über Austausche in die Partnerländer und für manche bis zum International Baccalaureate führt. Der gemeinsame Inselaufenthalt dient der Klassengemeinschaft und dem sozialen Lernen zu Schuljahresbeginn."
+        },
+        "imageBildIds": [],
+        "citations": [
+          "ESG Chronik"
+        ],
+        "optionen": [
+          {
+            "label": "Und wohin reist man, wenn man älter ist?",
+            "ziel": "partner-laender"
+          },
+          {
+            "label": "Was bedeutet eigentlich IB World School?",
+            "ziel": "ib-was"
+          },
+          {
+            "label": "Wie weit reisen ESG-Schüler insgesamt?",
+            "ziel": "abschluss-welt"
+          }
+        ]
+      },
+      {
+        "id": "ib-was",
+        "antwort": {
+          "kind": "Am ESG kann man ein besonderes Zeugnis machen, das auf der ganzen Welt gilt: das IB-Diplom. Seit 2013 ist die Schule eine IB World School.",
+          "erwachsene": "Seit 2013 ist das ESG eine IB World School. Das bedeutet: Neben dem normalen NRW-Abitur können Schülerinnen und Schüler zusätzlich das International Baccalaureate (IB) erwerben, einen weltweit anerkannten Abschluss.",
+          "fach": "Das ESG trägt seit 2013 den Status IB World School und bietet damit neben dem NRW-Abitur das International Baccalaureate an - ein international anerkanntes Diplom, das den Hochschulzugang weltweit erleichtert. Diese Auszeichnung ist Teil der Internationalisierungsstrategie der Schule und ergänzt das bilinguale Profil."
+        },
+        "imageBildIds": [],
+        "citations": [
+          "ESG Chronik"
+        ],
+        "optionen": [
+          {
+            "label": "Wird denn auch auf Englisch unterrichtet?",
+            "ziel": "bilingual"
+          },
+          {
+            "label": "Mit welchen Ländern arbeitet das ESG zusammen?",
+            "ziel": "partner-laender"
+          },
+          {
+            "label": "Wie hilft die Schule Menschen in Kenia?",
+            "ziel": "sozial-nairobi"
+          }
+        ]
+      },
+      {
+        "id": "bilingual",
+        "antwort": {
+          "kind": "Ja! Es gibt einen bilingualen Zweig. Dort werden manche Fächer ab Klasse 7 auf Englisch unterrichtet.",
+          "erwachsene": "Seit dem Schuljahr 2011/12 gibt es am ESG einen bilingualen Zweig. Ab Jahrgang 7 werden dort die Fächer Geschichte, Biologie und Erdkunde verstärkt auf Englisch unterrichtet.",
+          "fach": "Der bilinguale Zweig (Englisch) besteht seit dem Schuljahr 2011/12. Ab Jahrgang 7 werden Geschichte, Biologie und Erdkunde bilingual unterrichtet. Dieses Angebot bereitet sprachlich auf das International Baccalaureate vor und unterstreicht das internationale Profil, das das ESG seit 2013 auch als IB World School trägt."
+        },
+        "imageBildIds": [],
+        "citations": [
+          "ESG Chronik",
+          "Wikipedia"
+        ],
+        "optionen": [
+          {
+            "label": "Wohin kann man mit so guten Sprachen reisen?",
+            "ziel": "partner-laender"
+          },
+          {
+            "label": "Gab es früher schon Schüler aus dem Ausland?",
+            "ziel": "mavanzilla"
+          },
+          {
+            "label": "Fasse die ganze Weltreise zusammen",
+            "ziel": "abschluss-welt"
+          }
+        ]
+      },
+      {
+        "id": "sozial-nairobi",
+        "antwort": {
+          "kind": "Das ESG hilft einer Partnerschule in Nairobi in Kenia. Die Schule heißt St. Joseph.",
+          "erwachsene": "Seit 2020 unterstützt das ESG die Partnerschule St. Joseph in Nairobi (Kenia). Schülerinnen und Schüler sammeln Spenden und stehen in Kontakt - gelebte Solidarität über Kontinente hinweg.",
+          "fach": "Seit 2020 besteht die soziale Partnerschaft mit der St. Joseph Junior School in Nairobi (Kenia). Sie verbindet das internationale Profil des ESG mit konkretem sozialem Engagement: Spendenaktionen und persönlicher Austausch stehen im Mittelpunkt. Die Partnerschaft ist Teil eines breiteren sozialen Engagements, das auch die Ukraine-Hilfe 2022 umfasst."
+        },
+        "imageBildIds": [],
+        "citations": [
+          "Pressearchiv",
+          "ESbloG"
+        ],
+        "optionen": [
+          {
+            "label": "Wie viel Geld kam beim Spendenlauf zusammen?",
+            "ziel": "sponsorenlauf"
+          },
+          {
+            "label": "Was ist der ESG Social Day?",
+            "ziel": "social-day"
+          },
+          {
+            "label": "Mit welchen Ländern arbeitet das ESG noch zusammen?",
+            "ziel": "partner-laender"
+          }
+        ]
+      },
+      {
+        "id": "sponsorenlauf",
+        "antwort": {
+          "kind": "Bei einem großen Lauf 2021 sind rund 33.600 Euro für die Schule in Kenia zusammengekommen. Eine tolle Summe!",
+          "erwachsene": "2021 veranstaltete das ESG einen Sponsorenlauf für die Partnerschule in Nairobi. Dabei erliefen die Schülerinnen und Schüler rund 33.600 Euro - ein beeindruckendes Zeichen des Engagements.",
+          "fach": "Der Sponsorenlauf 2021 zugunsten der St. Joseph Junior School in Nairobi erbrachte rund 33.600 Euro. Solche Aktionen tragen die seit 2020 bestehende Kenia-Partnerschaft konkret und zeigen, wie das internationale und das soziale Profil des ESG ineinandergreifen."
+        },
+        "imageBildIds": [],
+        "citations": [
+          "Pressearchiv",
+          "ESbloG"
+        ],
+        "optionen": [
+          {
+            "label": "Gibt es noch mehr soziale Aktionen?",
+            "ziel": "social-day"
+          },
+          {
+            "label": "Hat das ESG auch der Ukraine geholfen?",
+            "ziel": "ukraine"
+          },
+          {
+            "label": "Zeig mir das soziale Herz des ESG",
+            "ziel": "abschluss-sozial"
+          }
+        ]
+      },
+      {
+        "id": "social-day",
+        "antwort": {
+          "kind": "Beim ESG Social Day engagieren sich Schüler für andere. Das gibt es seit 2025.",
+          "erwachsene": "Seit 2025 gibt es den ESG Social Day. An diesem Tag setzen sich die Schülerinnen und Schüler gezielt für soziale Zwecke ein und übernehmen Verantwortung in der Gemeinschaft.",
+          "fach": "Der ESG Social Day besteht seit 2025 und bündelt das soziale Engagement der Schule an einem festen Aktionstag. Er reiht sich ein in eine Reihe sozialer Initiativen - von der Kenia-Partnerschaft (seit 2020) über die Ukraine-Hilfe (2022) bis zu Schülerfirmen wie KLEM (2022) und ESGoods (2025)."
+        },
+        "imageBildIds": [],
+        "citations": [
+          "Pressearchiv",
+          "ESbloG"
+        ],
+        "optionen": [
+          {
+            "label": "Erzähl mir von der Ukraine-Hilfe",
+            "ziel": "ukraine"
+          },
+          {
+            "label": "Wie kam der Spendenlauf-Rekord zustande?",
+            "ziel": "sponsorenlauf"
+          },
+          {
+            "label": "Was hat das mit dem großen Jubiläum zu tun?",
+            "ziel": "abschluss-jubilaeum"
+          }
+        ]
+      },
+      {
+        "id": "ukraine",
+        "antwort": {
+          "kind": "Als 2022 der Krieg in der Ukraine begann, hat das ESG geholfen und Spenden gesammelt.",
+          "erwachsene": "2022 startete das ESG eine Ukraine-Hilfe und zeigte damit, dass Solidarität auch in der Nachbarschaft Europas zählt. Die Schulgemeinschaft sammelte Spenden und half betroffenen Menschen.",
+          "fach": "Die Ukraine-Hilfe 2022 ist Teil des breiten sozialen Engagements des ESG. Sie ergänzt die internationale Partnerschule in Nairobi (seit 2020) um europäische Nothilfe und unterstreicht das Selbstverständnis der Schule, Verantwortung weit über den eigenen Standort hinaus zu übernehmen."
+        },
+        "imageBildIds": [],
+        "citations": [
+          "Pressearchiv",
+          "ESbloG"
+        ],
+        "optionen": [
+          {
+            "label": "Was ist der ESG Social Day?",
+            "ziel": "social-day"
+          },
+          {
+            "label": "Zurück zur Partnerschule in Kenia",
+            "ziel": "sozial-nairobi"
+          },
+          {
+            "label": "Fasse das soziale Engagement zusammen",
+            "ziel": "abschluss-sozial"
+          }
+        ]
+      },
+      {
+        "id": "musik-moskau",
+        "antwort": {
+          "kind": "Sogar die Big Band der Schule ist schon weit gereist - 2012 bis nach Moskau!",
+          "erwachsene": "Internationalität zeigt sich auch in der Musik: 2012 reiste die Big Band des ESG bis nach Moskau. So wird das Schulleben über Konzerte und Begegnungen weltoffen erlebbar.",
+          "fach": "Die Moskau-Reise der Big Band im Jahr 2012 ist ein Beispiel dafür, wie das internationale Profil des ESG auch über Musik und Kultur getragen wird. Die Big Band (gegründet 1994) ergänzt damit das Netzwerk der Schulpartnerschaften um kulturelle Auslandskontakte."
+        },
+        "imageBildIds": [],
+        "citations": [
+          "ESG Chronik",
+          "Pressearchiv"
+        ],
+        "optionen": [
+          {
+            "label": "Mit welchen Ländern arbeitet das ESG zusammen?",
+            "ziel": "partner-laender"
+          },
+          {
+            "label": "Gab es früher schon ausländische Schüler?",
+            "ziel": "mavanzilla"
+          },
+          {
+            "label": "Wie passt das zum 175. Jubiläum?",
+            "ziel": "abschluss-jubilaeum"
+          }
+        ]
+      },
+      {
+        "id": "mavanzilla",
+        "antwort": {
+          "kind": "Schon vor sehr langer Zeit kam ein Schüler aus Angola in Afrika ans ESG: Paul Mavanzilla, von 1886 bis 1889.",
+          "erwachsene": "Internationalität hat am ESG eine lange Tradition: Bereits von 1886 bis 1889 besuchte Paul Mavanzilla aus Angola die Schule - ein bemerkenswertes frühes Beispiel für ausländische Schüler in Gütersloh.",
+          "fach": "Paul Mavanzilla aus Angola war von 1886 bis 1889 Schüler des ESG - ein außergewöhnlicher Beleg für die frühe internationale Geschichte der Schule im 19. Jahrhundert. Sein Aufenthalt zeigt, dass weltweite Verbindungen lange vor den heutigen Partnerschaften (ab 1990) und dem IB-Status (2013) Teil der Schulgeschichte waren."
+        },
+        "imageBildIds": [
+          "PRIMA_S05_01"
+        ],
+        "citations": [
+          "ESG Chronik",
           "ESG Website"
         ],
-        "weiter": [],
-        "reviewed": true
+        "optionen": [
+          {
+            "label": "Wie international ist das ESG heute?",
+            "ziel": "partner-laender"
+          },
+          {
+            "label": "Was ist die IB World School?",
+            "ziel": "ib-was"
+          },
+          {
+            "label": "Wie passt das zum 175. Jubiläum?",
+            "ziel": "abschluss-jubilaeum"
+          }
+        ]
+      },
+      {
+        "id": "abschluss-jubilaeum",
+        "antwort": {
+          "kind": "2026 feiert das ESG 175 Jahre - eine weltoffene Schule mit Freunden auf der ganzen Welt. Schön, dass du dabei warst!",
+          "erwachsene": "All diese Fäden laufen 2026 zusammen: Das ESG feiert sein 175-jähriges Jubiläum unter dem Motto '175 Jahre ESG - 1000 Fenster, unendlich viele Geschichten'. Partnerschaften, IB-Diplom und soziales Engagement zeigen eine Schule, die in der Welt zu Hause ist.",
+          "fach": "Zum 175-jährigen Jubiläum 2026 bündelt sich das internationale und soziale Profil des ESG: Partnerschulen auf drei Kontinenten (seit 1990), IB World School (seit 2013), bilingualer Zweig (seit 2011/12) und Engagement von Nairobi bis zur Ukraine. Das Motto '1000 Fenster, unendlich viele Geschichten' fasst diese Weltoffenheit treffend zusammen. Das Schulfest findet am 12. Juni 2026 statt."
+        },
+        "imageBildIds": [],
+        "citations": [
+          "ESG Chronik"
+        ],
+        "optionen": []
+      },
+      {
+        "id": "abschluss-welt",
+        "antwort": {
+          "kind": "Von Spiekeroog bis Nairobi: Am ESG reist man durch die ganze Welt. Danke fürs Mitkommen!",
+          "erwachsene": "Damit schließt sich die Weltreise: vom ersten Klassenausflug nach Spiekeroog (seit 1990) über Austausche in Europa und den USA bis zur Partnerschule in Kenia (seit 2020). Das ESG verbindet Generationen von Schülern mit der ganzen Welt.",
+          "fach": "Die Spannweite reicht von der Spiekeroog-Fahrt (Jg. 5, seit 1990) über die europäischen und US-amerikanischen Partnerschaften bis zur sozialen Partnerschule St. Joseph in Nairobi (seit 2020). Zusammen mit dem IB-Status (2013) und dem bilingualen Zweig (2011/12) entsteht ein durchgängiges internationales Profil - eine Schule, in der die Welt buchstäblich zu Gast ist."
+        },
+        "imageBildIds": [],
+        "citations": [
+          "ESG Chronik",
+          "Pressearchiv"
+        ],
+        "optionen": []
+      },
+      {
+        "id": "abschluss-sozial",
+        "antwort": {
+          "kind": "Ob in Kenia, in der Ukraine oder am Social Day - das ESG packt mit an. Danke, dass du dir das angeschaut hast!",
+          "erwachsene": "Das soziale Herz des ESG schlägt weit: Partnerschule in Nairobi (seit 2020), Sponsorenlauf 2021 mit rund 33.600 Euro, Ukraine-Hilfe 2022 und der ESG Social Day (seit 2025). Engagement, das über den Schulhof hinausreicht.",
+          "fach": "Das soziale Engagement des ESG bildet einen eigenen Strang der Internationalität: die Kenia-Partnerschaft (seit 2020) mit dem Sponsorenlauf 2021 (rund 33.600 Euro), die Ukraine-Hilfe 2022 und der ESG Social Day (seit 2025). Ergänzt durch Schülerfirmen wie KLEM (2022) und ESGoods (2025) zeigt sich eine Schulkultur der gelebten Verantwortung."
+        },
+        "imageBildIds": [],
+        "citations": [
+          "Pressearchiv",
+          "ESbloG"
+        ],
+        "optionen": []
       }
-    ]
+    ],
+    "reviewed": true
   }
 ]

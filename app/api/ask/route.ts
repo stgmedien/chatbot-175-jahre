@@ -3,6 +3,7 @@ import Anthropic from "@anthropic-ai/sdk";
 import { checkRateLimit, checkDailyCap, clientIp } from "@/lib/ratelimit";
 import { answerKey, getCachedAnswer, setCachedAnswer } from "@/lib/cache";
 import { SYSTEM_PROMPT, WISSENSBASIS } from "@/lib/prompt";
+import { parseBilder } from "@/lib/images";
 import { suffixForTier } from "@/lib/persona";
 import type { ToneTier } from "@/lib/types";
 
@@ -95,7 +96,8 @@ export async function POST(req: NextRequest) {
     });
 
     const block = msg.content.find((b) => b.type === "text");
-    const antwort = block && block.type === "text" ? block.text.trim() : "";
+    // Diese Fallback-Route rendert keine Galerie → BILDER-Marker entfernen.
+    const antwort = block && block.type === "text" ? parseBilder(block.text).text.trim() : "";
     const answer: AskAnswer = { antwort, quellen: [] };
 
     if (antwort) await setCachedAnswer(key, answer);

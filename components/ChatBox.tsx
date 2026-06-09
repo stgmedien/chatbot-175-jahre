@@ -3,7 +3,9 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { usePersona, useAgeConfirmed, useHydrated, confirmAge } from "@/lib/clientState";
 import { toneForPersona } from "@/lib/persona";
+import { parseBilder, resolveBildIds } from "@/lib/images";
 import { MarkdownPreview } from "./MarkdownPreview";
+import ChatGallery from "./ChatGallery";
 
 interface ChatMessage {
   role: "user" | "assistant";
@@ -259,7 +261,7 @@ export default function ChatBox() {
             ) : (
               <div key={i} className="flex justify-start">
                 <div className="max-w-[92%] rounded-2xl rounded-bl-md border border-esg-border bg-esg-card px-4 py-3">
-                  {m.content ? <MarkdownPreview content={m.content} /> : <TypingDots />}
+                  <AssistantContent content={m.content} />
                 </div>
               </div>
             ),
@@ -321,6 +323,19 @@ export default function ChatBox() {
         )}
       </form>
     </div>
+  );
+}
+
+/** Assistent-Bubble: trennt den [[BILDER: …]]-Marker vom Text, rendert Markdown +
+ *  (falls passende echte Fotos genannt wurden) eine kompakte Galerie darunter. */
+function AssistantContent({ content }: { content: string }) {
+  const { text, ids } = parseBilder(content);
+  if (!text.trim()) return <TypingDots />;
+  return (
+    <>
+      <MarkdownPreview content={text} />
+      <ChatGallery images={resolveBildIds(ids)} />
+    </>
   );
 }
 

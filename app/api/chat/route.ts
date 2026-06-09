@@ -3,6 +3,7 @@ import Anthropic, { APIUserAbortError } from "@anthropic-ai/sdk";
 import { checkRateLimit, checkDailyCap, clientIp } from "@/lib/ratelimit";
 import { answerKey, getCachedAnswer, setCachedAnswer } from "@/lib/cache";
 import { SYSTEM_PROMPT, WISSENSBASIS } from "@/lib/prompt";
+import { IMAGE_CATALOG_TEXT } from "@/lib/images";
 import { suffixForTier } from "@/lib/persona";
 import type { ToneTier } from "@/lib/types";
 
@@ -150,7 +151,11 @@ export async function POST(req: NextRequest) {
       { type: "text", text: SYSTEM_PROMPT },
       {
         type: "text",
-        text: "ESG-WISSENSBASIS (nur diese Informationen verwenden):\n\n" + WISSENSBASIS,
+        text:
+          "ESG-WISSENSBASIS (nur diese Informationen verwenden):\n\n" +
+          WISSENSBASIS +
+          "\n\n---\nVERFÜGBARE ECHTE FOTOS (Format: BildID | Jahr | Thema | Beschreibung) – nur diese IDs sind für den [[BILDER: …]]-Marker erlaubt:\n" +
+          IMAGE_CATALOG_TEXT,
         cache_control: { type: "ephemeral" },
       },
     ],

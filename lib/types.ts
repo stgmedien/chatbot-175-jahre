@@ -9,18 +9,30 @@ export interface TieredAnswer {
   fach: string;
 }
 
-export interface Station {
+/** Eine antippbare Verzweigungs-Option: Teaser-Text + Ziel-Knoten-ID. */
+export interface PathOption {
+  /** Antippbarer Teaser (wird zur „User-Bubble", wenn man ihn wählt). */
+  label: string;
+  /** ID des Knotens, zu dem diese Option führt. */
+  ziel: string;
+}
+
+/** Ein Knoten der Verzweigungskarte: kurze Antwort + bis zu 3 Weiter-Optionen. */
+export interface PathNode {
   id: string;
-  frage: string;
   antwort: TieredAnswer;
   /** Bild-IDs (IMG_YYYY_NNN) → werden über das Bild-Manifest aufgelöst. */
   imageBildIds: string[];
   /** Quellenangaben, die unter der Antwort gezeigt werden. */
   citations: string[];
-  /** IDs möglicher Anschluss-Stationen ("Wenn Besucher nachfragen"). */
-  weiter: string[];
-  /** Gate: nur reviewed === true wird ausgeliefert. */
-  reviewed: boolean;
+  /** Genau 3 bei Nicht-Terminal-Knoten; [] bei Abschluss-Knoten. */
+  optionen: PathOption[];
+}
+
+/** Einstieg eines Pfads: Begrüßung + die 3 ersten Optionen (noch keine Antwort). */
+export interface PathStart {
+  intro: string;
+  optionen: PathOption[];
 }
 
 export interface Pfad {
@@ -30,7 +42,10 @@ export interface Pfad {
   /** Kurzer Teaser für den Hub. */
   kurz: string;
   themen: string[];
-  stationen: Station[];
+  start: PathStart;
+  nodes: PathNode[];
+  /** Gate: nur reviewed === true wird ausgeliefert. */
+  reviewed: boolean;
 }
 
 export interface FaqItem {
@@ -80,14 +95,21 @@ export interface EmbeddingsIndex {
   chunks: IndexChunk[];
 }
 
-/** Server-aufgelöste Station fürs Rendering (Bilder bereits aus dem Manifest gemappt). */
-export interface ViewStation {
+/** Server-aufgelöster Knoten fürs Rendering (Bilder bereits aus dem Manifest gemappt). */
+export interface ViewNode {
   id: string;
-  frage: string;
   antwort: TieredAnswer;
   images: ImageEntry[];
   citations: string[];
-  weiter: string[];
+  optionen: PathOption[];
+}
+
+/** Server-aufgelöster Pfad: Start + alle Knoten (Bilder gemappt) fürs Client-Rendering. */
+export interface ViewPath {
+  titel: string;
+  intro: string;
+  startOptionen: PathOption[];
+  nodes: ViewNode[];
 }
 
 // Persona (clientseitig in localStorage gehalten).

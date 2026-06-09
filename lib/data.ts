@@ -8,9 +8,9 @@ export const PFADE = pfadeJson as Pfad[];
 export const FAQ = faqJson as FaqItem[];
 export const IMAGES = manifestJson as ImageManifest;
 
-/** Nur ausgelieferte (geprüfte) Pfade. */
+/** Nur ausgelieferte (geprüfte) Pfade mit mindestens einem Knoten. */
 export function publishedPfade(): Pfad[] {
-  return PFADE.filter((p) => p.stationen.some((s) => s.reviewed));
+  return PFADE.filter((p) => p.reviewed && p.nodes.length > 0);
 }
 
 export function getPfad(slug: string): Pfad | null {
