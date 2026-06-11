@@ -15,6 +15,7 @@ interface ChatMessage {
 const BEISPIELE = [
   "Seit wann gibt es den Posaunenchor?",
   "Wann wurde das ESG gegründet?",
+  "Zeig mir historische Fotos vom Schulgebäude!",
   "Was hat es mit dem ersten Fußballverein auf sich?",
   "Wer war Direktor in den 1930er Jahren?",
 ];
@@ -43,6 +44,20 @@ export default function ChatBox() {
   const stickRef = useRef(true);
 
   const allowed = ageStored || confirmedHere;
+
+  // Deep-Link ?q=… (z. B. von den Hub-Chips): Frage einmalig automatisch senden.
+  // sendRef zeigt immer auf die aktuelle send-Funktion (Effect-Deps bleiben schlank).
+  const sendRef = useRef<((text: string) => void) | null>(null);
+  const autoSentRef = useRef(false);
+  useEffect(() => {
+    if (!hydrated || !allowed || autoSentRef.current) return;
+    const q = new URLSearchParams(window.location.search).get("q");
+    if (!q || !q.trim()) return;
+    autoSentRef.current = true;
+    // Param entfernen, damit ein Reload die Frage nicht erneut abschickt.
+    window.history.replaceState(null, "", window.location.pathname);
+    queueMicrotask(() => sendRef.current?.(q.trim().slice(0, 500)));
+  }, [hydrated, allowed]);
 
   // Stick-to-bottom: misst direkt das Endsentinel statt Body-/Footer-Höhen.
   useEffect(() => {
@@ -74,6 +89,10 @@ export default function ChatBox() {
   const focusInput = useCallback(() => {
     requestAnimationFrame(() => textareaRef.current?.focus());
   }, []);
+
+  useEffect(() => {
+    sendRef.current = send;
+  });
 
   async function send(text: string) {
     const q = text.trim();

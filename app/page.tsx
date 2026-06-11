@@ -12,8 +12,9 @@ export default function Home() {
           1000 Fenster, unendlich viele Geschichten
         </h1>
         <p className="max-w-prose text-lg text-esg-muted">
-          Willkommen beim Erzählbot des Evangelisch-Stiftischen Gymnasiums Gütersloh. Klick dich
-          durch die Geschichte unserer Schule – oder stell uns einfach deine eigene Frage.
+          Willkommen beim Erzählbot des Evangelisch-Stiftischen Gymnasiums Gütersloh. Stell ihm
+          deine Fragen zu 175 Jahren Schulgeschichte – er antwortet mit Quellen und historischen
+          Fotos. Oder klick dich durch die geführten Pfade.
         </p>
       </div>
 
