@@ -21,6 +21,7 @@ const FILES = [
   "ESG_Haeufige_Fragen_FAQ.md",
   "ESG_SuperKI_Schnellantworten.md",
   "ESG_Historische_Dokumente_Funde.md",
+  "ESG_Funde_Festschriften_und_Presse.md",
 ];
 
 const parts: string[] = [];

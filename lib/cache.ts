@@ -16,7 +16,7 @@ const DEFAULT_TTL_S = 60 * 60 * 24;
 // einzelner Nutzer-Turn nicht den globalen Antwortbestand über Versionen hinweg
 // bestimmt. Bei Prompt-/Wissensbasis-Änderungen hochzählen (oder per Env setzen),
 // dann sind alte (ggf. vergiftete) Einträge sofort unerreichbar.
-export const CACHE_VERSION = process.env.CACHE_VERSION ?? "v2";
+export const CACHE_VERSION = process.env.CACHE_VERSION ?? "v3";
 
 export function answerKey(question: string, tier: ToneTier): string {
   const norm = question.trim().toLowerCase().replace(/\s+/g, " ");

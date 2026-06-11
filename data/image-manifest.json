@@ -1054,5 +1054,192 @@
     "thema": "Schülerleben",
     "blobUrl": "/bilder/IMG1668_Schuelerleben_Wandertage1930StRHuth_SCHIFF.jpg",
     "present": true
+  },
+  "F125_S001_01": {
+    "bildId": "F125_S001_01",
+    "dateiname": "1976_Jubilaeum_Festschrift125_Umschlag_F125.jpg",
+    "alt": "Umschlag der Festschrift '125 Jahre Ev. Stift. Gymnasium Gütersloh' (1976) mit dem Schulturm in Negativ-Optik, Titel 'Standort und Perspektiven'",
+    "rechte": "Stadt-/Schularchiv Gütersloh; Nutzung für das ESG-175-Projekt freigegeben",
+    "nutzung": "freigegeben",
+    "jahr": 1976,
+    "thema": "Jubilaeum",
+    "blobUrl": "/bilder/1976_Jubilaeum_Festschrift125_Umschlag_F125.jpg",
+    "present": true
+  },
+  "F125_S025_01": {
+    "bildId": "F125_S025_01",
+    "dateiname": "1976_Baugeschichte_Hauptgebaeude_Tuermchen_F125.jpg",
+    "alt": "Hauptgebäude des ESG mit dem markanten Penne-Türmchen, 1976",
+    "rechte": "Stadt-/Schularchiv Gütersloh; Nutzung für das ESG-175-Projekt freigegeben",
+    "nutzung": "freigegeben",
+    "jahr": 1976,
+    "thema": "Baugeschichte",
+    "blobUrl": "/bilder/1976_Baugeschichte_Hauptgebaeude_Tuermchen_F125.jpg",
+    "present": true
+  },
+  "F125_S025_02": {
+    "bildId": "F125_S025_02",
+    "dateiname": "1976_Baugeschichte_Naturwissenschaftlicher_Trakt_F125.jpg",
+    "alt": "Naturwissenschaftlicher Trakt (moderner Neubau) des ESG, 1976",
+    "rechte": "Stadt-/Schularchiv Gütersloh; Nutzung für das ESG-175-Projekt freigegeben",
+    "nutzung": "freigegeben",
+    "jahr": 1976,
+    "thema": "Baugeschichte",
+    "blobUrl": "/bilder/1976_Baugeschichte_Naturwissenschaftlicher_Trakt_F125.jpg",
+    "present": true
+  },
+  "F125_S027_01": {
+    "bildId": "F125_S027_01",
+    "dateiname": "1976_Schuelerleben_Aula_Altar_Orgel_F125.jpg",
+    "alt": "Aula des ESG mit Altar und Orgel, 1976",
+    "rechte": "Stadt-/Schularchiv Gütersloh; Nutzung für das ESG-175-Projekt freigegeben",
+    "nutzung": "freigegeben",
+    "jahr": 1976,
+    "thema": "Schülerleben",
+    "blobUrl": "/bilder/1976_Schuelerleben_Aula_Altar_Orgel_F125.jpg",
+    "present": true
+  },
+  "BBA_S065_01": {
+    "bildId": "BBA_S065_01",
+    "dateiname": "1965_Baugeschichte_Tuermchen_Federzeichnung_BBA.jpg",
+    "alt": "Federzeichnung des Dachtürmchens des ESG mit Posaunenengel-Wetterfahne, um 1965",
+    "rechte": "Stadt-/Schularchiv Gütersloh; Nutzung für das ESG-175-Projekt freigegeben",
+    "nutzung": "freigegeben",
+    "jahr": 1965,
+    "thema": "Baugeschichte",
+    "blobUrl": "/bilder/1965_Baugeschichte_Tuermchen_Federzeichnung_BBA.jpg",
+    "present": true
+  },
+  "BBA_S009_03": {
+    "bildId": "BBA_S009_03",
+    "dateiname": "1964_Baugeschichte_Hofseite_Schulgebaeude_BBA.jpg",
+    "alt": "Hofseite des ESG-Schulgebäudes mit Türmchen, um 1964",
+    "rechte": "Stadt-/Schularchiv Gütersloh; Nutzung für das ESG-175-Projekt freigegeben",
+    "nutzung": "freigegeben",
+    "jahr": 1964,
+    "thema": "Baugeschichte",
+    "blobUrl": "/bilder/1964_Baugeschichte_Hofseite_Schulgebaeude_BBA.jpg",
+    "present": true
+  },
+  "BBA_S009_02": {
+    "bildId": "BBA_S009_02",
+    "dateiname": "1964_Geschichte_Blick_ueber_Guetersloh_BBA.jpg",
+    "alt": "Blick über Gütersloh vom Gymnasium aus, um 1964",
+    "rechte": "Stadt-/Schularchiv Gütersloh; Nutzung für das ESG-175-Projekt freigegeben",
+    "nutzung": "freigegeben",
+    "jahr": 1964,
+    "thema": "Geschichte",
+    "blobUrl": "/bilder/1964_Geschichte_Blick_ueber_Guetersloh_BBA.jpg",
+    "present": true
+  },
+  "F100_S001_01": {
+    "bildId": "F100_S001_01",
+    "dateiname": "1928_Baugeschichte_Neues_Gebaeude_F100.jpg",
+    "alt": "Das neue Schulgebäude des ESG (Klinkerbau mit Türmchen), 1928 — Aufnahme aus der Festschrift 1951",
+    "rechte": "Stadt-/Schularchiv Gütersloh; Nutzung für das ESG-175-Projekt freigegeben",
+    "nutzung": "freigegeben",
+    "jahr": 1928,
+    "thema": "Baugeschichte",
+    "blobUrl": "/bilder/1928_Baugeschichte_Neues_Gebaeude_F100.jpg",
+    "present": true
+  },
+  "F100_S022_02": {
+    "bildId": "F100_S022_02",
+    "dateiname": "1951_Schuelerleben_Aula_Innenansicht_F100.jpg",
+    "alt": "Innenansicht der alten Aula des ESG mit Altar und Buntglasfenstern (vor der Kriegszerstörung)",
+    "rechte": "Stadt-/Schularchiv Gütersloh; Nutzung für das ESG-175-Projekt freigegeben",
+    "nutzung": "freigegeben",
+    "jahr": 1951,
+    "thema": "Schülerleben",
+    "blobUrl": "/bilder/1951_Schuelerleben_Aula_Innenansicht_F100.jpg",
+    "present": true
+  },
+  "F100_S022_01": {
+    "bildId": "F100_S022_01",
+    "dateiname": "1951_Baugeschichte_Aula_Aussenansicht_F100.jpg",
+    "alt": "Außenansicht der Aula des ESG, Festschrift 1951",
+    "rechte": "Stadt-/Schularchiv Gütersloh; Nutzung für das ESG-175-Projekt freigegeben",
+    "nutzung": "freigegeben",
+    "jahr": 1951,
+    "thema": "Baugeschichte",
+    "blobUrl": "/bilder/1951_Baugeschichte_Aula_Aussenansicht_F100.jpg",
+    "present": true
+  },
+  "F100_S021_02": {
+    "bildId": "F100_S021_02",
+    "dateiname": "oJ_Schulleitung_Direktor_Klingender_F100.jpg",
+    "alt": "Porträt von Direktor Klingender des ESG (Festschrift 100 Jahre, 1951)",
+    "rechte": "Stadt-/Schularchiv Gütersloh; Nutzung für das ESG-175-Projekt freigegeben",
+    "nutzung": "freigegeben",
+    "jahr": null,
+    "thema": "Schulleitung",
+    "blobUrl": "/bilder/oJ_Schulleitung_Direktor_Klingender_F100.jpg",
+    "present": true
+  },
+  "F100_S024_01": {
+    "bildId": "F100_S024_01",
+    "dateiname": "oJ_Schulleitung_Direktor_Rothfuchs_F100.jpg",
+    "alt": "Porträt von Direktor Rothfuchs des ESG (Festschrift 100 Jahre, 1951)",
+    "rechte": "Stadt-/Schularchiv Gütersloh; Nutzung für das ESG-175-Projekt freigegeben",
+    "nutzung": "freigegeben",
+    "jahr": null,
+    "thema": "Schulleitung",
+    "blobUrl": "/bilder/oJ_Schulleitung_Direktor_Rothfuchs_F100.jpg",
+    "present": true
+  },
+  "F100_S024_03": {
+    "bildId": "F100_S024_03",
+    "dateiname": "oJ_Schulleitung_Direktor_Luenzner_F100.jpg",
+    "alt": "Porträt von Direktor Lünzner des ESG (Festschrift 100 Jahre, 1951)",
+    "rechte": "Stadt-/Schularchiv Gütersloh; Nutzung für das ESG-175-Projekt freigegeben",
+    "nutzung": "freigegeben",
+    "jahr": null,
+    "thema": "Schulleitung",
+    "blobUrl": "/bilder/oJ_Schulleitung_Direktor_Luenzner_F100.jpg",
+    "present": true
+  },
+  "F100_S033_01": {
+    "bildId": "F100_S033_01",
+    "dateiname": "1950_Baugeschichte_Wiederaufbau_Suedfluegel_F100.jpg",
+    "alt": "Wiederaufbau des Südflügels des ESG nach dem Krieg, mit Gerüst, Aula und Glockenturm (Festschrift 1951)",
+    "rechte": "Stadt-/Schularchiv Gütersloh; Nutzung für das ESG-175-Projekt freigegeben",
+    "nutzung": "freigegeben",
+    "jahr": 1950,
+    "thema": "Baugeschichte",
+    "blobUrl": "/bilder/1950_Baugeschichte_Wiederaufbau_Suedfluegel_F100.jpg",
+    "present": true
+  },
+  "F100_S023_02": {
+    "bildId": "F100_S023_02",
+    "dateiname": "oJ_Baugeschichte_Altes_Fachwerk_Alumnat_F100.jpg",
+    "alt": "Das alte Fachwerk-Alumnat (Internat) des ESG (Festschrift 1951)",
+    "rechte": "Stadt-/Schularchiv Gütersloh; Nutzung für das ESG-175-Projekt freigegeben",
+    "nutzung": "freigegeben",
+    "jahr": null,
+    "thema": "Baugeschichte",
+    "blobUrl": "/bilder/oJ_Baugeschichte_Altes_Fachwerk_Alumnat_F100.jpg",
+    "present": true
+  },
+  "F100_S034_01": {
+    "bildId": "F100_S034_01",
+    "dateiname": "1951_Geschichte_Schuelerzahl_Diagramm_1920_1951_F100.jpg",
+    "alt": "Diagramm der Schülerzahlen des ESG 1920/21 bis 1950/51 (Einheimische, Auswärtige, Fahrschüler)",
+    "rechte": "Stadt-/Schularchiv Gütersloh; Nutzung für das ESG-175-Projekt freigegeben",
+    "nutzung": "freigegeben",
+    "jahr": 1951,
+    "thema": "Geschichte",
+    "blobUrl": "/bilder/1951_Geschichte_Schuelerzahl_Diagramm_1920_1951_F100.jpg",
+    "present": true
+  },
+  "F100_S021_01": {
+    "bildId": "F100_S021_01",
+    "dateiname": "oJ_Schulleitung_Anstaltspfarrer_Braun_F100.jpg",
+    "alt": "Porträt von Anstaltspfarrer Theodor Braun (1866–1884) des ESG (Festschrift 1951)",
+    "rechte": "Stadt-/Schularchiv Gütersloh; Nutzung für das ESG-175-Projekt freigegeben",
+    "nutzung": "freigegeben",
+    "jahr": null,
+    "thema": "Schulleitung",
+    "blobUrl": "/bilder/oJ_Schulleitung_Anstaltspfarrer_Braun_F100.jpg",
+    "present": true
   }
 }
